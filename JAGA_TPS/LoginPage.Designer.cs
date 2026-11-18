@@ -33,7 +33,7 @@
             button1 = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             flowLayoutPanel4 = new FlowLayoutPanel();
-            linkLabel2 = new LinkLabel();
+            linkDaftar = new LinkLabel();
             pictureBox4 = new PictureBox();
             label7 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -112,24 +112,26 @@
             // 
             flowLayoutPanel4.AutoSize = true;
             flowLayoutPanel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel4.Controls.Add(linkLabel2);
+            flowLayoutPanel4.Controls.Add(linkDaftar);
             flowLayoutPanel4.Controls.Add(pictureBox4);
             flowLayoutPanel4.Location = new Point(218, 3);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(85, 28);
             flowLayoutPanel4.TabIndex = 8;
             // 
-            // linkLabel2
+            // linkDaftar
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel2.LinkColor = Color.FromArgb(35, 122, 87);
-            linkLabel2.Location = new Point(3, 0);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(61, 25);
-            linkLabel2.TabIndex = 3;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Daftar";
+            linkDaftar.Anchor = AnchorStyles.Left;
+            linkDaftar.AutoSize = true;
+            linkDaftar.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkDaftar.LinkColor = Color.FromArgb(35, 122, 87);
+            linkDaftar.Location = new Point(3, 1);
+            linkDaftar.Name = "linkDaftar";
+            linkDaftar.Size = new Size(61, 25);
+            linkDaftar.TabIndex = 3;
+            linkDaftar.TabStop = true;
+            linkDaftar.Text = "Daftar";
+            linkDaftar.LinkClicked += linkDaftar_LinkClicked;
             // 
             // pictureBox4
             // 
@@ -400,7 +402,7 @@
         private Button button1;
         private TableLayoutPanel tableLayoutPanel3;
         private FlowLayoutPanel flowLayoutPanel4;
-        private LinkLabel linkLabel2;
+        private LinkLabel linkDaftar;
         private PictureBox pictureBox4;
         private Label label7;
         private TableLayoutPanel tableLayoutPanel1;

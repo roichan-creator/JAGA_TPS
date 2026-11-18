@@ -6,5 +6,15 @@ namespace JAGA_TPS
         {
             InitializeComponent();
         }
+
+        private void linkDaftar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Membuka Form RegistrasiJagaTPS
+            RegistrasiJagaTPS formProfil = new RegistrasiJagaTPS();
+            formProfil.Show();
+
+            // Menyembunyikan form LoginPage
+            this.Hide();
+        }
     }
 }

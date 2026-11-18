@@ -17,9 +17,20 @@ namespace JAGA_TPS
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void linkMasuk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Membuka Form Login
+            LoginPage formProfil = new LoginPage();
+            formProfil.Show();
+
+            // Menyembunyikan form RegistrasiJagaTPS
+            this.Hide();
         }
     }
 }
