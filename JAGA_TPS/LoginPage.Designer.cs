@@ -115,7 +115,7 @@
             flowLayoutPanel4.Controls.Add(pictureBox4);
             flowLayoutPanel4.Location = new Point(218, 3);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(102, 30);
+            flowLayoutPanel4.Size = new Size(85, 28);
             flowLayoutPanel4.TabIndex = 8;
             // 
             // linkLabel2
@@ -136,7 +136,7 @@
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(70, 3);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(29, 24);
+            pictureBox4.Size = new Size(12, 22);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 7;
             pictureBox4.TabStop = false;
@@ -219,6 +219,7 @@
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.White;
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -336,7 +337,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.Control;
+            label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(45, 105, 81);
             label1.Location = new Point(143, 176);
@@ -347,6 +348,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.logo_JagaTPS;
             pictureBox1.Location = new Point(143, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(176, 173);
@@ -363,7 +365,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             HelpButton = true;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "LoginPage";
