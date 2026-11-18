@@ -69,6 +69,7 @@
             // 
             // panel1
             // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(button1);
             panel1.Controls.Add(tableLayoutPanel3);
             panel1.Controls.Add(tableLayoutPanel1);
@@ -89,7 +90,7 @@
             button1.Name = "button1";
             button1.Size = new Size(425, 55);
             button1.TabIndex = 5;
-            button1.Text = "button1";
+            button1.Text = "Masuk";
             button1.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel3
