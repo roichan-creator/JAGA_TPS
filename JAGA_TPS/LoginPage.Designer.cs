@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
-            panel1 = new Panel();
-            button1 = new Button();
+            panelLogin = new Panel();
+            btnDaftar = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             flowLayoutPanel4 = new FlowLayoutPanel();
             linkDaftar = new LinkLabel();
@@ -39,21 +39,21 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             pictureBox2 = new PictureBox();
-            textBox1 = new TextBox();
+            txtEmail = new TextBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
-            checkBox1 = new CheckBox();
+            chkIngatSaya = new CheckBox();
             linkLabel1 = new LinkLabel();
             flowLayoutPanel2 = new FlowLayoutPanel();
             pictureBox3 = new PictureBox();
-            textBox2 = new TextBox();
+            txtPassword = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            panel1.SuspendLayout();
+            panelLogin.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -67,31 +67,32 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // panelLogin
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(tableLayoutPanel3);
-            panel1.Controls.Add(tableLayoutPanel1);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(612, 31);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(460, 839);
-            panel1.TabIndex = 1;
+            panelLogin.BorderStyle = BorderStyle.FixedSingle;
+            panelLogin.Controls.Add(btnDaftar);
+            panelLogin.Controls.Add(tableLayoutPanel3);
+            panelLogin.Controls.Add(tableLayoutPanel1);
+            panelLogin.Controls.Add(label3);
+            panelLogin.Controls.Add(label2);
+            panelLogin.Controls.Add(label1);
+            panelLogin.Controls.Add(pictureBox1);
+            panelLogin.Location = new Point(612, 31);
+            panelLogin.Name = "panelLogin";
+            panelLogin.Size = new Size(460, 839);
+            panelLogin.TabIndex = 1;
             // 
-            // button1
+            // btnDaftar
             // 
-            button1.BackColor = Color.FromArgb(35, 122, 87);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(19, 618);
-            button1.Name = "button1";
-            button1.Size = new Size(425, 55);
-            button1.TabIndex = 5;
-            button1.Text = "Masuk";
-            button1.UseVisualStyleBackColor = false;
+            btnDaftar.BackColor = Color.FromArgb(35, 122, 87);
+            btnDaftar.ForeColor = Color.White;
+            btnDaftar.Location = new Point(19, 618);
+            btnDaftar.Name = "btnDaftar";
+            btnDaftar.Size = new Size(425, 55);
+            btnDaftar.TabIndex = 5;
+            btnDaftar.Text = "Masuk";
+            btnDaftar.UseVisualStyleBackColor = false;
+            btnDaftar.Click += btnDaftar_Click;
             // 
             // tableLayoutPanel3
             // 
@@ -121,11 +122,11 @@
             // 
             // linkDaftar
             // 
-            linkDaftar.Anchor = AnchorStyles.Left;
+            linkDaftar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             linkDaftar.AutoSize = true;
             linkDaftar.LinkBehavior = LinkBehavior.NeverUnderline;
             linkDaftar.LinkColor = Color.FromArgb(35, 122, 87);
-            linkDaftar.Location = new Point(3, 1);
+            linkDaftar.Location = new Point(3, 3);
             linkDaftar.Name = "linkDaftar";
             linkDaftar.Size = new Size(61, 25);
             linkDaftar.TabIndex = 3;
@@ -135,7 +136,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(70, 3);
             pictureBox4.Name = "pictureBox4";
@@ -182,7 +183,7 @@
             flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel1.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel1.Controls.Add(pictureBox2);
-            flowLayoutPanel1.Controls.Add(textBox1);
+            flowLayoutPanel1.Controls.Add(txtEmail);
             flowLayoutPanel1.Location = new Point(3, 31);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(419, 40);
@@ -199,16 +200,16 @@
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtEmail
             // 
-            textBox1.Anchor = AnchorStyles.Left;
-            textBox1.BackColor = Color.FromArgb(233, 247, 237);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox1.Location = new Point(38, 8);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(368, 24);
-            textBox1.TabIndex = 6;
+            txtEmail.Anchor = AnchorStyles.Left;
+            txtEmail.BackColor = Color.FromArgb(233, 247, 237);
+            txtEmail.BorderStyle = BorderStyle.None;
+            txtEmail.ForeColor = Color.FromArgb(111, 122, 114);
+            txtEmail.Location = new Point(38, 8);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(368, 24);
+            txtEmail.TabIndex = 6;
             // 
             // flowLayoutPanel3
             // 
@@ -226,7 +227,7 @@
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Controls.Add(checkBox1, 0, 0);
+            tableLayoutPanel2.Controls.Add(chkIngatSaya, 0, 0);
             tableLayoutPanel2.Controls.Add(linkLabel1, 1, 0);
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -236,16 +237,16 @@
             tableLayoutPanel2.Size = new Size(416, 37);
             tableLayoutPanel2.TabIndex = 8;
             // 
-            // checkBox1
+            // chkIngatSaya
             // 
-            checkBox1.Anchor = AnchorStyles.Left;
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(3, 4);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(119, 29);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "Ingat saya";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkIngatSaya.Anchor = AnchorStyles.Left;
+            chkIngatSaya.AutoSize = true;
+            chkIngatSaya.Location = new Point(3, 4);
+            chkIngatSaya.Name = "chkIngatSaya";
+            chkIngatSaya.Size = new Size(119, 29);
+            chkIngatSaya.TabIndex = 0;
+            chkIngatSaya.Text = "Ingat saya";
+            chkIngatSaya.UseVisualStyleBackColor = true;
             // 
             // linkLabel1
             // 
@@ -265,7 +266,7 @@
             flowLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel2.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel2.Controls.Add(pictureBox3);
-            flowLayoutPanel2.Controls.Add(textBox2);
+            flowLayoutPanel2.Controls.Add(txtPassword);
             flowLayoutPanel2.Location = new Point(3, 127);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(419, 39);
@@ -282,18 +283,18 @@
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Anchor = AnchorStyles.Left;
-            textBox2.BackColor = Color.FromArgb(233, 247, 237);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox2.Location = new Point(38, 8);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(368, 24);
-            textBox2.TabIndex = 6;
-            textBox2.UseSystemPasswordChar = true;
+            txtPassword.Anchor = AnchorStyles.Left;
+            txtPassword.BackColor = Color.FromArgb(233, 247, 237);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.FromArgb(111, 122, 114);
+            txtPassword.Location = new Point(38, 8);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(368, 24);
+            txtPassword.TabIndex = 6;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -365,7 +366,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1685, 901);
-            Controls.Add(panel1);
+            Controls.Add(panelLogin);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             HelpButton = true;
             Margin = new Padding(4);
@@ -374,8 +375,8 @@
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login Page";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panelLogin.ResumeLayout(false);
+            panelLogin.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
             flowLayoutPanel4.ResumeLayout(false);
@@ -398,8 +399,8 @@
 
         #endregion
 
-        private Panel panel1;
-        private Button button1;
+        private Panel panelLogin;
+        private Button btnDaftar;
         private TableLayoutPanel tableLayoutPanel3;
         private FlowLayoutPanel flowLayoutPanel4;
         private LinkLabel linkDaftar;
@@ -408,14 +409,14 @@
         private TableLayoutPanel tableLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel1;
         private PictureBox pictureBox2;
-        private TextBox textBox1;
+        private TextBox txtEmail;
         private FlowLayoutPanel flowLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel2;
-        private CheckBox checkBox1;
+        private CheckBox chkIngatSaya;
         private LinkLabel linkLabel1;
         private FlowLayoutPanel flowLayoutPanel2;
         private PictureBox pictureBox3;
-        private TextBox textBox2;
+        private TextBox txtPassword;
         private Label label4;
         private Label label5;
         private Label label3;

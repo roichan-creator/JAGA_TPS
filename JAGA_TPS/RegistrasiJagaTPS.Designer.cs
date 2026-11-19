@@ -41,40 +41,40 @@
             label14 = new Label();
             tableLayoutPanel10 = new TableLayoutPanel();
             pictureBox9 = new PictureBox();
-            radioButton1 = new RadioButton();
+            rbPenanggungJawab = new RadioButton();
             tablayoutOP = new TableLayoutPanel();
             label11 = new Label();
             label12 = new Label();
             tableLayoutPanel8 = new TableLayoutPanel();
-            radioButton2 = new RadioButton();
+            rbOperator = new RadioButton();
             pictureBox8 = new PictureBox();
             tablayoutPengelolaTPS = new TableLayoutPanel();
             label10 = new Label();
             label7 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
-            radioButton3 = new RadioButton();
+            rbPengelola = new RadioButton();
             pictureBox7 = new PictureBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             label9 = new Label();
             label8 = new Label();
             flowLayoutPanel4 = new FlowLayoutPanel();
             pictureBox11 = new PictureBox();
-            textBox5 = new TextBox();
+            txtPassword = new TextBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             pictureBox2 = new PictureBox();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
             flowLayoutPanel2 = new FlowLayoutPanel();
             pictureBox3 = new PictureBox();
-            textBox2 = new TextBox();
+            txtNamaInstansi = new TextBox();
             flowLayoutPanel5 = new FlowLayoutPanel();
             pictureBox5 = new PictureBox();
-            textBox3 = new TextBox();
+            txtEmail = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label15 = new Label();
-            checkBox4 = new CheckBox();
-            button1 = new Button();
+            chkPersetujuan = new CheckBox();
+            btnDaftar = new Button();
             panel1 = new Panel();
             tableLayoutPanel11 = new TableLayoutPanel();
             flowLayoutPanel3 = new FlowLayoutPanel();
@@ -165,8 +165,8 @@
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
             tableLayoutPanel1.Controls.Add(label6, 0, 6);
             tableLayoutPanel1.Controls.Add(label15, 0, 9);
-            tableLayoutPanel1.Controls.Add(checkBox4, 0, 11);
-            tableLayoutPanel1.Location = new Point(45, 257);
+            tableLayoutPanel1.Controls.Add(chkPersetujuan, 0, 11);
+            tableLayoutPanel1.Location = new Point(37, 257);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 12;
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
@@ -260,7 +260,7 @@
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.3684216F));
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.63158F));
             tableLayoutPanel10.Controls.Add(pictureBox9, 0, 0);
-            tableLayoutPanel10.Controls.Add(radioButton1, 1, 0);
+            tableLayoutPanel10.Controls.Add(rbPenanggungJawab, 1, 0);
             tableLayoutPanel10.Location = new Point(3, 3);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 1;
@@ -280,17 +280,17 @@
             pictureBox9.TabIndex = 7;
             pictureBox9.TabStop = false;
             // 
-            // radioButton1
+            // rbPenanggungJawab
             // 
-            radioButton1.Anchor = AnchorStyles.Right;
-            radioButton1.AutoSize = true;
-            radioButton1.Enabled = false;
-            radioButton1.Location = new Point(107, 3);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(21, 20);
-            radioButton1.TabIndex = 13;
-            radioButton1.TabStop = true;
-            radioButton1.UseVisualStyleBackColor = true;
+            rbPenanggungJawab.Anchor = AnchorStyles.Right;
+            rbPenanggungJawab.AutoSize = true;
+            rbPenanggungJawab.Enabled = false;
+            rbPenanggungJawab.Location = new Point(107, 3);
+            rbPenanggungJawab.Name = "rbPenanggungJawab";
+            rbPenanggungJawab.Size = new Size(21, 20);
+            rbPenanggungJawab.TabIndex = 13;
+            rbPenanggungJawab.TabStop = true;
+            rbPenanggungJawab.UseVisualStyleBackColor = true;
             // 
             // tablayoutOP
             // 
@@ -337,7 +337,7 @@
             tableLayoutPanel8.ColumnCount = 2;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.3684216F));
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.63158F));
-            tableLayoutPanel8.Controls.Add(radioButton2, 1, 0);
+            tableLayoutPanel8.Controls.Add(rbOperator, 1, 0);
             tableLayoutPanel8.Controls.Add(pictureBox8, 0, 0);
             tableLayoutPanel8.Location = new Point(3, 3);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -347,17 +347,17 @@
             tableLayoutPanel8.Size = new Size(149, 26);
             tableLayoutPanel8.TabIndex = 13;
             // 
-            // radioButton2
+            // rbOperator
             // 
-            radioButton2.Anchor = AnchorStyles.Right;
-            radioButton2.AutoSize = true;
-            radioButton2.Enabled = false;
-            radioButton2.Location = new Point(125, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(21, 20);
-            radioButton2.TabIndex = 14;
-            radioButton2.TabStop = true;
-            radioButton2.UseVisualStyleBackColor = true;
+            rbOperator.Anchor = AnchorStyles.Right;
+            rbOperator.AutoSize = true;
+            rbOperator.Enabled = false;
+            rbOperator.Location = new Point(125, 3);
+            rbOperator.Name = "rbOperator";
+            rbOperator.Size = new Size(21, 20);
+            rbOperator.TabIndex = 14;
+            rbOperator.TabStop = true;
+            rbOperator.UseVisualStyleBackColor = true;
             // 
             // pictureBox8
             // 
@@ -415,7 +415,7 @@
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.3684216F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.63158F));
-            tableLayoutPanel3.Controls.Add(radioButton3, 1, 0);
+            tableLayoutPanel3.Controls.Add(rbPengelola, 1, 0);
             tableLayoutPanel3.Controls.Add(pictureBox7, 0, 0);
             tableLayoutPanel3.Location = new Point(3, 3);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -425,16 +425,16 @@
             tableLayoutPanel3.Size = new Size(149, 26);
             tableLayoutPanel3.TabIndex = 13;
             // 
-            // radioButton3
+            // rbPengelola
             // 
-            radioButton3.Anchor = AnchorStyles.Right;
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(125, 3);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(21, 20);
-            radioButton3.TabIndex = 15;
-            radioButton3.TabStop = true;
-            radioButton3.UseVisualStyleBackColor = true;
+            rbPengelola.Anchor = AnchorStyles.Right;
+            rbPengelola.AutoSize = true;
+            rbPengelola.Location = new Point(125, 3);
+            rbPengelola.Name = "rbPengelola";
+            rbPengelola.Size = new Size(21, 20);
+            rbPengelola.TabIndex = 15;
+            rbPengelola.TabStop = true;
+            rbPengelola.UseVisualStyleBackColor = true;
             // 
             // pictureBox7
             // 
@@ -490,7 +490,7 @@
             flowLayoutPanel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel4.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel4.Controls.Add(pictureBox11);
-            flowLayoutPanel4.Controls.Add(textBox5);
+            flowLayoutPanel4.Controls.Add(txtPassword);
             flowLayoutPanel4.Location = new Point(3, 457);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(471, 31);
@@ -507,18 +507,18 @@
             pictureBox11.TabIndex = 5;
             pictureBox11.TabStop = false;
             // 
-            // textBox5
+            // txtPassword
             // 
-            textBox5.Anchor = AnchorStyles.Left;
-            textBox5.BackColor = Color.FromArgb(233, 247, 237);
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox5.Location = new Point(28, 5);
-            textBox5.Name = "textBox5";
-            textBox5.PasswordChar = '*';
-            textBox5.Size = new Size(405, 24);
-            textBox5.TabIndex = 6;
-            textBox5.UseSystemPasswordChar = true;
+            txtPassword.Anchor = AnchorStyles.Left;
+            txtPassword.BackColor = Color.FromArgb(233, 247, 237);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.FromArgb(111, 122, 114);
+            txtPassword.Location = new Point(28, 5);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(437, 24);
+            txtPassword.TabIndex = 6;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // flowLayoutPanel1
             // 
@@ -526,7 +526,7 @@
             flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel1.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel1.Controls.Add(pictureBox2);
-            flowLayoutPanel1.Controls.Add(textBox1);
+            flowLayoutPanel1.Controls.Add(txtUsername);
             flowLayoutPanel1.Location = new Point(3, 31);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(471, 35);
@@ -539,20 +539,20 @@
             pictureBox2.Location = new Point(3, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(19, 29);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Anchor = AnchorStyles.Left;
-            textBox1.BackColor = Color.FromArgb(233, 247, 237);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox1.Location = new Point(28, 5);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(440, 24);
-            textBox1.TabIndex = 6;
+            txtUsername.Anchor = AnchorStyles.Left;
+            txtUsername.BackColor = Color.FromArgb(233, 247, 237);
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.ForeColor = Color.FromArgb(111, 122, 114);
+            txtUsername.Location = new Point(28, 5);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(440, 24);
+            txtUsername.TabIndex = 6;
             // 
             // flowLayoutPanel2
             // 
@@ -560,7 +560,7 @@
             flowLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel2.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel2.Controls.Add(pictureBox3);
-            flowLayoutPanel2.Controls.Add(textBox2);
+            flowLayoutPanel2.Controls.Add(txtNamaInstansi);
             flowLayoutPanel2.Location = new Point(3, 110);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(471, 35);
@@ -573,22 +573,20 @@
             pictureBox3.Location = new Point(3, 3);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(19, 29);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // txtNamaInstansi
             // 
-            textBox2.Anchor = AnchorStyles.Left;
-            textBox2.BackColor = Color.FromArgb(233, 247, 237);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox2.Location = new Point(28, 5);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(440, 24);
-            textBox2.TabIndex = 6;
-            textBox2.UseSystemPasswordChar = true;
+            txtNamaInstansi.Anchor = AnchorStyles.Left;
+            txtNamaInstansi.BackColor = Color.FromArgb(233, 247, 237);
+            txtNamaInstansi.BorderStyle = BorderStyle.None;
+            txtNamaInstansi.ForeColor = Color.FromArgb(111, 122, 114);
+            txtNamaInstansi.Location = new Point(28, 5);
+            txtNamaInstansi.Name = "txtNamaInstansi";
+            txtNamaInstansi.Size = new Size(440, 24);
+            txtNamaInstansi.TabIndex = 6;
             // 
             // flowLayoutPanel5
             // 
@@ -596,10 +594,10 @@
             flowLayoutPanel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel5.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel5.Controls.Add(pictureBox5);
-            flowLayoutPanel5.Controls.Add(textBox3);
+            flowLayoutPanel5.Controls.Add(txtEmail);
             flowLayoutPanel5.Location = new Point(3, 192);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
-            flowLayoutPanel5.Size = new Size(471, 35);
+            flowLayoutPanel5.Size = new Size(471, 37);
             flowLayoutPanel5.TabIndex = 8;
             // 
             // pictureBox5
@@ -608,23 +606,21 @@
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(3, 3);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(19, 29);
+            pictureBox5.Size = new Size(19, 34);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             // 
-            // textBox3
+            // txtEmail
             // 
-            textBox3.Anchor = AnchorStyles.Left;
-            textBox3.BackColor = Color.FromArgb(233, 247, 237);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.ForeColor = Color.FromArgb(111, 122, 114);
-            textBox3.Location = new Point(28, 5);
-            textBox3.Name = "textBox3";
-            textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(440, 24);
-            textBox3.TabIndex = 6;
-            textBox3.UseSystemPasswordChar = true;
+            txtEmail.Anchor = AnchorStyles.Left;
+            txtEmail.BackColor = Color.FromArgb(233, 247, 237);
+            txtEmail.BorderStyle = BorderStyle.None;
+            txtEmail.ForeColor = Color.FromArgb(111, 122, 114);
+            txtEmail.Location = new Point(28, 8);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(440, 24);
+            txtEmail.TabIndex = 6;
             // 
             // label4
             // 
@@ -666,27 +662,28 @@
             label15.TabIndex = 10;
             label15.Text = "Kata Sandi";
             // 
-            // checkBox4
+            // chkPersetujuan
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(3, 494);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(471, 54);
-            checkBox4.TabIndex = 14;
-            checkBox4.Text = "Saya menyetujui ketentuan pemantauan lingkungan dan validitas data\nkawasan.";
-            checkBox4.UseVisualStyleBackColor = true;
+            chkPersetujuan.AutoSize = true;
+            chkPersetujuan.Location = new Point(3, 494);
+            chkPersetujuan.Name = "chkPersetujuan";
+            chkPersetujuan.Size = new Size(471, 54);
+            chkPersetujuan.TabIndex = 14;
+            chkPersetujuan.Text = "Saya menyetujui ketentuan pemantauan lingkungan dan validitas data\nkawasan.";
+            chkPersetujuan.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDaftar
             // 
-            button1.BackColor = Color.FromArgb(35, 122, 87);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(58, 810);
-            button1.Name = "button1";
-            button1.Size = new Size(444, 31);
-            button1.TabIndex = 5;
-            button1.Text = "Masuk";
-            button1.UseVisualStyleBackColor = false;
+            btnDaftar.BackColor = Color.FromArgb(35, 122, 87);
+            btnDaftar.FlatStyle = FlatStyle.Popup;
+            btnDaftar.ForeColor = Color.White;
+            btnDaftar.Location = new Point(52, 811);
+            btnDaftar.Name = "btnDaftar";
+            btnDaftar.Size = new Size(444, 31);
+            btnDaftar.TabIndex = 5;
+            btnDaftar.Text = "Masuk";
+            btnDaftar.UseVisualStyleBackColor = false;
+            btnDaftar.Click += btnDaftar_Click;
             // 
             // panel1
             // 
@@ -696,13 +693,12 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnDaftar);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(625, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(542, 897);
             panel1.TabIndex = 2;
-            panel1.Paint += panel1_Paint;
             // 
             // tableLayoutPanel11
             // 
@@ -770,7 +766,11 @@
             ClientSize = new Size(1685, 901);
             Controls.Add(flowLayoutPanel6);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "RegistrasiJagaTPS";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegistrasiJagaTPS";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
@@ -824,19 +824,19 @@
         private TableLayoutPanel tableLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel1;
         private PictureBox pictureBox2;
-        private TextBox textBox1;
+        private TextBox txtUsername;
         private TableLayoutPanel tableLayoutPanel2;
         private FlowLayoutPanel flowLayoutPanel2;
         private PictureBox pictureBox3;
-        private TextBox textBox2;
+        private TextBox txtNamaInstansi;
         private Label label4;
         private Label label5;
-        private Button button1;
+        private Button btnDaftar;
         private Panel panel1;
         private Label label6;
         private FlowLayoutPanel flowLayoutPanel5;
         private PictureBox pictureBox5;
-        private TextBox textBox3;
+        private TextBox txtEmail;
         private Label label8;
         private TableLayoutPanel tableLayoutPanel4;
         private Label label9;
@@ -860,15 +860,15 @@
         private Label label15;
         private FlowLayoutPanel flowLayoutPanel4;
         private PictureBox pictureBox11;
-        private TextBox textBox5;
-        private CheckBox checkBox4;
+        private TextBox txtPassword;
+        private CheckBox chkPersetujuan;
         private TableLayoutPanel tableLayoutPanel11;
         private FlowLayoutPanel flowLayoutPanel3;
         private LinkLabel linkMasuk;
         private Label label16;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
+        private RadioButton rbPenanggungJawab;
+        private RadioButton rbOperator;
+        private RadioButton rbPengelola;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
     }
