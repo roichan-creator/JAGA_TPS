@@ -70,7 +70,7 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(10, 264);
+            flowLayoutPanel1.Size = new Size(10, 175);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -90,8 +90,7 @@
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(3, 23);
             label2.Name = "label2";
-            label2.Padding = new Padding(0, 8, 0, 0);
-            label2.Size = new Size(354, 39);
+            label2.Size = new Size(354, 31);
             label2.TabIndex = 2;
             label2.Text = "TPS Sentral Komersial & Kantin A";
             // 
@@ -101,16 +100,16 @@
             flowLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel2.Controls.Add(pictureBox1);
             flowLayoutPanel2.Controls.Add(label4);
-            flowLayoutPanel2.Location = new Point(3, 65);
+            flowLayoutPanel2.Location = new Point(3, 54);
+            flowLayoutPanel2.Margin = new Padding(3, 0, 3, 0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Padding = new Padding(0, 10, 0, 0);
-            flowLayoutPanel2.Size = new Size(282, 45);
+            flowLayoutPanel2.Size = new Size(282, 35);
             flowLayoutPanel2.TabIndex = 3;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 13);
+            pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(31, 29);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -123,7 +122,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(63, 73, 67);
-            label4.Location = new Point(40, 17);
+            label4.Location = new Point(40, 7);
             label4.Name = "label4";
             label4.Size = new Size(239, 20);
             label4.TabIndex = 3;
@@ -151,7 +150,7 @@
             flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(16, 18);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(360, 113);
+            flowLayoutPanel3.Size = new Size(360, 89);
             flowLayoutPanel3.TabIndex = 4;
             // 
             // flowLayoutPanel4
@@ -224,7 +223,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 31.8818035F));
             tableLayoutPanel1.Controls.Add(flowLayoutPanel4, 0, 0);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel5, 1, 0);
-            tableLayoutPanel1.Location = new Point(16, 169);
+            tableLayoutPanel1.Location = new Point(16, 137);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -324,7 +323,7 @@
             flowLayoutPanel8.Controls.Add(flowLayoutPanel7);
             flowLayoutPanel8.Controls.Add(label10);
             flowLayoutPanel8.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel8.Location = new Point(445, 18);
+            flowLayoutPanel8.Location = new Point(431, 18);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
             flowLayoutPanel8.Size = new Size(228, 99);
             flowLayoutPanel8.TabIndex = 13;
@@ -338,7 +337,7 @@
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             Name = "DataTPS";
-            Size = new Size(675, 264);
+            Size = new Size(531, 175);
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

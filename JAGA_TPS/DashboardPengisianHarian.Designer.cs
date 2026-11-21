@@ -43,6 +43,9 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             label5 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
+            flowLayoutPanel13 = new FlowLayoutPanel();
+            pictureBox9 = new PictureBox();
+            button2 = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel5 = new FlowLayoutPanel();
             pictureBox3 = new PictureBox();
@@ -64,6 +67,46 @@
             pictureBox7 = new PictureBox();
             flowLayoutPanel11 = new FlowLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
+            flowLayoutPanel12 = new FlowLayoutPanel();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            datatps3 = new DataTPS();
+            datatps2 = new DataTPS();
+            datatps1 = new DataTPS();
+            pictureBox10 = new PictureBox();
+            label13 = new Label();
+            flowLayoutPanel14 = new FlowLayoutPanel();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            comboBox1 = new ComboBox();
+            numericUpDown1 = new NumericUpDown();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            tableLayoutPanel5 = new TableLayoutPanel();
+            tableLayoutPanel6 = new TableLayoutPanel();
+            flowLayoutPanel15 = new FlowLayoutPanel();
+            label24 = new Label();
+            flowLayoutPanel16 = new FlowLayoutPanel();
+            flowLayoutPanel17 = new FlowLayoutPanel();
+            label25 = new Label();
+            label26 = new Label();
+            pictureBox11 = new PictureBox();
+            flowLayoutPanel18 = new FlowLayoutPanel();
+            label27 = new Label();
+            label28 = new Label();
+            flowLayoutPanel19 = new FlowLayoutPanel();
+            pictureBox12 = new PictureBox();
+            button3 = new Button();
+            flowLayoutPanel20 = new FlowLayoutPanel();
+            label29 = new Label();
+            label30 = new Label();
+            flowLayoutPanel21 = new FlowLayoutPanel();
+            pictureBox13 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -73,6 +116,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            flowLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             flowLayoutPanel8.SuspendLayout();
             flowLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -86,6 +131,23 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             flowLayoutPanel11.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            flowLayoutPanel12.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            flowLayoutPanel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            tableLayoutPanel5.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
+            flowLayoutPanel15.SuspendLayout();
+            flowLayoutPanel16.SuspendLayout();
+            flowLayoutPanel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            flowLayoutPanel18.SuspendLayout();
+            flowLayoutPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            flowLayoutPanel20.SuspendLayout();
+            flowLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -218,6 +280,7 @@
             // 
             tableLayoutPanel1.AutoSize = true;
             tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel1.BackColor = Color.White;
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 79.0059357F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.9940643F));
@@ -244,8 +307,10 @@
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.White;
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Controls.Add(flowLayoutPanel13, 0, 1);
             tableLayoutPanel2.Controls.Add(flowLayoutPanel8, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Left;
             tableLayoutPanel2.Location = new Point(0, 53);
@@ -257,6 +322,39 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Size = new Size(204, 668);
             tableLayoutPanel2.TabIndex = 9;
+            // 
+            // flowLayoutPanel13
+            // 
+            flowLayoutPanel13.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            flowLayoutPanel13.AutoSize = true;
+            flowLayoutPanel13.BackColor = Color.White;
+            flowLayoutPanel13.Controls.Add(pictureBox9);
+            flowLayoutPanel13.Controls.Add(button2);
+            flowLayoutPanel13.Location = new Point(3, 629);
+            flowLayoutPanel13.Name = "flowLayoutPanel13";
+            flowLayoutPanel13.Padding = new Padding(0, 0, 50, 0);
+            flowLayoutPanel13.Size = new Size(190, 36);
+            flowLayoutPanel13.TabIndex = 18;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Anchor = AnchorStyles.Left;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(3, 3);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(34, 30);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 0;
+            pictureBox9.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(43, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 18;
+            button2.Text = "Logout";
+            button2.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel8
             // 
@@ -386,7 +484,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(210, 64);
+            label9.Location = new Point(3, 0);
             label9.Name = "label9";
             label9.Size = new Size(208, 31);
             label9.TabIndex = 10;
@@ -396,7 +494,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(210, 95);
+            label10.Location = new Point(3, 31);
             label10.Name = "label10";
             label10.Size = new Size(611, 17);
             label10.TabIndex = 11;
@@ -487,34 +585,511 @@
             flowLayoutPanel11.BackColor = Color.FromArgb(227, 241, 231);
             flowLayoutPanel11.Controls.Add(pictureBox7);
             flowLayoutPanel11.Controls.Add(button1);
-            flowLayoutPanel11.Location = new Point(447, 7);
+            flowLayoutPanel11.Location = new Point(507, 7);
             flowLayoutPanel11.Name = "flowLayoutPanel11";
             flowLayoutPanel11.Size = new Size(161, 38);
             flowLayoutPanel11.TabIndex = 15;
             // 
             // tableLayoutPanel3
             // 
+            tableLayoutPanel3.BackColor = Color.White;
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 69.39443F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30.6055641F));
             tableLayoutPanel3.Controls.Add(flowLayoutPanel9, 0, 0);
             tableLayoutPanel3.Controls.Add(flowLayoutPanel11, 1, 0);
-            tableLayoutPanel3.Location = new Point(210, 115);
+            tableLayoutPanel3.Location = new Point(3, 51);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(611, 53);
+            tableLayoutPanel3.Size = new Size(671, 53);
             tableLayoutPanel3.TabIndex = 16;
+            // 
+            // flowLayoutPanel12
+            // 
+            flowLayoutPanel12.AutoSize = true;
+            flowLayoutPanel12.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel12.BackColor = Color.FromArgb(227, 241, 231);
+            flowLayoutPanel12.Controls.Add(label9);
+            flowLayoutPanel12.Controls.Add(label10);
+            flowLayoutPanel12.Controls.Add(tableLayoutPanel3);
+            flowLayoutPanel12.Controls.Add(tableLayoutPanel4);
+            flowLayoutPanel12.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel12.Location = new Point(206, 53);
+            flowLayoutPanel12.Name = "flowLayoutPanel12";
+            flowLayoutPanel12.Size = new Size(701, 648);
+            flowLayoutPanel12.TabIndex = 17;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.AutoScroll = true;
+            tableLayoutPanel4.ColumnCount = 1;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Controls.Add(datatps3, 0, 2);
+            tableLayoutPanel4.Controls.Add(datatps2, 0, 1);
+            tableLayoutPanel4.Controls.Add(datatps1, 0, 0);
+            tableLayoutPanel4.Location = new Point(3, 110);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 3;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle());
+            tableLayoutPanel4.RowStyles.Add(new RowStyle());
+            tableLayoutPanel4.RowStyles.Add(new RowStyle());
+            tableLayoutPanel4.Size = new Size(695, 535);
+            tableLayoutPanel4.TabIndex = 18;
+            // 
+            // datatps3
+            // 
+            datatps3.BackColor = Color.White;
+            datatps3.Location = new Point(3, 453);
+            datatps3.Name = "datatps3";
+            datatps3.Size = new Size(662, 219);
+            datatps3.TabIndex = 21;
+            // 
+            // datatps2
+            // 
+            datatps2.BackColor = Color.White;
+            datatps2.Location = new Point(3, 228);
+            datatps2.Name = "datatps2";
+            datatps2.Size = new Size(662, 219);
+            datatps2.TabIndex = 20;
+            // 
+            // datatps1
+            // 
+            datatps1.BackColor = Color.White;
+            datatps1.Location = new Point(3, 3);
+            datatps1.Name = "datatps1";
+            datatps1.Size = new Size(662, 219);
+            datatps1.TabIndex = 19;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(3, 3);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(22, 17);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 0;
+            pictureBox10.TabStop = false;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.FromArgb(178, 240, 209);
+            label13.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.FromArgb(16, 81, 58);
+            label13.Location = new Point(31, 3);
+            label13.Margin = new Padding(3);
+            label13.Name = "label13";
+            label13.Size = new Size(128, 17);
+            label13.TabIndex = 2;
+            label13.Text = "FORMULIR PETUGAS";
+            // 
+            // flowLayoutPanel14
+            // 
+            flowLayoutPanel14.AutoSize = true;
+            flowLayoutPanel14.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel14.BackColor = Color.FromArgb(178, 240, 209);
+            flowLayoutPanel14.Controls.Add(pictureBox10);
+            flowLayoutPanel14.Controls.Add(label13);
+            flowLayoutPanel14.Location = new Point(3, 3);
+            flowLayoutPanel14.Name = "flowLayoutPanel14";
+            flowLayoutPanel14.Size = new Size(162, 20);
+            flowLayoutPanel14.TabIndex = 18;
+            // 
+            // label14
+            // 
+            label14.Anchor = AnchorStyles.Right;
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.FromArgb(63, 73, 67);
+            label14.Location = new Point(351, 4);
+            label14.Name = "label14";
+            label14.Size = new Size(81, 17);
+            label14.TabIndex = 19;
+            label14.Text = "REV-2025.04";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(3, 32);
+            label15.Name = "label15";
+            label15.Size = new Size(247, 28);
+            label15.TabIndex = 20;
+            label15.Text = "Input Pemeriksaan Harian";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.FromArgb(63, 73, 67);
+            label16.Location = new Point(3, 60);
+            label16.Name = "label16";
+            label16.Size = new Size(314, 20);
+            label16.TabIndex = 21;
+            label16.Text = "Catat evaluasi volume dan kondisi TPS hari ini.";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI Semibold", 9F);
+            label17.Location = new Point(3, 80);
+            label17.Name = "label17";
+            label17.Size = new Size(114, 20);
+            label17.TabIndex = 22;
+            label17.Text = "Pilih Lokasi TPS";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "TPS Blok C - Kawasan Manufaktur Utama", "TPS Blok C - Kawasan Manufaktur Utama", "TPS Blok C - Kawasan Manufaktur Utama" });
+            comboBox1.Location = new Point(3, 103);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(334, 28);
+            comboBox1.TabIndex = 23;
+            comboBox1.Text = "TPS Blok C - Kawasan Manufaktur Utama";
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            numericUpDown1.ForeColor = Color.FromArgb(186, 26, 26);
+            numericUpDown1.Location = new Point(6, 0);
+            numericUpDown1.Margin = new Padding(0);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(40, 27);
+            numericUpDown1.TabIndex = 24;
+            // 
+            // label18
+            // 
+            label18.Anchor = AnchorStyles.Left;
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI Semibold", 9F);
+            label18.Location = new Point(3, 7);
+            label18.Name = "label18";
+            label18.Size = new Size(178, 20);
+            label18.TabIndex = 25;
+            label18.Text = "Estimasi Volume Sampah";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.BackColor = Color.FromArgb(216, 246, 230);
+            label19.Font = new Font("Segoe UI Semibold", 8F);
+            label19.Location = new Point(3, 0);
+            label19.Name = "label19";
+            label19.Padding = new Padding(19, 0, 19, 0);
+            label19.Size = new Size(129, 19);
+            label19.TabIndex = 26;
+            label19.Text = "0-40% Aman";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.BackColor = Color.FromArgb(250, 231, 226);
+            label20.Font = new Font("Segoe UI Semibold", 8F);
+            label20.Location = new Point(290, 0);
+            label20.Name = "label20";
+            label20.Padding = new Padding(19, 0, 19, 0);
+            label20.Size = new Size(140, 19);
+            label20.TabIndex = 27;
+            label20.Text = "76-100% Kritis";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.BackColor = Color.FromArgb(247, 238, 217);
+            label21.Font = new Font("Segoe UI Semibold", 8F);
+            label21.Location = new Point(138, 0);
+            label21.Name = "label21";
+            label21.Padding = new Padding(19, 0, 19, 0);
+            label21.Size = new Size(146, 19);
+            label21.TabIndex = 28;
+            label21.Text = "41-75% Normal";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI Semibold", 12F);
+            label22.Location = new Point(49, 0);
+            label22.Name = "label22";
+            label22.Size = new Size(29, 28);
+            label22.TabIndex = 29;
+            label22.Text = "%";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI Semibold", 9F);
+            label23.Location = new Point(3, 206);
+            label23.Name = "label23";
+            label23.Size = new Size(205, 20);
+            label23.TabIndex = 30;
+            label23.Text = "Dokumentasi Foto Lapangan";
+            // 
+            // tableLayoutPanel5
+            // 
+            tableLayoutPanel5.ColumnCount = 2;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.Controls.Add(flowLayoutPanel14, 0, 0);
+            tableLayoutPanel5.Controls.Add(label14, 1, 0);
+            tableLayoutPanel5.Location = new Point(3, 3);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 1;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel5.Size = new Size(435, 26);
+            tableLayoutPanel5.TabIndex = 31;
+            // 
+            // tableLayoutPanel6
+            // 
+            tableLayoutPanel6.ColumnCount = 2;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.Controls.Add(flowLayoutPanel15, 1, 0);
+            tableLayoutPanel6.Controls.Add(label18, 0, 0);
+            tableLayoutPanel6.Location = new Point(3, 3);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 1;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel6.Size = new Size(435, 35);
+            tableLayoutPanel6.TabIndex = 32;
+            // 
+            // flowLayoutPanel15
+            // 
+            flowLayoutPanel15.Anchor = AnchorStyles.Right;
+            flowLayoutPanel15.AutoSize = true;
+            flowLayoutPanel15.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel15.BackColor = Color.White;
+            flowLayoutPanel15.Controls.Add(label24);
+            flowLayoutPanel15.Controls.Add(numericUpDown1);
+            flowLayoutPanel15.Controls.Add(label22);
+            flowLayoutPanel15.Location = new Point(351, 3);
+            flowLayoutPanel15.Name = "flowLayoutPanel15";
+            flowLayoutPanel15.Size = new Size(81, 28);
+            flowLayoutPanel15.TabIndex = 18;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.BackColor = Color.FromArgb(178, 240, 209);
+            label24.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.FromArgb(16, 81, 58);
+            label24.Location = new Point(3, 3);
+            label24.Margin = new Padding(3);
+            label24.Name = "label24";
+            label24.Size = new Size(0, 17);
+            label24.TabIndex = 2;
+            // 
+            // flowLayoutPanel16
+            // 
+            flowLayoutPanel16.AutoSize = true;
+            flowLayoutPanel16.BackColor = Color.FromArgb(242, 250, 244);
+            flowLayoutPanel16.Controls.Add(label19);
+            flowLayoutPanel16.Controls.Add(label21);
+            flowLayoutPanel16.Controls.Add(label20);
+            flowLayoutPanel16.Location = new Point(3, 44);
+            flowLayoutPanel16.Name = "flowLayoutPanel16";
+            flowLayoutPanel16.Size = new Size(433, 19);
+            flowLayoutPanel16.TabIndex = 33;
+            // 
+            // flowLayoutPanel17
+            // 
+            flowLayoutPanel17.Anchor = AnchorStyles.Top;
+            flowLayoutPanel17.AutoSize = true;
+            flowLayoutPanel17.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel17.BackColor = Color.FromArgb(242, 250, 244);
+            flowLayoutPanel17.Controls.Add(tableLayoutPanel6);
+            flowLayoutPanel17.Controls.Add(flowLayoutPanel16);
+            flowLayoutPanel17.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel17.Location = new Point(3, 137);
+            flowLayoutPanel17.Name = "flowLayoutPanel17";
+            flowLayoutPanel17.Size = new Size(441, 66);
+            flowLayoutPanel17.TabIndex = 34;
+            // 
+            // label25
+            // 
+            label25.Anchor = AnchorStyles.Top;
+            label25.AutoSize = true;
+            label25.Font = new Font("Segoe UI Semibold", 9F);
+            label25.Location = new Point(3, 64);
+            label25.Name = "label25";
+            label25.Size = new Size(268, 20);
+            label25.TabIndex = 35;
+            label25.Text = "Klik atau seret foto tumpukan sampah";
+            // 
+            // label26
+            // 
+            label26.Anchor = AnchorStyles.Top;
+            label26.AutoSize = true;
+            label26.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label26.ForeColor = Color.FromArgb(63, 73, 67);
+            label26.Location = new Point(40, 84);
+            label26.Name = "label26";
+            label26.Size = new Size(193, 20);
+            label26.TabIndex = 36;
+            label26.Text = "Format JPG/PNG maks. 5MB";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Anchor = AnchorStyles.Top;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(107, 3);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(60, 58);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 37;
+            pictureBox11.TabStop = false;
+            // 
+            // flowLayoutPanel18
+            // 
+            flowLayoutPanel18.Anchor = AnchorStyles.Top;
+            flowLayoutPanel18.AutoSize = true;
+            flowLayoutPanel18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel18.Controls.Add(pictureBox11);
+            flowLayoutPanel18.Controls.Add(label25);
+            flowLayoutPanel18.Controls.Add(label26);
+            flowLayoutPanel18.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel18.Location = new Point(86, 229);
+            flowLayoutPanel18.Name = "flowLayoutPanel18";
+            flowLayoutPanel18.Size = new Size(274, 104);
+            flowLayoutPanel18.TabIndex = 38;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI Semibold", 9F);
+            label27.Location = new Point(3, 336);
+            label27.Name = "label27";
+            label27.Size = new Size(207, 20);
+            label27.TabIndex = 39;
+            label27.Text = "Catatan Tambahan Lapangan";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label28.ForeColor = Color.FromArgb(63, 73, 67);
+            label28.Location = new Point(3, 356);
+            label28.Name = "label28";
+            label28.Size = new Size(412, 40);
+            label28.TabIndex = 40;
+            label28.Text = "Tuliskan temuan tumpukan sampah spesifik non-organik (cth:\nkardus basah, jeriken plastik berlebih, palet pecah) ...";
+            // 
+            // flowLayoutPanel19
+            // 
+            flowLayoutPanel19.Anchor = AnchorStyles.None;
+            flowLayoutPanel19.AutoSize = true;
+            flowLayoutPanel19.BackColor = Color.FromArgb(0, 96, 65);
+            flowLayoutPanel19.Controls.Add(pictureBox12);
+            flowLayoutPanel19.Controls.Add(button3);
+            flowLayoutPanel19.Location = new Point(13, 399);
+            flowLayoutPanel19.Name = "flowLayoutPanel19";
+            flowLayoutPanel19.Size = new Size(420, 38);
+            flowLayoutPanel19.TabIndex = 41;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(90, 3);
+            pictureBox12.Margin = new Padding(90, 3, 3, 3);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(32, 30);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox12.TabIndex = 14;
+            pictureBox12.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.AutoSize = true;
+            button3.BackColor = Color.FromArgb(0, 96, 65);
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(128, 3);
+            button3.Margin = new Padding(3, 3, 90, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(202, 32);
+            button3.TabIndex = 13;
+            button3.Text = "Simpan Hasil Pemeriksaan";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel20
+            // 
+            flowLayoutPanel20.AutoSize = true;
+            flowLayoutPanel20.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel20.BackColor = Color.White;
+            flowLayoutPanel20.Controls.Add(tableLayoutPanel5);
+            flowLayoutPanel20.Controls.Add(label15);
+            flowLayoutPanel20.Controls.Add(label16);
+            flowLayoutPanel20.Controls.Add(label17);
+            flowLayoutPanel20.Controls.Add(comboBox1);
+            flowLayoutPanel20.Controls.Add(flowLayoutPanel17);
+            flowLayoutPanel20.Controls.Add(label23);
+            flowLayoutPanel20.Controls.Add(flowLayoutPanel18);
+            flowLayoutPanel20.Controls.Add(label27);
+            flowLayoutPanel20.Controls.Add(label28);
+            flowLayoutPanel20.Controls.Add(flowLayoutPanel19);
+            flowLayoutPanel20.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel20.Location = new Point(901, 53);
+            flowLayoutPanel20.Name = "flowLayoutPanel20";
+            flowLayoutPanel20.Size = new Size(447, 440);
+            flowLayoutPanel20.TabIndex = 42;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI Semibold", 8F);
+            label29.Location = new Point(3, 0);
+            label29.Name = "label29";
+            label29.Size = new Size(216, 19);
+            label29.TabIndex = 43;
+            label29.Text = "SOP Mitigasi Penumpukan Cepat";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Segoe UI", 8F);
+            label30.ForeColor = Color.FromArgb(63, 73, 67);
+            label30.Location = new Point(3, 19);
+            label30.Name = "label30";
+            label30.Size = new Size(387, 57);
+            label30.TabIndex = 44;
+            label30.Text = "TPS berstatus Bahaya (>75%) diwajibkan mengajukan tiket\npengangkutan darurat dalam kurun waktu 3 jam kerja setelah\nformulir disimpan untuk mencegah penalti lingkungan hidup.";
+            // 
+            // flowLayoutPanel21
+            // 
+            flowLayoutPanel21.AutoSize = true;
+            flowLayoutPanel21.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel21.Controls.Add(label29);
+            flowLayoutPanel21.Controls.Add(label30);
+            flowLayoutPanel21.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel21.Location = new Point(955, 555);
+            flowLayoutPanel21.Name = "flowLayoutPanel21";
+            flowLayoutPanel21.Size = new Size(393, 76);
+            flowLayoutPanel21.TabIndex = 45;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Anchor = AnchorStyles.Top;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(915, 555);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(37, 39);
+            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox13.TabIndex = 46;
+            pictureBox13.TabStop = false;
             // 
             // DashboardPengisianHarian
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.FromArgb(242, 250, 244);
             ClientSize = new Size(1348, 721);
-            Controls.Add(tableLayoutPanel3);
-            Controls.Add(label10);
-            Controls.Add(label9);
+            Controls.Add(pictureBox13);
+            Controls.Add(flowLayoutPanel21);
+            Controls.Add(flowLayoutPanel20);
+            Controls.Add(flowLayoutPanel12);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -538,6 +1113,8 @@
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            flowLayoutPanel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             flowLayoutPanel8.ResumeLayout(false);
             flowLayoutPanel8.PerformLayout();
             flowLayoutPanel5.ResumeLayout(false);
@@ -559,6 +1136,34 @@
             flowLayoutPanel11.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            flowLayoutPanel12.ResumeLayout(false);
+            flowLayoutPanel12.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            flowLayoutPanel14.ResumeLayout(false);
+            flowLayoutPanel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            tableLayoutPanel5.ResumeLayout(false);
+            tableLayoutPanel5.PerformLayout();
+            tableLayoutPanel6.ResumeLayout(false);
+            tableLayoutPanel6.PerformLayout();
+            flowLayoutPanel15.ResumeLayout(false);
+            flowLayoutPanel15.PerformLayout();
+            flowLayoutPanel16.ResumeLayout(false);
+            flowLayoutPanel16.PerformLayout();
+            flowLayoutPanel17.ResumeLayout(false);
+            flowLayoutPanel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            flowLayoutPanel18.ResumeLayout(false);
+            flowLayoutPanel18.PerformLayout();
+            flowLayoutPanel19.ResumeLayout(false);
+            flowLayoutPanel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            flowLayoutPanel20.ResumeLayout(false);
+            flowLayoutPanel20.PerformLayout();
+            flowLayoutPanel21.ResumeLayout(false);
+            flowLayoutPanel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -600,5 +1205,48 @@
         private FlowLayoutPanel flowLayoutPanel11;
         private TableLayoutPanel tableLayoutPanel3;
         private PictureBox pictureBox8;
+        private FlowLayoutPanel flowLayoutPanel12;
+        private TableLayoutPanel tableLayoutPanel4;
+        private DataTPS datatps3;
+        private DataTPS datatps2;
+        private DataTPS datatps1;
+        private FlowLayoutPanel flowLayoutPanel13;
+        private PictureBox pictureBox9;
+        private Button button2;
+        private PictureBox pictureBox10;
+        private Label label13;
+        private FlowLayoutPanel flowLayoutPanel14;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private ComboBox comboBox1;
+        private NumericUpDown numericUpDown1;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private TableLayoutPanel tableLayoutPanel5;
+        private TableLayoutPanel tableLayoutPanel6;
+        private FlowLayoutPanel flowLayoutPanel15;
+        private Label label24;
+        private FlowLayoutPanel flowLayoutPanel16;
+        private FlowLayoutPanel flowLayoutPanel17;
+        private Label label25;
+        private Label label26;
+        private PictureBox pictureBox11;
+        private FlowLayoutPanel flowLayoutPanel18;
+        private Label label27;
+        private Label label28;
+        private FlowLayoutPanel flowLayoutPanel19;
+        private PictureBox pictureBox12;
+        private Button button3;
+        private FlowLayoutPanel flowLayoutPanel20;
+        private Label label29;
+        private Label label30;
+        private FlowLayoutPanel flowLayoutPanel21;
+        private PictureBox pictureBox13;
     }
 }
