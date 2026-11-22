@@ -330,7 +330,8 @@
             // 
             // DataTPS
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             Controls.Add(flowLayoutPanel8);
             Controls.Add(tableLayoutPanel1);
