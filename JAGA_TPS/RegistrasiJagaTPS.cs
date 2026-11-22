@@ -87,16 +87,20 @@ namespace JAGA_TPS
             penggunaBaru.Password = password;
             penggunaBaru.Role = role;
 
+
             // Simpan akun
             UserStore.Users.Add(penggunaBaru);
 
-            MessageBox.Show("Registrasi berhasil! Silakan login.");
+            MessageBox.Show(
+                "Registrasi berhasil! Silakan login."
+            );
 
             // Kembali ke halaman login
             LoginPage login = new LoginPage();
             login.Show();
 
             this.Hide();
+
         }
     }
 }

@@ -60,11 +60,12 @@ namespace JAGA_TPS
                 // Menampilkan role pengguna
                 MessageBox.Show("Role: " + akunDitemukan.Role);
 
-                // Membuka Form RegistrasiJagaTPS
-                DashboardPengisianHarian dashboardPengisianHarian = new DashboardPengisianHarian();
-                dashboardPengisianHarian.Show();
+                // Membuka Dashboard dengan nama pengguna
+                DashboardPengisianHarian dashboard =
+                    new DashboardPengisianHarian(akunDitemukan.NamaLengkap);
 
-                // Menyembunyikan form LoginPage
+                dashboard.Show();
+
                 this.Hide();
             }
             else

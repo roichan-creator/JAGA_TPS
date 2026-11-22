@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataTPS));
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
-            label2 = new Label();
+            lblNamaTPS = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
             pictureBox1 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
             flowLayoutPanel3 = new FlowLayoutPanel();
             flowLayoutPanel4 = new FlowLayoutPanel();
-            label5 = new Label();
+            lblVolume = new Label();
             label6 = new Label();
-            label7 = new Label();
+            lblJadwal = new Label();
             flowLayoutPanel5 = new FlowLayoutPanel();
             tableLayoutPanel1 = new TableLayoutPanel();
             flowLayoutPanel6 = new FlowLayoutPanel();
@@ -70,7 +70,7 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(10, 175);
+            flowLayoutPanel1.Size = new Size(10, 246);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -80,19 +80,19 @@
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(137, 23);
+            label1.Size = new Size(168, 30);
             label1.TabIndex = 1;
             label1.Text = "TPS-ID: MM-01C";
             // 
-            // label2
+            // lblNamaTPS
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(3, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(354, 31);
-            label2.TabIndex = 2;
-            label2.Text = "TPS Sentral Komersial & Kantin A";
+            lblNamaTPS.AutoSize = true;
+            lblNamaTPS.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNamaTPS.Location = new Point(3, 30);
+            lblNamaTPS.Name = "lblNamaTPS";
+            lblNamaTPS.Size = new Size(435, 38);
+            lblNamaTPS.TabIndex = 2;
+            lblNamaTPS.Text = "TPS Sentral Komersial & Kantin A";
             // 
             // flowLayoutPanel2
             // 
@@ -100,10 +100,10 @@
             flowLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel2.Controls.Add(pictureBox1);
             flowLayoutPanel2.Controls.Add(label4);
-            flowLayoutPanel2.Location = new Point(3, 54);
+            flowLayoutPanel2.Location = new Point(3, 68);
             flowLayoutPanel2.Margin = new Padding(3, 0, 3, 0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(282, 35);
+            flowLayoutPanel2.Size = new Size(330, 35);
             flowLayoutPanel2.TabIndex = 3;
             // 
             // pictureBox1
@@ -122,9 +122,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(63, 73, 67);
-            label4.Location = new Point(40, 7);
+            label4.Location = new Point(40, 5);
             label4.Name = "label4";
-            label4.Size = new Size(239, 20);
+            label4.Size = new Size(287, 25);
             label4.TabIndex = 3;
             label4.Text = "Zona Industri Barat, Jalur Logistik 3";
             // 
@@ -134,9 +134,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(18, 30, 24);
-            label3.Location = new Point(3, 17);
+            label3.Location = new Point(3, 20);
             label3.Name = "label3";
-            label3.Size = new Size(161, 20);
+            label3.Size = new Size(200, 25);
             label3.TabIndex = 2;
             label3.Text = "Volume Keterisian TPS";
             // 
@@ -145,12 +145,12 @@
             flowLayoutPanel3.AutoSize = true;
             flowLayoutPanel3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel3.Controls.Add(label1);
-            flowLayoutPanel3.Controls.Add(label2);
+            flowLayoutPanel3.Controls.Add(lblNamaTPS);
             flowLayoutPanel3.Controls.Add(flowLayoutPanel2);
             flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(16, 18);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(360, 89);
+            flowLayoutPanel3.Size = new Size(441, 103);
             flowLayoutPanel3.TabIndex = 4;
             // 
             // flowLayoutPanel4
@@ -159,23 +159,23 @@
             flowLayoutPanel4.AutoSize = true;
             flowLayoutPanel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel4.Controls.Add(label3);
-            flowLayoutPanel4.Controls.Add(label5);
-            flowLayoutPanel4.Location = new Point(3, 13);
+            flowLayoutPanel4.Controls.Add(lblVolume);
+            flowLayoutPanel4.Location = new Point(3, 15);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(327, 54);
+            flowLayoutPanel4.Size = new Size(388, 65);
             flowLayoutPanel4.TabIndex = 5;
             // 
-            // label5
+            // lblVolume
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.Red;
-            label5.Location = new Point(170, 0);
-            label5.Name = "label5";
-            label5.Padding = new Padding(50, 0, 0, 0);
-            label5.Size = new Size(154, 54);
-            label5.TabIndex = 6;
-            label5.Text = "88%";
+            lblVolume.AutoSize = true;
+            lblVolume.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblVolume.ForeColor = Color.Red;
+            lblVolume.Location = new Point(209, 0);
+            lblVolume.Name = "lblVolume";
+            lblVolume.Padding = new Padding(50, 0, 0, 0);
+            lblVolume.Size = new Size(176, 65);
+            lblVolume.TabIndex = 6;
+            lblVolume.Text = "88%";
             // 
             // label6
             // 
@@ -185,21 +185,21 @@
             label6.ForeColor = Color.FromArgb(63, 73, 67);
             label6.Location = new Point(3, 0);
             label6.Name = "label6";
-            label6.Size = new Size(95, 20);
+            label6.Size = new Size(114, 25);
             label6.TabIndex = 6;
             label6.Text = "Jadwal Rutin:";
             // 
-            // label7
+            // lblJadwal
             // 
-            label7.Anchor = AnchorStyles.Left;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(63, 73, 67);
-            label7.Location = new Point(3, 20);
-            label7.Name = "label7";
-            label7.Size = new Size(157, 20);
-            label7.TabIndex = 7;
-            label7.Text = "Setiap Selasa && Jumat";
+            lblJadwal.Anchor = AnchorStyles.Left;
+            lblJadwal.AutoSize = true;
+            lblJadwal.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJadwal.ForeColor = Color.FromArgb(63, 73, 67);
+            lblJadwal.Location = new Point(3, 25);
+            lblJadwal.Name = "lblJadwal";
+            lblJadwal.Size = new Size(193, 25);
+            lblJadwal.TabIndex = 7;
+            lblJadwal.Text = "Setiap Selasa && Jumat";
             // 
             // flowLayoutPanel5
             // 
@@ -207,11 +207,11 @@
             flowLayoutPanel5.AutoSize = true;
             flowLayoutPanel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel5.Controls.Add(label6);
-            flowLayoutPanel5.Controls.Add(label7);
+            flowLayoutPanel5.Controls.Add(lblJadwal);
             flowLayoutPanel5.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel5.Location = new Point(441, 20);
+            flowLayoutPanel5.Location = new Point(441, 23);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
-            flowLayoutPanel5.Size = new Size(163, 40);
+            flowLayoutPanel5.Size = new Size(199, 50);
             flowLayoutPanel5.TabIndex = 8;
             // 
             // tableLayoutPanel1
@@ -228,7 +228,7 @@
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(643, 80);
+            tableLayoutPanel1.Size = new Size(643, 96);
             tableLayoutPanel1.TabIndex = 9;
             // 
             // flowLayoutPanel6
@@ -239,9 +239,9 @@
             flowLayoutPanel6.BackColor = Color.FromArgb(255, 225, 222);
             flowLayoutPanel6.Controls.Add(pictureBox2);
             flowLayoutPanel6.Controls.Add(label8);
-            flowLayoutPanel6.Location = new Point(143, 3);
+            flowLayoutPanel6.Location = new Point(146, 3);
             flowLayoutPanel6.Name = "flowLayoutPanel6";
-            flowLayoutPanel6.Size = new Size(82, 29);
+            flowLayoutPanel6.Size = new Size(96, 29);
             flowLayoutPanel6.TabIndex = 10;
             // 
             // pictureBox2
@@ -260,9 +260,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.FromArgb(186, 26, 26);
-            label8.Location = new Point(27, 6);
+            label8.Location = new Point(27, 4);
             label8.Name = "label8";
-            label8.Size = new Size(52, 17);
+            label8.Size = new Size(66, 21);
             label8.TabIndex = 3;
             label8.Text = "Bahaya";
             // 
@@ -275,7 +275,7 @@
             flowLayoutPanel7.Controls.Add(button1);
             flowLayoutPanel7.Location = new Point(3, 38);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
-            flowLayoutPanel7.Size = new Size(222, 41);
+            flowLayoutPanel7.Size = new Size(239, 41);
             flowLayoutPanel7.TabIndex = 11;
             // 
             // pictureBox3
@@ -296,9 +296,9 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(63, 73, 67);
-            button1.Location = new Point(46, 7);
+            button1.Location = new Point(46, 5);
             button1.Name = "button1";
-            button1.Size = new Size(173, 27);
+            button1.Size = new Size(190, 31);
             button1.TabIndex = 12;
             button1.Text = "Ajukan Pengangkutan";
             button1.UseVisualStyleBackColor = false;
@@ -309,9 +309,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FromArgb(63, 73, 67);
-            label10.Location = new Point(153, 82);
+            label10.Location = new Point(154, 82);
             label10.Name = "label10";
-            label10.Size = new Size(72, 17);
+            label10.Size = new Size(88, 21);
             label10.TabIndex = 12;
             label10.Text = "Lihat Detail";
             // 
@@ -325,7 +325,7 @@
             flowLayoutPanel8.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel8.Location = new Point(431, 18);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
-            flowLayoutPanel8.Size = new Size(228, 99);
+            flowLayoutPanel8.Size = new Size(245, 103);
             flowLayoutPanel8.TabIndex = 13;
             // 
             // DataTPS
@@ -337,7 +337,8 @@
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             Name = "DataTPS";
-            Size = new Size(531, 175);
+            Size = new Size(690, 246);
+            Load += DataTPS_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -365,16 +366,16 @@
 
         private FlowLayoutPanel flowLayoutPanel1;
         private Label label1;
-        private Label label2;
+        private Label lblNamaTPS;
         private FlowLayoutPanel flowLayoutPanel2;
         private PictureBox pictureBox1;
         private Label label3;
         private Label label4;
         private FlowLayoutPanel flowLayoutPanel3;
         private FlowLayoutPanel flowLayoutPanel4;
-        private Label label5;
+        private Label lblVolume;
         private Label label6;
-        private Label label7;
+        private Label lblJadwal;
         private FlowLayoutPanel flowLayoutPanel5;
         private TableLayoutPanel tableLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel6;
