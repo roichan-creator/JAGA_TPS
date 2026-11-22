@@ -123,7 +123,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo_JagaTPS;
-            pictureBox1.Location = new Point(187, -1);
+            pictureBox1.Location = new Point(149, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(173, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;

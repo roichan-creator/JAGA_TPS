@@ -17,6 +17,5 @@ namespace JAGA_TPS
             InitializeComponent();
         }
 
-
     }
 }
