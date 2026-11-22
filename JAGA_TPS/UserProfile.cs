@@ -14,7 +14,7 @@ namespace JAGA_TPS
     {
         public UserProfile()
         {
-            InitializeComponent();
+            InitializeComponent(GetPictureLogoutPetugas1());
         }
     }
 }

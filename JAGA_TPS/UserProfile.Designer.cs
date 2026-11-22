@@ -20,13 +20,18 @@
             base.Dispose(disposing);
         }
 
+        private PictureBox GetPictureLogoutPetugas1()
+        {
+            return pictureLogoutPetugas;
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(PictureBox pictureLogoutPetugas1)
         {
             pictureLogo = new PictureBox();
             labelJagaTPS = new Label();
@@ -153,10 +158,10 @@
             // 
             // pictureLogo
             // 
-            pictureLogo.Image = Properties.Resources.TPS1;
+            pictureLogo.Dock = DockStyle.Fill;
             pictureLogo.Location = new Point(3, 3);
             pictureLogo.Name = "pictureLogo";
-            pictureLogo.Size = new Size(65, 77);
+            pictureLogo.Size = new Size(65, 73);
             pictureLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureLogo.TabIndex = 0;
             pictureLogo.TabStop = false;
@@ -223,7 +228,7 @@
             tableLayoutJagaSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutJagaSistem.Controls.Add(labelJagaTPS, 0, 0);
             tableLayoutJagaSistem.Controls.Add(label2, 0, 1);
-            tableLayoutJagaSistem.Location = new Point(74, 5);
+            tableLayoutJagaSistem.Location = new Point(74, 3);
             tableLayoutJagaSistem.Name = "tableLayoutJagaSistem";
             tableLayoutJagaSistem.RowCount = 2;
             tableLayoutJagaSistem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -239,7 +244,7 @@
             flowLayoutJagaSistem.Controls.Add(tableLayoutJagaSistem);
             flowLayoutJagaSistem.Location = new Point(3, 3);
             flowLayoutJagaSistem.Name = "flowLayoutJagaSistem";
-            flowLayoutJagaSistem.Size = new Size(270, 83);
+            flowLayoutJagaSistem.Size = new Size(270, 79);
             flowLayoutJagaSistem.TabIndex = 6;
             // 
             // labelNavUt
@@ -292,7 +297,6 @@
             // 
             // pictureDashboard
             // 
-            pictureDashboard.Image = Properties.Resources.chartline;
             pictureDashboard.Location = new Point(3, 3);
             pictureDashboard.Name = "pictureDashboard";
             pictureDashboard.Size = new Size(35, 35);
@@ -302,7 +306,6 @@
             // 
             // pictureRiwayat
             // 
-            pictureRiwayat.Image = Properties.Resources.clock1;
             pictureRiwayat.Location = new Point(3, 3);
             pictureRiwayat.Name = "pictureRiwayat";
             pictureRiwayat.Size = new Size(35, 35);
@@ -312,7 +315,6 @@
             // 
             // pictureProfile
             // 
-            pictureProfile.Image = Properties.Resources.badge2;
             pictureProfile.Location = new Point(3, 3);
             pictureProfile.Name = "pictureProfile";
             pictureProfile.Size = new Size(35, 35);
@@ -356,11 +358,7 @@
             flowLayoutProfile.Name = "flowLayoutProfile";
             flowLayoutProfile.Size = new Size(114, 41);
             flowLayoutProfile.TabIndex = 16;
-            // 
-            // pictureLogoutPetugas
-            // 
-            pictureLogoutPetugas.Image = Properties.Resources.logout11;
-            pictureLogoutPetugas.Location = new Point(3, 3);
+            pictureLogoutPetugas1.Location = new Point(3, 3);
             pictureLogoutPetugas.Name = "pictureLogoutPetugas";
             pictureLogoutPetugas.Size = new Size(30, 30);
             pictureLogoutPetugas.SizeMode = PictureBoxSizeMode.Zoom;
@@ -464,11 +462,11 @@
             labelBudiSantoso.AutoSize = true;
             labelBudiSantoso.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelBudiSantoso.ForeColor = Color.FromArgb(51, 51, 51);
-            labelBudiSantoso.Location = new Point(89, 1);
+            labelBudiSantoso.Location = new Point(4, 1);
             labelBudiSantoso.Name = "labelBudiSantoso";
-            labelBudiSantoso.Size = new Size(132, 28);
+            labelBudiSantoso.Size = new Size(217, 28);
             labelBudiSantoso.TabIndex = 22;
-            labelBudiSantoso.Text = "Budi Santoso";
+            labelBudiSantoso.Text = "Gading Azriel Prasetyo";
             // 
             // labelPengelola
             // 
@@ -484,7 +482,6 @@
             // 
             // pictureUser
             // 
-            pictureUser.Image = Properties.Resources.circle_user_solid;
             pictureUser.Location = new Point(312, 3);
             pictureUser.Name = "pictureUser";
             pictureUser.Size = new Size(73, 60);
@@ -495,7 +492,6 @@
             // pictureNotif
             // 
             pictureNotif.Anchor = AnchorStyles.Right;
-            pictureNotif.Image = Properties.Resources.notification1;
             pictureNotif.Location = new Point(3, 3);
             pictureNotif.Name = "pictureNotif";
             pictureNotif.Size = new Size(73, 60);
@@ -505,7 +501,6 @@
             // 
             // picturePengelolaTPS
             // 
-            picturePengelolaTPS.Image = Properties.Resources.Screenshot_2026_11_18_1407231;
             picturePengelolaTPS.Location = new Point(156, 3);
             picturePengelolaTPS.Name = "picturePengelolaTPS";
             picturePengelolaTPS.Size = new Size(100, 100);
@@ -515,7 +510,6 @@
             // 
             // pictureIDCard
             // 
-            pictureIDCard.Image = Properties.Resources.badge;
             pictureIDCard.Location = new Point(3, 3);
             pictureIDCard.Name = "pictureIDCard";
             pictureIDCard.Size = new Size(35, 35);
@@ -673,7 +667,6 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(163, 228, 215);
-            pictureBox1.Image = Properties.Resources.location1;
             pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(33, 49);
@@ -741,7 +734,6 @@
             // 
             pictureManageAccount.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureManageAccount.BackColor = Color.FromArgb(226, 236, 233);
-            pictureManageAccount.Image = Properties.Resources.manage_akun;
             pictureManageAccount.Location = new Point(3, 7);
             pictureManageAccount.Name = "pictureManageAccount";
             pictureManageAccount.Size = new Size(33, 35);
@@ -753,7 +745,6 @@
             // 
             pictureAdminPanelSet.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureAdminPanelSet.BackColor = Color.FromArgb(226, 236, 233);
-            pictureAdminPanelSet.Image = Properties.Resources.user_panel_setting;
             pictureAdminPanelSet.Location = new Point(3, 57);
             pictureAdminPanelSet.Name = "pictureAdminPanelSet";
             pictureAdminPanelSet.Size = new Size(33, 35);
@@ -765,7 +756,6 @@
             // 
             pictureNotification.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureNotification.BackColor = Color.FromArgb(226, 236, 233);
-            pictureNotification.Image = Properties.Resources.notif_active;
             pictureNotification.Location = new Point(3, 107);
             pictureNotification.Name = "pictureNotification";
             pictureNotification.Size = new Size(33, 35);
@@ -911,15 +901,15 @@
             tableLayoutPengaturanSistemdanAkun.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.495547F));
             tableLayoutPengaturanSistemdanAkun.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 76.21359F));
             tableLayoutPengaturanSistemdanAkun.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.3203888F));
-            tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureArrowsRight3, 2, 2);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(tableLayoutInforAkunKontak, 1, 0);
-            tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureArrowsRight2, 2, 1);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureNotification, 0, 2);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureArrowsRight1, 2, 0);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(tableLayoutNotifikasidanPeringatanDini, 1, 2);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureManageAccount, 0, 0);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(tableLayoutPerandanHakAkses, 1, 1);
             tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureAdminPanelSet, 0, 1);
+            tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureArrowsRight2, 2, 2);
+            tableLayoutPengaturanSistemdanAkun.Controls.Add(pictureArrowsRight3, 2, 1);
             tableLayoutPengaturanSistemdanAkun.Location = new Point(3, 35);
             tableLayoutPengaturanSistemdanAkun.Name = "tableLayoutPengaturanSistemdanAkun";
             tableLayoutPengaturanSistemdanAkun.RowCount = 3;
@@ -933,8 +923,7 @@
             // 
             pictureArrowsRight3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureArrowsRight3.BackColor = SystemColors.Control;
-            pictureArrowsRight3.Image = Properties.Resources.teruskan2;
-            pictureArrowsRight3.Location = new Point(355, 105);
+            pictureArrowsRight3.Location = new Point(355, 55);
             pictureArrowsRight3.Name = "pictureArrowsRight3";
             pictureArrowsRight3.Size = new Size(54, 40);
             pictureArrowsRight3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -945,8 +934,7 @@
             // 
             pictureArrowsRight2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureArrowsRight2.BackColor = SystemColors.Control;
-            pictureArrowsRight2.Image = Properties.Resources.teruskan1;
-            pictureArrowsRight2.Location = new Point(355, 55);
+            pictureArrowsRight2.Location = new Point(355, 105);
             pictureArrowsRight2.Name = "pictureArrowsRight2";
             pictureArrowsRight2.Size = new Size(54, 40);
             pictureArrowsRight2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -957,7 +945,6 @@
             // 
             pictureArrowsRight1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureArrowsRight1.BackColor = SystemColors.Control;
-            pictureArrowsRight1.Image = Properties.Resources.teruskan;
             pictureArrowsRight1.Location = new Point(355, 5);
             pictureArrowsRight1.Name = "pictureArrowsRight1";
             pictureArrowsRight1.Size = new Size(54, 40);
@@ -990,7 +977,6 @@
             // 
             pictureBook.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureBook.BackColor = Color.FromArgb(226, 236, 233);
-            pictureBook.Image = Properties.Resources.book;
             pictureBook.Location = new Point(3, 8);
             pictureBook.Name = "pictureBook";
             pictureBook.Size = new Size(36, 35);
@@ -1079,7 +1065,6 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = SystemColors.Control;
-            pictureBox2.Image = Properties.Resources.teruskan2;
             pictureBox2.Location = new Point(358, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(54, 45);
@@ -1112,7 +1097,6 @@
             // pictureLogoutAccount
             // 
             pictureLogoutAccount.BackColor = Color.FromArgb(250, 219, 216);
-            pictureLogoutAccount.Image = Properties.Resources.logout2;
             pictureLogoutAccount.Location = new Point(3, 3);
             pictureLogoutAccount.Name = "pictureLogoutAccount";
             pictureLogoutAccount.Size = new Size(30, 30);
