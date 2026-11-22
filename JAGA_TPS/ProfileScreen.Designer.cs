@@ -151,7 +151,6 @@
             // 
             // pictureBoxLogo
             // 
-            pictureBoxLogo.Image = Properties.Resources.TPS;
             pictureBoxLogo.Location = new Point(3, 3);
             pictureBoxLogo.Name = "pictureBoxLogo";
             pictureBoxLogo.Size = new Size(53, 64);
@@ -196,7 +195,6 @@
             // 
             // pictureBoxDashHar
             // 
-            pictureBoxDashHar.Image = Properties.Resources.chartline;
             pictureBoxDashHar.Location = new Point(3, 3);
             pictureBoxDashHar.Name = "pictureBoxDashHar";
             pictureBoxDashHar.Size = new Size(35, 35);
@@ -218,7 +216,6 @@
             // 
             // pictureBoxRiwayat
             // 
-            pictureBoxRiwayat.Image = Properties.Resources.clock;
             pictureBoxRiwayat.Location = new Point(3, 3);
             pictureBoxRiwayat.Name = "pictureBoxRiwayat";
             pictureBoxRiwayat.Size = new Size(35, 35);
@@ -240,7 +237,6 @@
             // 
             // pictureBoxProfile
             // 
-            pictureBoxProfile.Image = Properties.Resources.badge2;
             pictureBoxProfile.Location = new Point(3, 3);
             pictureBoxProfile.Name = "pictureBoxProfile";
             pictureBoxProfile.Size = new Size(35, 35);
@@ -263,7 +259,6 @@
             // 
             // pictureBoxLogout1
             // 
-            pictureBoxLogout1.Image = Properties.Resources.logout1;
             pictureBoxLogout1.Location = new Point(3, 3);
             pictureBoxLogout1.Name = "pictureBoxLogout1";
             pictureBoxLogout1.Size = new Size(35, 35);
@@ -446,7 +441,6 @@
             // 
             // pictureBoxNotif
             // 
-            pictureBoxNotif.Image = Properties.Resources.circle_user_solid;
             pictureBoxNotif.Location = new Point(331, 3);
             pictureBoxNotif.Name = "pictureBoxNotif";
             pictureBoxNotif.Size = new Size(58, 62);
@@ -456,7 +450,6 @@
             // 
             // pictureBoxUser
             // 
-            pictureBoxUser.Image = Properties.Resources.notification;
             pictureBoxUser.Location = new Point(3, 3);
             pictureBoxUser.Name = "pictureBoxUser";
             pictureBoxUser.Size = new Size(60, 62);
@@ -466,7 +459,6 @@
             // 
             // pictureBoxFotoPengelola
             // 
-            pictureBoxFotoPengelola.Image = Properties.Resources.Screenshot_2026_11_18_140723;
             pictureBoxFotoPengelola.Location = new Point(168, 3);
             pictureBoxFotoPengelola.Name = "pictureBoxFotoPengelola";
             pictureBoxFotoPengelola.Size = new Size(120, 100);
@@ -476,7 +468,6 @@
             // 
             // pictureBoxIDCard
             // 
-            pictureBoxIDCard.Image = Properties.Resources.badge;
             pictureBoxIDCard.Location = new Point(3, 3);
             pictureBoxIDCard.Name = "pictureBoxIDCard";
             pictureBoxIDCard.Size = new Size(35, 35);
@@ -581,7 +572,6 @@
             // pictureBoxLokasi
             // 
             pictureBoxLokasi.BackColor = Color.FromArgb(163, 228, 215);
-            pictureBoxLokasi.Image = Properties.Resources.location;
             pictureBoxLokasi.Location = new Point(3, 3);
             pictureBoxLokasi.Name = "pictureBoxLokasi";
             pictureBoxLokasi.Size = new Size(50, 60);
@@ -683,7 +673,6 @@
             // pictureBoxManageAccount
             // 
             pictureBoxManageAccount.BackColor = SystemColors.Control;
-            pictureBoxManageAccount.Image = Properties.Resources.manage_akun;
             pictureBoxManageAccount.Location = new Point(3, 3);
             pictureBoxManageAccount.Name = "pictureBoxManageAccount";
             pictureBoxManageAccount.Size = new Size(60, 56);
@@ -717,7 +706,6 @@
             // pictureBoxRightArrow1
             // 
             pictureBoxRightArrow1.BackColor = SystemColors.Control;
-            pictureBoxRightArrow1.Image = Properties.Resources.teruskan3;
             pictureBoxRightArrow1.Location = new Point(388, 3);
             pictureBoxRightArrow1.Name = "pictureBoxRightArrow1";
             pictureBoxRightArrow1.Size = new Size(58, 56);
@@ -728,7 +716,6 @@
             // pictureBoxUserPanelSetting
             // 
             pictureBoxUserPanelSetting.BackColor = SystemColors.Control;
-            pictureBoxUserPanelSetting.Image = Properties.Resources.user_panel_setting;
             pictureBoxUserPanelSetting.Location = new Point(3, 65);
             pictureBoxUserPanelSetting.Name = "pictureBoxUserPanelSetting";
             pictureBoxUserPanelSetting.Size = new Size(60, 56);
@@ -762,7 +749,6 @@
             // pictureBoxRightArrow2
             // 
             pictureBoxRightArrow2.BackColor = SystemColors.Control;
-            pictureBoxRightArrow2.Image = Properties.Resources.teruskan2;
             pictureBoxRightArrow2.Location = new Point(388, 65);
             pictureBoxRightArrow2.Name = "pictureBoxRightArrow2";
             pictureBoxRightArrow2.Size = new Size(58, 56);
@@ -773,7 +759,6 @@
             // pictureBoxNotifikasi
             // 
             pictureBoxNotifikasi.BackColor = SystemColors.Control;
-            pictureBoxNotifikasi.Image = Properties.Resources.notif_active;
             pictureBoxNotifikasi.Location = new Point(3, 127);
             pictureBoxNotifikasi.Name = "pictureBoxNotifikasi";
             pictureBoxNotifikasi.Size = new Size(60, 55);
@@ -807,7 +792,6 @@
             // pictureBoxRightArrow3
             // 
             pictureBoxRightArrow3.BackColor = SystemColors.Control;
-            pictureBoxRightArrow3.Image = Properties.Resources.teruskan1;
             pictureBoxRightArrow3.Location = new Point(388, 127);
             pictureBoxRightArrow3.Name = "pictureBoxRightArrow3";
             pictureBoxRightArrow3.Size = new Size(58, 55);
@@ -923,7 +907,6 @@
             // pictureBoxBook
             // 
             pictureBoxBook.BackColor = SystemColors.Control;
-            pictureBoxBook.Image = Properties.Resources.book;
             pictureBoxBook.Location = new Point(3, 3);
             pictureBoxBook.Name = "pictureBoxBook";
             pictureBoxBook.Size = new Size(60, 48);
@@ -935,7 +918,6 @@
             // 
             pictureBoxRightArrow4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBoxRightArrow4.BackColor = SystemColors.Control;
-            pictureBoxRightArrow4.Image = Properties.Resources.teruskan;
             pictureBoxRightArrow4.Location = new Point(394, 3);
             pictureBoxRightArrow4.Name = "pictureBoxRightArrow4";
             pictureBoxRightArrow4.Size = new Size(58, 48);
@@ -1023,7 +1005,6 @@
             // 
             // pictureBoxLogout2
             // 
-            pictureBoxLogout2.Image = Properties.Resources.logout2;
             pictureBoxLogout2.Location = new Point(3, 3);
             pictureBoxLogout2.Name = "pictureBoxLogout2";
             pictureBoxLogout2.Size = new Size(35, 35);
