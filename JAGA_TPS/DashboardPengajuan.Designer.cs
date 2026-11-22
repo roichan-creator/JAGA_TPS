@@ -99,6 +99,7 @@
             label23 = new Label();
             flowLayoutPanel20 = new FlowLayoutPanel();
             pictureBox16 = new PictureBox();
+            textBox4 = new TextBox();
             flowLayoutPanel21 = new FlowLayoutPanel();
             pictureBox17 = new PictureBox();
             textBox2 = new TextBox();
@@ -109,6 +110,7 @@
             tableLayoutPanel5 = new TableLayoutPanel();
             tableLayoutPanel6 = new TableLayoutPanel();
             flowLayoutPanel22 = new FlowLayoutPanel();
+            flowLayoutPanel24 = new FlowLayoutPanel();
             tableLayoutPanel7 = new TableLayoutPanel();
             label20 = new Label();
             label28 = new Label();
@@ -116,16 +118,14 @@
             pictureBox18 = new PictureBox();
             label29 = new Label();
             tableLayoutPanel8 = new TableLayoutPanel();
-            label30 = new Label();
             label31 = new Label();
-            flowLayoutPanel24 = new FlowLayoutPanel();
-            flowLayoutPanel25 = new FlowLayoutPanel();
+            label30 = new Label();
+            tableLayoutPanel9 = new TableLayoutPanel();
             pictureBox19 = new PictureBox();
+            flowLayoutPanel25 = new FlowLayoutPanel();
             button5 = new Button();
             button6 = new Button();
-            tableLayoutPanel9 = new TableLayoutPanel();
             flowLayoutPanel27 = new FlowLayoutPanel();
-            textBox4 = new TextBox();
             flowLayoutPanel12.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             flowLayoutPanel9.SuspendLayout();
@@ -171,14 +171,14 @@
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             flowLayoutPanel22.SuspendLayout();
+            flowLayoutPanel24.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
             flowLayoutPanel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             tableLayoutPanel8.SuspendLayout();
-            flowLayoutPanel24.SuspendLayout();
-            flowLayoutPanel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            flowLayoutPanel25.SuspendLayout();
             flowLayoutPanel27.SuspendLayout();
             SuspendLayout();
             // 
@@ -766,20 +766,20 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label15.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label15.Location = new Point(3, 31);
             label15.Name = "label15";
-            label15.Size = new Size(251, 28);
+            label15.Size = new Size(212, 23);
             label15.TabIndex = 52;
             label15.Text = "Pengajuan Pengangkutan";
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(3, 59);
+            label16.Font = new Font("Segoe UI", 7F);
+            label16.Location = new Point(3, 54);
             label16.Name = "label16";
-            label16.Size = new Size(411, 17);
+            label16.Size = new Size(372, 15);
             label16.TabIndex = 53;
             label16.Text = "Kirimkan tiket penjemputan darurat ke armada pengangkut MM2100.";
             // 
@@ -870,8 +870,8 @@
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label21.ForeColor = SystemColors.ControlText;
-            label21.Location = new Point(3, 244);
-            label21.Margin = new Padding(3, 10, 3, 10);
+            label21.Location = new Point(3, 230);
+            label21.Margin = new Padding(3);
             label21.Name = "label21";
             label21.Size = new Size(130, 20);
             label21.TabIndex = 57;
@@ -880,10 +880,10 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 8F);
-            textBox1.Location = new Point(3, 277);
+            textBox1.Location = new Point(3, 256);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(430, 75);
+            textBox1.Size = new Size(430, 56);
             textBox1.TabIndex = 58;
             textBox1.Text = "Penumpukan limbah non-organik plastik kemasan dan palet rusak\r\nmelebihi batas kapasitas TPS sejak kemarin sore karena ritme produksi\r\nmeningkat.";
             // 
@@ -893,8 +893,8 @@
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label22.ForeColor = SystemColors.ControlText;
-            label22.Location = new Point(3, 365);
-            label22.Margin = new Padding(3, 10, 3, 10);
+            label22.Location = new Point(3, 318);
+            label22.Margin = new Padding(3);
             label22.Name = "label22";
             label22.Size = new Size(181, 20);
             label22.TabIndex = 59;
@@ -909,7 +909,7 @@
             flowLayoutPanel18.Controls.Add(button3);
             flowLayoutPanel18.Location = new Point(182, 3);
             flowLayoutPanel18.Name = "flowLayoutPanel18";
-            flowLayoutPanel18.Size = new Size(222, 41);
+            flowLayoutPanel18.Size = new Size(212, 34);
             flowLayoutPanel18.TabIndex = 60;
             // 
             // pictureBox14
@@ -917,7 +917,7 @@
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
             pictureBox14.Location = new Point(3, 3);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(37, 35);
+            pictureBox14.Size = new Size(27, 28);
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 0;
             pictureBox14.TabStop = false;
@@ -930,7 +930,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(46, 7);
+            button3.Location = new Point(36, 3);
             button3.Name = "button3";
             button3.Size = new Size(173, 27);
             button3.TabIndex = 12;
@@ -947,7 +947,7 @@
             button4.ForeColor = Color.FromArgb(63, 73, 67);
             button4.Location = new Point(3, 3);
             button4.Name = "button4";
-            button4.Size = new Size(173, 41);
+            button4.Size = new Size(173, 33);
             button4.TabIndex = 61;
             button4.Text = "Batal";
             button4.UseVisualStyleBackColor = false;
@@ -959,9 +959,9 @@
             flowLayoutPanel19.BackColor = Color.White;
             flowLayoutPanel19.Controls.Add(pictureBox15);
             flowLayoutPanel19.Controls.Add(label23);
-            flowLayoutPanel19.Location = new Point(3, 502);
+            flowLayoutPanel19.Location = new Point(3, 451);
             flowLayoutPanel19.Name = "flowLayoutPanel19";
-            flowLayoutPanel19.Size = new Size(234, 31);
+            flowLayoutPanel19.Size = new Size(210, 28);
             flowLayoutPanel19.TabIndex = 62;
             // 
             // pictureBox15
@@ -970,7 +970,7 @@
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
             pictureBox15.Location = new Point(3, 3);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(32, 25);
+            pictureBox15.Size = new Size(25, 22);
             pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox15.TabIndex = 0;
             pictureBox15.TabStop = false;
@@ -979,12 +979,12 @@
             // 
             label23.Anchor = AnchorStyles.Left;
             label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label23.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label23.ForeColor = SystemColors.ControlText;
-            label23.Location = new Point(41, 5);
+            label23.Location = new Point(34, 4);
             label23.Margin = new Padding(3);
             label23.Name = "label23";
-            label23.Size = new Size(190, 20);
+            label23.Size = new Size(173, 19);
             label23.TabIndex = 2;
             label23.Text = "Permintaan Pengangkutan";
             // 
@@ -994,10 +994,9 @@
             flowLayoutPanel20.BackColor = Color.FromArgb(221, 236, 226);
             flowLayoutPanel20.Controls.Add(pictureBox16);
             flowLayoutPanel20.Controls.Add(textBox4);
-            flowLayoutPanel20.Location = new Point(942, 595);
+            flowLayoutPanel20.Location = new Point(1401, 511);
             flowLayoutPanel20.Name = "flowLayoutPanel20";
-            flowLayoutPanel20.Padding = new Padding(0, 0, 50, 0);
-            flowLayoutPanel20.Size = new Size(294, 40);
+            flowLayoutPanel20.Size = new Size(185, 40);
             flowLayoutPanel20.TabIndex = 63;
             // 
             // pictureBox16
@@ -1011,15 +1010,23 @@
             pictureBox16.TabIndex = 0;
             pictureBox16.TabStop = false;
             // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.FromArgb(221, 236, 226);
+            textBox4.Location = new Point(43, 3);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(139, 27);
+            textBox4.TabIndex = 66;
+            textBox4.Text = "±3.2 Ton Non-Org";
+            // 
             // flowLayoutPanel21
             // 
             flowLayoutPanel21.AutoSize = true;
             flowLayoutPanel21.BackColor = Color.FromArgb(221, 236, 226);
             flowLayoutPanel21.Controls.Add(pictureBox17);
             flowLayoutPanel21.Controls.Add(textBox2);
-            flowLayoutPanel21.Location = new Point(1251, 598);
+            flowLayoutPanel21.Location = new Point(1391, 641);
             flowLayoutPanel21.Name = "flowLayoutPanel21";
-            flowLayoutPanel21.Padding = new Padding(0, 0, 50, 0);
             flowLayoutPanel21.Size = new Size(294, 40);
             flowLayoutPanel21.TabIndex = 64;
             // 
@@ -1039,7 +1046,7 @@
             textBox2.BackColor = Color.FromArgb(221, 236, 226);
             textBox2.Location = new Point(43, 3);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(198, 27);
+            textBox2.Size = new Size(132, 27);
             textBox2.TabIndex = 65;
             textBox2.Text = "±3.2 Ton Non-Org";
             // 
@@ -1047,7 +1054,7 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.Location = new Point(937, 549);
+            label24.Location = new Point(1401, 467);
             label24.Name = "label24";
             label24.Size = new Size(133, 17);
             label24.TabIndex = 65;
@@ -1057,7 +1064,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label25.Location = new Point(887, 631);
+            label25.Location = new Point(909, 641);
             label25.Name = "label25";
             label25.Size = new Size(211, 17);
             label25.TabIndex = 66;
@@ -1067,7 +1074,7 @@
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label26.Location = new Point(1340, 671);
+            label26.Location = new Point(1431, 599);
             label26.Name = "label26";
             label26.Size = new Size(103, 17);
             label26.TabIndex = 67;
@@ -1076,7 +1083,7 @@
             // textBox3
             // 
             textBox3.BackColor = Color.FromArgb(221, 236, 226);
-            textBox3.Location = new Point(923, 644);
+            textBox3.Location = new Point(932, 661);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(411, 54);
@@ -1105,7 +1112,7 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 36.6336632F));
             tableLayoutPanel6.Controls.Add(label17, 0, 0);
             tableLayoutPanel6.Controls.Add(flowLayoutPanel17, 1, 0);
-            tableLayoutPanel6.Location = new Point(3, 79);
+            tableLayoutPanel6.Location = new Point(3, 72);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -1127,10 +1134,24 @@
             flowLayoutPanel22.Controls.Add(flowLayoutPanel27);
             flowLayoutPanel22.Controls.Add(flowLayoutPanel19);
             flowLayoutPanel22.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel22.Location = new Point(910, 56);
+            flowLayoutPanel22.Location = new Point(907, 56);
             flowLayoutPanel22.Name = "flowLayoutPanel22";
-            flowLayoutPanel22.Size = new Size(460, 536);
+            flowLayoutPanel22.Size = new Size(436, 536);
             flowLayoutPanel22.TabIndex = 71;
+            // 
+            // flowLayoutPanel24
+            // 
+            flowLayoutPanel24.AutoSize = true;
+            flowLayoutPanel24.BackColor = Color.FromArgb(233, 247, 237);
+            flowLayoutPanel24.Controls.Add(tableLayoutPanel7);
+            flowLayoutPanel24.Controls.Add(label28);
+            flowLayoutPanel24.Controls.Add(flowLayoutPanel23);
+            flowLayoutPanel24.Controls.Add(tableLayoutPanel8);
+            flowLayoutPanel24.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel24.Location = new Point(3, 105);
+            flowLayoutPanel24.Name = "flowLayoutPanel24";
+            flowLayoutPanel24.Size = new Size(410, 119);
+            flowLayoutPanel24.TabIndex = 76;
             // 
             // tableLayoutPanel7
             // 
@@ -1219,6 +1240,18 @@
             tableLayoutPanel8.Size = new Size(404, 27);
             tableLayoutPanel8.TabIndex = 75;
             // 
+            // label31
+            // 
+            label31.Anchor = AnchorStyles.Left;
+            label31.AutoSize = true;
+            label31.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label31.ForeColor = Color.FromArgb(63, 73, 67);
+            label31.Location = new Point(3, 3);
+            label31.Name = "label31";
+            label31.Size = new Size(95, 20);
+            label31.TabIndex = 76;
+            label31.Text = "Jadwal Rutin:";
+            // 
             // label30
             // 
             label30.Anchor = AnchorStyles.Left;
@@ -1232,31 +1265,31 @@
             label30.TabIndex = 54;
             label30.Text = "Selasa & Jumat (14.00 WIB)";
             // 
-            // label31
+            // tableLayoutPanel9
             // 
-            label31.Anchor = AnchorStyles.Left;
-            label31.AutoSize = true;
-            label31.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label31.ForeColor = Color.FromArgb(63, 73, 67);
-            label31.Location = new Point(3, 3);
-            label31.Name = "label31";
-            label31.Size = new Size(95, 20);
-            label31.TabIndex = 76;
-            label31.Text = "Jadwal Rutin:";
+            tableLayoutPanel9.BackColor = Color.White;
+            tableLayoutPanel9.ColumnCount = 2;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.29703F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.70297F));
+            tableLayoutPanel9.Controls.Add(pictureBox19, 0, 0);
+            tableLayoutPanel9.Controls.Add(flowLayoutPanel25, 1, 0);
+            tableLayoutPanel9.Location = new Point(3, 344);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 1;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel9.Size = new Size(404, 55);
+            tableLayoutPanel9.TabIndex = 76;
             // 
-            // flowLayoutPanel24
+            // pictureBox19
             // 
-            flowLayoutPanel24.AutoSize = true;
-            flowLayoutPanel24.BackColor = Color.FromArgb(233, 247, 237);
-            flowLayoutPanel24.Controls.Add(tableLayoutPanel7);
-            flowLayoutPanel24.Controls.Add(label28);
-            flowLayoutPanel24.Controls.Add(flowLayoutPanel23);
-            flowLayoutPanel24.Controls.Add(tableLayoutPanel8);
-            flowLayoutPanel24.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel24.Location = new Point(3, 112);
-            flowLayoutPanel24.Name = "flowLayoutPanel24";
-            flowLayoutPanel24.Size = new Size(410, 119);
-            flowLayoutPanel24.TabIndex = 76;
+            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
+            pictureBox19.Location = new Point(3, 3);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(47, 49);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox19.TabIndex = 0;
+            pictureBox19.TabStop = false;
             // 
             // flowLayoutPanel25
             // 
@@ -1265,20 +1298,10 @@
             flowLayoutPanel25.BackColor = Color.FromArgb(36, 123, 88);
             flowLayoutPanel25.Controls.Add(button5);
             flowLayoutPanel25.Controls.Add(button6);
-            flowLayoutPanel25.Location = new Point(221, 3);
+            flowLayoutPanel25.Location = new Point(229, 9);
             flowLayoutPanel25.Name = "flowLayoutPanel25";
-            flowLayoutPanel25.Size = new Size(180, 39);
+            flowLayoutPanel25.Size = new Size(172, 37);
             flowLayoutPanel25.TabIndex = 72;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(3, 3);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(43, 39);
-            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox19.TabIndex = 0;
-            pictureBox19.TabStop = false;
             // 
             // button5
             // 
@@ -1288,7 +1311,7 @@
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(3, 9);
+            button5.Location = new Point(3, 5);
             button5.Name = "button5";
             button5.Size = new Size(123, 27);
             button5.TabIndex = 12;
@@ -1306,25 +1329,9 @@
             button6.ForeColor = Color.White;
             button6.Location = new Point(132, 3);
             button6.Name = "button6";
-            button6.Size = new Size(45, 39);
+            button6.Size = new Size(37, 31);
             button6.TabIndex = 13;
             button6.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel9
-            // 
-            tableLayoutPanel9.BackColor = Color.White;
-            tableLayoutPanel9.ColumnCount = 2;
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.29703F));
-            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.70297F));
-            tableLayoutPanel9.Controls.Add(pictureBox19, 0, 0);
-            tableLayoutPanel9.Controls.Add(flowLayoutPanel25, 1, 0);
-            tableLayoutPanel9.Location = new Point(3, 398);
-            tableLayoutPanel9.Name = "tableLayoutPanel9";
-            tableLayoutPanel9.RowCount = 1;
-            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel9.Size = new Size(404, 45);
-            tableLayoutPanel9.TabIndex = 76;
             // 
             // flowLayoutPanel27
             // 
@@ -1333,19 +1340,10 @@
             flowLayoutPanel27.BackColor = Color.FromArgb(36, 123, 88);
             flowLayoutPanel27.Controls.Add(button4);
             flowLayoutPanel27.Controls.Add(flowLayoutPanel18);
-            flowLayoutPanel27.Location = new Point(3, 449);
+            flowLayoutPanel27.Location = new Point(3, 405);
             flowLayoutPanel27.Name = "flowLayoutPanel27";
-            flowLayoutPanel27.Size = new Size(407, 47);
+            flowLayoutPanel27.Size = new Size(397, 40);
             flowLayoutPanel27.TabIndex = 78;
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.FromArgb(221, 236, 226);
-            textBox4.Location = new Point(43, 3);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(198, 27);
-            textBox4.TabIndex = 66;
-            textBox4.Text = "±3.2 Ton Non-Org";
             // 
             // DashboardPengajuan
             // 
@@ -1440,6 +1438,8 @@
             tableLayoutPanel6.PerformLayout();
             flowLayoutPanel22.ResumeLayout(false);
             flowLayoutPanel22.PerformLayout();
+            flowLayoutPanel24.ResumeLayout(false);
+            flowLayoutPanel24.PerformLayout();
             tableLayoutPanel7.ResumeLayout(false);
             tableLayoutPanel7.PerformLayout();
             flowLayoutPanel23.ResumeLayout(false);
@@ -1447,13 +1447,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
-            flowLayoutPanel24.ResumeLayout(false);
-            flowLayoutPanel24.PerformLayout();
-            flowLayoutPanel25.ResumeLayout(false);
-            flowLayoutPanel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             tableLayoutPanel9.ResumeLayout(false);
             tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            flowLayoutPanel25.ResumeLayout(false);
+            flowLayoutPanel25.PerformLayout();
             flowLayoutPanel27.ResumeLayout(false);
             flowLayoutPanel27.PerformLayout();
             ResumeLayout(false);
