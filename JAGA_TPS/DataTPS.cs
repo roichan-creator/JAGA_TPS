@@ -20,11 +20,12 @@ namespace JAGA_TPS
         public void TampilkanData(TPSModel tps)
         {
             lblNamaTPS.Text = tps.NamaTPS;
+            lblLokasiTPS.Text = tps.Lokasi;
 
             // Menampilkan persentase
             lblVolume.Text = tps.Volume + "%";
 
-            lblJadwal.Text = "Jadwal Rutin: " + tps.JadwalRutin;
+            lblJadwal.Text = "" + tps.JadwalRutin;
 
             // Menentukan status TPS
             if (tps.Volume <= 40)
@@ -32,18 +33,24 @@ namespace JAGA_TPS
                 lblStatus.Text = "Aman";
                 lblStatus.BackColor = Color.LightGreen;
                 lblStatus.ForeColor = Color.DarkGreen;
+                lblVolume.ForeColor = Color.DarkGreen;
+                flyStatus.BackColor = Color.LightGreen;
             }
             else if (tps.Volume <= 75)
             {
                 lblStatus.Text = "Normal";
                 lblStatus.BackColor = Color.LightGoldenrodYellow;
                 lblStatus.ForeColor = Color.DarkGoldenrod;
+                lblVolume.ForeColor = Color.DarkGoldenrod;
+                flyStatus.BackColor = Color.LightGoldenrodYellow;
             }
             else
             {
                 lblStatus.Text = "Kritis";
                 lblStatus.BackColor = Color.MistyRose;
                 lblStatus.ForeColor = Color.Red;
+                lblVolume.ForeColor = Color.Red;
+                flyStatus.BackColor = Color.MistyRose;
             }
         }
 

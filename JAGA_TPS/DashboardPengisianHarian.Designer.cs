@@ -45,7 +45,7 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             flowLayoutPanel13 = new FlowLayoutPanel();
             pictureBox9 = new PictureBox();
-            button2 = new Button();
+            btnLogout = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel5 = new FlowLayoutPanel();
             pictureBox3 = new PictureBox();
@@ -66,6 +66,7 @@
             btnTambahPTS = new Button();
             pictureBox7 = new PictureBox();
             flowLayoutPanel11 = new FlowLayoutPanel();
+            button1 = new Button();
             tableLayoutPanel3 = new TableLayoutPanel();
             flowLayoutPanel12 = new FlowLayoutPanel();
             tblDaftarTPS = new TableLayoutPanel();
@@ -93,20 +94,22 @@
             label24 = new Label();
             flowLayoutPanel16 = new FlowLayoutPanel();
             flowLayoutPanel17 = new FlowLayoutPanel();
-            label25 = new Label();
-            label26 = new Label();
-            pictureBox11 = new PictureBox();
-            flowLayoutPanel18 = new FlowLayoutPanel();
+            pictureDokumentasiFoto = new PictureBox();
             label27 = new Label();
             label28 = new Label();
             flowLayoutPanel19 = new FlowLayoutPanel();
             pictureBox12 = new PictureBox();
             btnSimpanPemeriksaan = new Button();
             flowLayoutPanel20 = new FlowLayoutPanel();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            flowLayoutPanel18 = new FlowLayoutPanel();
+            btnTambahFoto = new Button();
+            btnHapusFoto = new Button();
             label29 = new Label();
             label30 = new Label();
             flowLayoutPanel21 = new FlowLayoutPanel();
             pictureBox13 = new PictureBox();
+            linkLabelProfil = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -141,11 +144,12 @@
             flowLayoutPanel15.SuspendLayout();
             flowLayoutPanel16.SuspendLayout();
             flowLayoutPanel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            flowLayoutPanel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureDokumentasiFoto).BeginInit();
             flowLayoutPanel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             flowLayoutPanel20.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            flowLayoutPanel18.SuspendLayout();
             flowLayoutPanel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
@@ -335,6 +339,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
             tableLayoutPanel2.Size = new Size(255, 834);
             tableLayoutPanel2.TabIndex = 9;
+            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // flowLayoutPanel13
             // 
@@ -342,7 +347,7 @@
             flowLayoutPanel13.AutoSize = true;
             flowLayoutPanel13.BackColor = Color.White;
             flowLayoutPanel13.Controls.Add(pictureBox9);
-            flowLayoutPanel13.Controls.Add(button2);
+            flowLayoutPanel13.Controls.Add(btnLogout);
             flowLayoutPanel13.Location = new Point(4, 784);
             flowLayoutPanel13.Margin = new Padding(4);
             flowLayoutPanel13.Name = "flowLayoutPanel13";
@@ -362,15 +367,16 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // button2
+            // btnLogout
             // 
-            button2.Location = new Point(54, 4);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(118, 36);
-            button2.TabIndex = 18;
-            button2.Text = "Logout";
-            button2.UseVisualStyleBackColor = true;
+            btnLogout.Location = new Point(54, 4);
+            btnLogout.Margin = new Padding(4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(118, 36);
+            btnLogout.TabIndex = 18;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // flowLayoutPanel8
             // 
@@ -383,7 +389,7 @@
             flowLayoutPanel8.Location = new Point(4, 4);
             flowLayoutPanel8.Margin = new Padding(4);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
-            flowLayoutPanel8.Size = new Size(243, 241);
+            flowLayoutPanel8.Size = new Size(243, 238);
             flowLayoutPanel8.TabIndex = 13;
             // 
             // flowLayoutPanel5
@@ -470,19 +476,19 @@
             flowLayoutPanel7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel7.BackColor = Color.White;
             flowLayoutPanel7.Controls.Add(pictureBox5);
-            flowLayoutPanel7.Controls.Add(label8);
+            flowLayoutPanel7.Controls.Add(linkLabelProfil);
             flowLayoutPanel7.Location = new Point(4, 188);
             flowLayoutPanel7.Margin = new Padding(4);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Padding = new Padding(0, 0, 62, 0);
-            flowLayoutPanel7.Size = new Size(177, 49);
+            flowLayoutPanel7.Size = new Size(175, 46);
             flowLayoutPanel7.TabIndex = 12;
             // 
             // pictureBox5
             // 
             pictureBox5.Anchor = AnchorStyles.Left;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(4, 5);
+            pictureBox5.Location = new Point(4, 4);
             pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(42, 38);
@@ -496,7 +502,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(54, 12);
+            label8.Location = new Point(1431, 653);
             label8.Margin = new Padding(4, 12, 4, 12);
             label8.Name = "label8";
             label8.Size = new Size(57, 25);
@@ -618,11 +624,26 @@
             flowLayoutPanel11.BackColor = Color.FromArgb(227, 241, 231);
             flowLayoutPanel11.Controls.Add(pictureBox7);
             flowLayoutPanel11.Controls.Add(btnTambahPTS);
-            flowLayoutPanel11.Location = new Point(610, 7);
+            flowLayoutPanel11.Controls.Add(button1);
+            flowLayoutPanel11.Location = new Point(610, 4);
             flowLayoutPanel11.Margin = new Padding(4);
             flowLayoutPanel11.Name = "flowLayoutPanel11";
-            flowLayoutPanel11.Size = new Size(225, 52);
+            flowLayoutPanel11.Size = new Size(225, 58);
             flowLayoutPanel11.TabIndex = 15;
+            // 
+            // button1
+            // 
+            button1.AutoSize = true;
+            button1.BackColor = Color.FromArgb(227, 241, 231);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.FromArgb(0, 96, 65);
+            button1.Location = new Point(4, 56);
+            button1.Margin = new Padding(4);
+            button1.Name = "button1";
+            button1.Size = new Size(169, 44);
+            button1.TabIndex = 15;
+            button1.Text = "+ Tambah TPS";
+            button1.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel3
             // 
@@ -678,7 +699,7 @@
             // 
             datatps3.BackColor = Color.White;
             datatps3.Location = new Point(4, 568);
-            datatps3.Margin = new Padding(4, 4, 4, 4);
+            datatps3.Margin = new Padding(4);
             datatps3.Name = "datatps3";
             datatps3.Size = new Size(828, 274);
             datatps3.TabIndex = 21;
@@ -687,7 +708,7 @@
             // 
             datatps2.BackColor = Color.White;
             datatps2.Location = new Point(4, 286);
-            datatps2.Margin = new Padding(4, 4, 4, 4);
+            datatps2.Margin = new Padding(4);
             datatps2.Name = "datatps2";
             datatps2.Size = new Size(828, 274);
             datatps2.TabIndex = 20;
@@ -696,7 +717,7 @@
             // 
             datatps1.BackColor = Color.White;
             datatps1.Location = new Point(4, 4);
-            datatps1.Margin = new Padding(4, 4, 4, 4);
+            datatps1.Margin = new Padding(4);
             datatps1.Name = "datatps1";
             datatps1.Size = new Size(828, 274);
             datatps1.TabIndex = 19;
@@ -965,62 +986,23 @@
             flowLayoutPanel17.Size = new Size(552, 81);
             flowLayoutPanel17.TabIndex = 34;
             // 
-            // label25
+            // pictureDokumentasiFoto
             // 
-            label25.Anchor = AnchorStyles.Top;
-            label25.AutoSize = true;
-            label25.Font = new Font("Segoe UI Semibold", 9F);
-            label25.Location = new Point(4, 0);
-            label25.Margin = new Padding(4, 0, 4, 0);
-            label25.Name = "label25";
-            label25.Size = new Size(328, 25);
-            label25.TabIndex = 35;
-            label25.Text = "Klik atau seret foto tumpukan sampah";
-            // 
-            // label26
-            // 
-            label26.Anchor = AnchorStyles.Top;
-            label26.AutoSize = true;
-            label26.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label26.ForeColor = Color.FromArgb(63, 73, 67);
-            label26.Location = new Point(50, 25);
-            label26.Margin = new Padding(4, 0, 4, 0);
-            label26.Name = "label26";
-            label26.Size = new Size(236, 25);
-            label26.TabIndex = 36;
-            label26.Text = "Format JPG/PNG maks. 5MB";
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Anchor = AnchorStyles.Top;
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(255, 281);
-            pictureBox11.Margin = new Padding(4);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(75, 72);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 37;
-            pictureBox11.TabStop = false;
-            // 
-            // flowLayoutPanel18
-            // 
-            flowLayoutPanel18.Anchor = AnchorStyles.Top;
-            flowLayoutPanel18.AutoSize = true;
-            flowLayoutPanel18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel18.Controls.Add(label25);
-            flowLayoutPanel18.Controls.Add(label26);
-            flowLayoutPanel18.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel18.Location = new Point(124, 361);
-            flowLayoutPanel18.Margin = new Padding(4);
-            flowLayoutPanel18.Name = "flowLayoutPanel18";
-            flowLayoutPanel18.Size = new Size(336, 50);
-            flowLayoutPanel18.TabIndex = 38;
+            pictureDokumentasiFoto.Anchor = AnchorStyles.Left;
+            pictureDokumentasiFoto.Image = (Image)resources.GetObject("pictureDokumentasiFoto.Image");
+            pictureDokumentasiFoto.Location = new Point(4, 4);
+            pictureDokumentasiFoto.Margin = new Padding(4);
+            pictureDokumentasiFoto.Name = "pictureDokumentasiFoto";
+            pictureDokumentasiFoto.Size = new Size(366, 151);
+            pictureDokumentasiFoto.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureDokumentasiFoto.TabIndex = 37;
+            pictureDokumentasiFoto.TabStop = false;
             // 
             // label27
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI Semibold", 9F);
-            label27.Location = new Point(4, 415);
+            label27.Location = new Point(4, 442);
             label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
             label27.Size = new Size(248, 25);
@@ -1032,7 +1014,7 @@
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label28.ForeColor = Color.FromArgb(63, 73, 67);
-            label28.Location = new Point(4, 440);
+            label28.Location = new Point(4, 467);
             label28.Margin = new Padding(4, 0, 4, 0);
             label28.Name = "label28";
             label28.Size = new Size(499, 50);
@@ -1046,7 +1028,7 @@
             flowLayoutPanel19.BackColor = Color.FromArgb(0, 96, 65);
             flowLayoutPanel19.Controls.Add(pictureBox12);
             flowLayoutPanel19.Controls.Add(btnSimpanPemeriksaan);
-            flowLayoutPanel19.Location = new Point(4, 494);
+            flowLayoutPanel19.Location = new Point(4, 521);
             flowLayoutPanel19.Margin = new Padding(4);
             flowLayoutPanel19.Name = "flowLayoutPanel19";
             flowLayoutPanel19.Size = new Size(577, 52);
@@ -1091,8 +1073,7 @@
             flowLayoutPanel20.Controls.Add(cmbLokasiTPS);
             flowLayoutPanel20.Controls.Add(flowLayoutPanel17);
             flowLayoutPanel20.Controls.Add(label23);
-            flowLayoutPanel20.Controls.Add(pictureBox11);
-            flowLayoutPanel20.Controls.Add(flowLayoutPanel18);
+            flowLayoutPanel20.Controls.Add(tableLayoutPanel4);
             flowLayoutPanel20.Controls.Add(label27);
             flowLayoutPanel20.Controls.Add(label28);
             flowLayoutPanel20.Controls.Add(flowLayoutPanel19);
@@ -1100,8 +1081,64 @@
             flowLayoutPanel20.Location = new Point(1126, 66);
             flowLayoutPanel20.Margin = new Padding(4);
             flowLayoutPanel20.Name = "flowLayoutPanel20";
-            flowLayoutPanel20.Size = new Size(585, 550);
+            flowLayoutPanel20.Size = new Size(585, 577);
             flowLayoutPanel20.TabIndex = 42;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.ColumnCount = 2;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 182F));
+            tableLayoutPanel4.Controls.Add(flowLayoutPanel18, 1, 0);
+            tableLayoutPanel4.Controls.Add(pictureDokumentasiFoto, 0, 0);
+            tableLayoutPanel4.Location = new Point(3, 280);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel4.Size = new Size(556, 159);
+            tableLayoutPanel4.TabIndex = 47;
+            // 
+            // flowLayoutPanel18
+            // 
+            flowLayoutPanel18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel18.Controls.Add(btnTambahFoto);
+            flowLayoutPanel18.Controls.Add(btnHapusFoto);
+            flowLayoutPanel18.Location = new Point(377, 3);
+            flowLayoutPanel18.Name = "flowLayoutPanel18";
+            flowLayoutPanel18.Size = new Size(175, 152);
+            flowLayoutPanel18.TabIndex = 48;
+            // 
+            // btnTambahFoto
+            // 
+            btnTambahFoto.Anchor = AnchorStyles.Right;
+            btnTambahFoto.AutoSize = true;
+            btnTambahFoto.BackColor = Color.FromArgb(227, 241, 231);
+            btnTambahFoto.FlatStyle = FlatStyle.Popup;
+            btnTambahFoto.ForeColor = Color.FromArgb(0, 96, 65);
+            btnTambahFoto.Location = new Point(4, 4);
+            btnTambahFoto.Margin = new Padding(4);
+            btnTambahFoto.Name = "btnTambahFoto";
+            btnTambahFoto.Size = new Size(169, 44);
+            btnTambahFoto.TabIndex = 16;
+            btnTambahFoto.Text = "Tambah Foto";
+            btnTambahFoto.UseVisualStyleBackColor = false;
+            btnTambahFoto.Click += btnTambahFoto_Click;
+            // 
+            // btnHapusFoto
+            // 
+            btnHapusFoto.AutoSize = true;
+            btnHapusFoto.BackColor = Color.FromArgb(186, 26, 26);
+            btnHapusFoto.FlatStyle = FlatStyle.Popup;
+            btnHapusFoto.ForeColor = SystemColors.ControlText;
+            btnHapusFoto.Location = new Point(4, 56);
+            btnHapusFoto.Margin = new Padding(4);
+            btnHapusFoto.Name = "btnHapusFoto";
+            btnHapusFoto.Size = new Size(169, 44);
+            btnHapusFoto.TabIndex = 47;
+            btnHapusFoto.Text = "Hapus";
+            btnHapusFoto.UseVisualStyleBackColor = false;
+            btnHapusFoto.Click += btnHapusFoto_Click;
             // 
             // label29
             // 
@@ -1151,12 +1188,28 @@
             pictureBox13.TabIndex = 46;
             pictureBox13.TabStop = false;
             // 
+            // linkLabelProfil
+            // 
+            linkLabelProfil.Anchor = AnchorStyles.None;
+            linkLabelProfil.AutoSize = true;
+            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabelProfil.LinkColor = SystemColors.ControlText;
+            linkLabelProfil.Location = new Point(53, 10);
+            linkLabelProfil.Name = "linkLabelProfil";
+            linkLabelProfil.Size = new Size(57, 25);
+            linkLabelProfil.TabIndex = 47;
+            linkLabelProfil.TabStop = true;
+            linkLabelProfil.Text = "Profil";
+            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
+            // 
             // DashboardPengisianHarian
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 250, 244);
             ClientSize = new Size(1685, 901);
+            Controls.Add(label8);
             Controls.Add(pictureBox13);
             Controls.Add(flowLayoutPanel21);
             Controls.Add(flowLayoutPanel20);
@@ -1226,14 +1279,15 @@
             flowLayoutPanel16.PerformLayout();
             flowLayoutPanel17.ResumeLayout(false);
             flowLayoutPanel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            flowLayoutPanel18.ResumeLayout(false);
-            flowLayoutPanel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureDokumentasiFoto).EndInit();
             flowLayoutPanel19.ResumeLayout(false);
             flowLayoutPanel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             flowLayoutPanel20.ResumeLayout(false);
             flowLayoutPanel20.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            flowLayoutPanel18.ResumeLayout(false);
+            flowLayoutPanel18.PerformLayout();
             flowLayoutPanel21.ResumeLayout(false);
             flowLayoutPanel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
@@ -1285,7 +1339,7 @@
         private DataTPS datatps1;
         private FlowLayoutPanel flowLayoutPanel13;
         private PictureBox pictureBox9;
-        private Button button2;
+        private Button btnLogout;
         private PictureBox pictureBox10;
         private Label label13;
         private FlowLayoutPanel flowLayoutPanel14;
@@ -1307,10 +1361,7 @@
         private Label label24;
         private FlowLayoutPanel flowLayoutPanel16;
         private FlowLayoutPanel flowLayoutPanel17;
-        private Label label25;
-        private Label label26;
-        private PictureBox pictureBox11;
-        private FlowLayoutPanel flowLayoutPanel18;
+        private PictureBox pictureDokumentasiFoto;
         private Label label27;
         private Label label28;
         private FlowLayoutPanel flowLayoutPanel19;
@@ -1321,5 +1372,11 @@
         private Label label30;
         private FlowLayoutPanel flowLayoutPanel21;
         private PictureBox pictureBox13;
+        private Button button1;
+        private Button btnTambahFoto;
+        private Button btnHapusFoto;
+        private TableLayoutPanel tableLayoutPanel4;
+        private FlowLayoutPanel flowLayoutPanel18;
+        private LinkLabel linkLabelProfil;
     }
 }

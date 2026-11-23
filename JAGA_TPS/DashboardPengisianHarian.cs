@@ -143,8 +143,6 @@ namespace JAGA_TPS
                 return;
             }
 
-            // Mengambil nilai volume
-            //tps.Volume = (int)nudVolume.Value;
             // Mengambil nilai estimasi volume sampah
             tps.Volume = (int)nudVolume.Value;
 
@@ -159,6 +157,84 @@ namespace JAGA_TPS
             );
         }
 
-       
+        private void btnTambahFoto_Click(object sender, EventArgs e)
+        {
+            // Membuat instance OpenFileDialog
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                // Filter jenis file gambar yang bisa dipilih
+                openFileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.bmp)|*.jpg; *.jpeg; *.png; *.bmp";
+                openFileDialog.Title = "Pilih Dokumentasi Foto Lapangan";
+
+                // Jika pengguna memilih file dan menekan OK
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        // Menampilkan gambar ke PictureBox
+                        pictureDokumentasiFoto.Image = Image.FromFile(openFileDialog.FileName);
+
+                        // Menyesuaikan ukuran gambar agar pas di dalam PictureBox
+                        pictureDokumentasiFoto.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Gagal memuat gambar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void btnHapusFoto_Click(object sender, EventArgs e)
+        {
+            // Membersihkan gambar dari PictureBox
+            if (pictureDokumentasiFoto.Image != null)
+            {
+                pictureDokumentasiFoto.Image.Dispose(); // Membersihkan memori gambar sebelumnya
+                pictureDokumentasiFoto.Image = null;
+            }
+            else
+            {
+                MessageBox.Show("Tidak ada foto untuk dihapus.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show(
+                "Apakah Anda yakin ingin keluar dari akun ini?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+
+                LoginPage formLogin = new LoginPage();
+
+
+                formLogin.Show();
+
+
+                this.Close();
+            }
+        }
+
+        private void linkLabelProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Membuka Form RegistrasiJagaTPS
+            ProfileScreen formProfil = new ProfileScreen();
+            formProfil.Show();
+
+            // Menyembunyikan form LoginPage
+            this.Hide();
+        }
     }
 }
