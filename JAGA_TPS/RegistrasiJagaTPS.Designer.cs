@@ -638,9 +638,9 @@
             label5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(3, 79);
             label5.Name = "label5";
-            label5.Size = new Size(227, 28);
+            label5.Size = new Size(115, 28);
             label5.TabIndex = 6;
-            label5.Text = "Nama Instansi / Kawasan";
+            label5.Text = "ID Izin Kerja";
             // 
             // label6
             // 

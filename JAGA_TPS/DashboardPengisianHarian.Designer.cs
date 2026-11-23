@@ -80,7 +80,7 @@
             label16 = new Label();
             label17 = new Label();
             cmbLokasiTPS = new ComboBox();
-            numericUpDown1 = new NumericUpDown();
+            nudVolume = new NumericUpDown();
             label18 = new Label();
             label19 = new Label();
             label20 = new Label();
@@ -135,7 +135,7 @@
             tblDaftarTPS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             flowLayoutPanel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudVolume).BeginInit();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             flowLayoutPanel15.SuspendLayout();
@@ -678,7 +678,7 @@
             // 
             datatps3.BackColor = Color.White;
             datatps3.Location = new Point(4, 568);
-            datatps3.Margin = new Padding(4);
+            datatps3.Margin = new Padding(4, 4, 4, 4);
             datatps3.Name = "datatps3";
             datatps3.Size = new Size(828, 274);
             datatps3.TabIndex = 21;
@@ -687,7 +687,7 @@
             // 
             datatps2.BackColor = Color.White;
             datatps2.Location = new Point(4, 286);
-            datatps2.Margin = new Padding(4);
+            datatps2.Margin = new Padding(4, 4, 4, 4);
             datatps2.Name = "datatps2";
             datatps2.Size = new Size(828, 274);
             datatps2.TabIndex = 20;
@@ -696,7 +696,7 @@
             // 
             datatps1.BackColor = Color.White;
             datatps1.Location = new Point(4, 4);
-            datatps1.Margin = new Padding(4);
+            datatps1.Margin = new Padding(4, 4, 4, 4);
             datatps1.Name = "datatps1";
             datatps1.Size = new Size(828, 274);
             datatps1.TabIndex = 19;
@@ -796,15 +796,15 @@
             cmbLokasiTPS.TabIndex = 23;
             cmbLokasiTPS.Text = "TPS Blok C - Kawasan Manufaktur Utama";
             // 
-            // numericUpDown1
+            // nudVolume
             // 
-            numericUpDown1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            numericUpDown1.ForeColor = Color.FromArgb(186, 26, 26);
-            numericUpDown1.Location = new Point(8, 0);
-            numericUpDown1.Margin = new Padding(0);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(50, 31);
-            numericUpDown1.TabIndex = 24;
+            nudVolume.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            nudVolume.ForeColor = Color.FromArgb(186, 26, 26);
+            nudVolume.Location = new Point(8, 0);
+            nudVolume.Margin = new Padding(0);
+            nudVolume.Name = "nudVolume";
+            nudVolume.Size = new Size(50, 31);
+            nudVolume.TabIndex = 24;
             // 
             // label18
             // 
@@ -917,7 +917,7 @@
             flowLayoutPanel15.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel15.BackColor = Color.White;
             flowLayoutPanel15.Controls.Add(label24);
-            flowLayoutPanel15.Controls.Add(numericUpDown1);
+            flowLayoutPanel15.Controls.Add(nudVolume);
             flowLayoutPanel15.Controls.Add(label22);
             flowLayoutPanel15.Location = new Point(440, 6);
             flowLayoutPanel15.Margin = new Padding(4);
@@ -970,7 +970,7 @@
             label25.Anchor = AnchorStyles.Top;
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI Semibold", 9F);
-            label25.Location = new Point(4, 80);
+            label25.Location = new Point(4, 0);
             label25.Margin = new Padding(4, 0, 4, 0);
             label25.Name = "label25";
             label25.Size = new Size(328, 25);
@@ -983,7 +983,7 @@
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.FromArgb(63, 73, 67);
-            label26.Location = new Point(50, 105);
+            label26.Location = new Point(50, 25);
             label26.Margin = new Padding(4, 0, 4, 0);
             label26.Name = "label26";
             label26.Size = new Size(236, 25);
@@ -994,7 +994,7 @@
             // 
             pictureBox11.Anchor = AnchorStyles.Top;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(130, 4);
+            pictureBox11.Location = new Point(255, 281);
             pictureBox11.Margin = new Padding(4);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(75, 72);
@@ -1007,14 +1007,13 @@
             flowLayoutPanel18.Anchor = AnchorStyles.Top;
             flowLayoutPanel18.AutoSize = true;
             flowLayoutPanel18.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel18.Controls.Add(pictureBox11);
             flowLayoutPanel18.Controls.Add(label25);
             flowLayoutPanel18.Controls.Add(label26);
             flowLayoutPanel18.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel18.Location = new Point(124, 281);
+            flowLayoutPanel18.Location = new Point(124, 361);
             flowLayoutPanel18.Margin = new Padding(4);
             flowLayoutPanel18.Name = "flowLayoutPanel18";
-            flowLayoutPanel18.Size = new Size(336, 130);
+            flowLayoutPanel18.Size = new Size(336, 50);
             flowLayoutPanel18.TabIndex = 38;
             // 
             // label27
@@ -1092,6 +1091,7 @@
             flowLayoutPanel20.Controls.Add(cmbLokasiTPS);
             flowLayoutPanel20.Controls.Add(flowLayoutPanel17);
             flowLayoutPanel20.Controls.Add(label23);
+            flowLayoutPanel20.Controls.Add(pictureBox11);
             flowLayoutPanel20.Controls.Add(flowLayoutPanel18);
             flowLayoutPanel20.Controls.Add(label27);
             flowLayoutPanel20.Controls.Add(label28);
@@ -1215,7 +1215,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             flowLayoutPanel14.ResumeLayout(false);
             flowLayoutPanel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudVolume).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel5.PerformLayout();
             tableLayoutPanel6.ResumeLayout(false);
@@ -1294,7 +1294,7 @@
         private Label label16;
         private Label label17;
         private ComboBox cmbLokasiTPS;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown nudVolume;
         private Label label18;
         private Label label19;
         private Label label20;

@@ -32,12 +32,12 @@ namespace JAGA_TPS
         {
             // 1. Mengambil data dari TextBox
             string nama = txtUsername.Text.Trim();
-            string instansi = txtNamaInstansi.Text.Trim();
+            string idizinkerja = txtNamaInstansi.Text.Trim();
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text;
 
             // 2. Validasi input kosong
-            if (nama == "" || instansi == "" ||
+            if (nama == "" || idizinkerja == "" ||
                 email == "" || password == "")
             {
                 MessageBox.Show("Semua data wajib diisi!");
@@ -82,7 +82,7 @@ namespace JAGA_TPS
             User penggunaBaru = new User();
 
             penggunaBaru.NamaLengkap = nama;
-            penggunaBaru.Instansi = instansi;
+            penggunaBaru.IdIzinKerja = idizinkerja;
             penggunaBaru.Email = email;
             penggunaBaru.Password = password;
             penggunaBaru.Role = role;

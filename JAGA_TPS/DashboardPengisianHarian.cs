@@ -70,6 +70,13 @@ namespace JAGA_TPS
                 return;
             }
 
+            // Meminta jadwal rutin TPS
+            string jadwalrutin = Interaction.InputBox(
+                "Masukkan jadwal rutin TPS:",
+                "Tambah TPS",
+                ""
+            );
+
             // Membuat data TPS baru
             TPSModel tpsBaru = new TPSModel();
 
@@ -80,7 +87,7 @@ namespace JAGA_TPS
             tpsBaru.Lokasi = lokasi;
             tpsBaru.Volume = 0;
             tpsBaru.SudahDiperiksa = false;
-            tpsBaru.JadwalRutin = "-";
+            tpsBaru.JadwalRutin = jadwalrutin;
 
             // Menyimpan data TPS
             TPSStore.DaftarTPS.Add(tpsBaru);
@@ -138,11 +145,11 @@ namespace JAGA_TPS
 
             // Mengambil nilai volume
             //tps.Volume = (int)nudVolume.Value;
+            // Mengambil nilai estimasi volume sampah
+            tps.Volume = (int)nudVolume.Value;
 
             // Mengubah status pemeriksaan
             tps.SudahDiperiksa = true;
-
-            tps.JadwalRutin = "Setiap Selasa & Jumat";
 
             // Memperbarui tampilan Dashboard
             TampilkanDaftarTPS();
@@ -151,5 +158,7 @@ namespace JAGA_TPS
                 "Hasil pemeriksaan berhasil disimpan!"
             );
         }
+
+       
     }
 }
