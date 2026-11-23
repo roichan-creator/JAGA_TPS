@@ -182,16 +182,17 @@
             labelSistemResikSampah.Location = new Point(2, 35);
             labelSistemResikSampah.Margin = new Padding(2, 0, 2, 0);
             labelSistemResikSampah.Name = "labelSistemResikSampah";
-            labelSistemResikSampah.Size = new Size(186, 25);
+            labelSistemResikSampah.Size = new Size(190, 25);
             labelSistemResikSampah.TabIndex = 2;
-            labelSistemResikSampah.Text = "Sistem Resik Sampah";
+            labelSistemResikSampah.Text = "Jaga Hati Rawat Bumi";
+            labelSistemResikSampah.Click += labelSistemResikSampah_Click;
             // 
             // labelNavigasiUtama
             // 
             labelNavigasiUtama.AutoSize = true;
             labelNavigasiUtama.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelNavigasiUtama.ForeColor = Color.FromArgb(51, 51, 51);
-            labelNavigasiUtama.Location = new Point(11, 181);
+            labelNavigasiUtama.Location = new Point(13, 179);
             labelNavigasiUtama.Margin = new Padding(2, 0, 2, 0);
             labelNavigasiUtama.Name = "labelNavigasiUtama";
             labelNavigasiUtama.Size = new Size(167, 25);
@@ -300,15 +301,15 @@
             tableLayoutPanelJagaTPSdanSistem.ColumnCount = 1;
             tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelJagaTps, 0, 0);
             tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelSistemResikSampah, 0, 1);
+            tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelJagaTps, 0, 0);
             tableLayoutPanelJagaTPSdanSistem.Location = new Point(61, 2);
             tableLayoutPanelJagaTPSdanSistem.Margin = new Padding(2);
             tableLayoutPanelJagaTPSdanSistem.Name = "tableLayoutPanelJagaTPSdanSistem";
             tableLayoutPanelJagaTPSdanSistem.RowCount = 2;
             tableLayoutPanelJagaTPSdanSistem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanelJagaTPSdanSistem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelJagaTPSdanSistem.Size = new Size(192, 64);
+            tableLayoutPanelJagaTPSdanSistem.Size = new Size(195, 64);
             tableLayoutPanelJagaTPSdanSistem.TabIndex = 12;
             // 
             // tableLayoutPanelLogodanJagaTPS
@@ -316,8 +317,8 @@
             tableLayoutPanelLogodanJagaTPS.ColumnCount = 2;
             tableLayoutPanelLogodanJagaTPS.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.015873F));
             tableLayoutPanelLogodanJagaTPS.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 76.98412F));
-            tableLayoutPanelLogodanJagaTPS.Controls.Add(pictureBoxLogo, 0, 0);
             tableLayoutPanelLogodanJagaTPS.Controls.Add(tableLayoutPanelJagaTPSdanSistem, 1, 0);
+            tableLayoutPanelLogodanJagaTPS.Controls.Add(pictureBoxLogo, 0, 0);
             tableLayoutPanelLogodanJagaTPS.Location = new Point(2, 2);
             tableLayoutPanelLogodanJagaTPS.Margin = new Padding(2);
             tableLayoutPanelLogodanJagaTPS.Name = "tableLayoutPanelLogodanJagaTPS";
@@ -381,7 +382,7 @@
             panelnavbarkiri.Location = new Point(1, 2);
             panelnavbarkiri.Margin = new Padding(2);
             panelnavbarkiri.Name = "panelnavbarkiri";
-            panelnavbarkiri.Size = new Size(264, 710);
+            panelnavbarkiri.Size = new Size(287, 710);
             panelnavbarkiri.TabIndex = 18;
             // 
             // tableLayoutPanelNavigasiUtama
@@ -405,10 +406,10 @@
             // panelNavAtas
             // 
             panelNavAtas.Controls.Add(tableLayoutPanel2);
-            panelNavAtas.Location = new Point(268, 2);
+            panelNavAtas.Location = new Point(292, 2);
             panelNavAtas.Margin = new Padding(2);
             panelNavAtas.Name = "panelNavAtas";
-            panelNavAtas.Size = new Size(1073, 73);
+            panelNavAtas.Size = new Size(1049, 73);
             panelNavAtas.TabIndex = 19;
             // 
             // tableLayoutPanel2
