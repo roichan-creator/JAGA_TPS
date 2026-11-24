@@ -85,7 +85,7 @@
             tableLayoutPanel5 = new TableLayoutPanel();
             flowLayoutPanel13 = new FlowLayoutPanel();
             pictureBox9 = new PictureBox();
-            button2 = new Button();
+            btnLogout = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             label5 = new Label();
             flowLayoutPanel6 = new FlowLayoutPanel();
@@ -880,7 +880,7 @@
             flowLayoutPanel13.AutoSize = true;
             flowLayoutPanel13.BackColor = Color.White;
             flowLayoutPanel13.Controls.Add(pictureBox9);
-            flowLayoutPanel13.Controls.Add(button2);
+            flowLayoutPanel13.Controls.Add(btnLogout);
             flowLayoutPanel13.Location = new Point(4, 752);
             flowLayoutPanel13.Margin = new Padding(4);
             flowLayoutPanel13.Name = "flowLayoutPanel13";
@@ -900,15 +900,16 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // button2
+            // btnLogout
             // 
-            button2.Location = new Point(53, 4);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 35);
-            button2.TabIndex = 18;
-            button2.Text = "Logout";
-            button2.UseVisualStyleBackColor = true;
+            btnLogout.Location = new Point(53, 4);
+            btnLogout.Margin = new Padding(4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(113, 35);
+            btnLogout.TabIndex = 18;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // flowLayoutPanel8
             // 
@@ -1137,7 +1138,7 @@
         private TableLayoutPanel tableLayoutPanel5;
         private FlowLayoutPanel flowLayoutPanel13;
         private PictureBox pictureBox9;
-        private Button button2;
+        private Button btnLogout;
         private FlowLayoutPanel flowLayoutPanel8;
         private Label label5;
         private FlowLayoutPanel flowLayoutPanel6;

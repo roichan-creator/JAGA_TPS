@@ -35,5 +35,27 @@ namespace JAGA_TPS
             // Menyembunyikan ProfileScreen
             this.Hide();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Apakah Anda yakin ingin keluar dari akun ini?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+
+                LoginPage formLogin = new LoginPage();
+
+
+                formLogin.Show();
+
+
+                this.Close();
+            }
+        }
     }
 }
