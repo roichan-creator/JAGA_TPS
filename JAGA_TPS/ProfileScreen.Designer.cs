@@ -1082,7 +1082,7 @@
             // 
             flowLayoutPanel7.AutoSize = true;
             flowLayoutPanel7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel7.BackColor = Color.WhiteSmoke;
+            flowLayoutPanel7.BackColor = Color.White;
             flowLayoutPanel7.Controls.Add(pictureBoxFotoPengelola);
             flowLayoutPanel7.Controls.Add(tableLayoutPanelPictTPSID);
             flowLayoutPanel7.Controls.Add(tableLayoutPanelIdentitas);

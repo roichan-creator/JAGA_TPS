@@ -624,7 +624,6 @@
             label2.Size = new Size(171, 17);
             label2.TabIndex = 3;
             label2.Text = "Jaga Hati Rawat Lingkungan";
-            label2.Click += label2_Click;
             // 
             // flowLayoutPanel4
             // 
