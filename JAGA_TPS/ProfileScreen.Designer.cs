@@ -210,7 +210,6 @@
             linkLabelProfil.TabIndex = 70;
             linkLabelProfil.TabStop = true;
             linkLabelProfil.Text = "Dashboard harian";
-            
             // 
             // flowLayoutPanelProfile
             // 
@@ -837,7 +836,7 @@
             flowLayoutPanel2.Controls.Add(flowLayoutPanel1);
             flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(201, 47);
+            flowLayoutPanel2.Size = new Size(234, 47);
             flowLayoutPanel2.TabIndex = 2;
             // 
             // pictureBox1
@@ -859,7 +858,7 @@
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(54, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(144, 37);
+            flowLayoutPanel1.Size = new Size(177, 37);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -880,9 +879,9 @@
             label2.ForeColor = Color.FromArgb(63, 73, 67);
             label2.Location = new Point(3, 20);
             label2.Name = "label2";
-            label2.Size = new Size(138, 17);
+            label2.Size = new Size(171, 17);
             label2.TabIndex = 3;
-            label2.Text = "smskamkdnfhfbdjkjvvn";
+            label2.Text = "Jaga Hati Rawat Lingkungan";
             // 
             // flowLayoutPanel4
             // 

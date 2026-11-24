@@ -104,11 +104,11 @@
             flowLayoutPanel18 = new FlowLayoutPanel();
             btnTambahFoto = new Button();
             btnHapusFoto = new Button();
+            textBox1 = new TextBox();
             label29 = new Label();
             label30 = new Label();
             flowLayoutPanel21 = new FlowLayoutPanel();
             pictureBox13 = new PictureBox();
-            textBox1 = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
@@ -173,7 +173,7 @@
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(54, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(144, 37);
+            flowLayoutPanel1.Size = new Size(177, 37);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -194,9 +194,9 @@
             label2.ForeColor = Color.FromArgb(63, 73, 67);
             label2.Location = new Point(3, 20);
             label2.Name = "label2";
-            label2.Size = new Size(138, 17);
+            label2.Size = new Size(171, 17);
             label2.TabIndex = 3;
-            label2.Text = "smskamkdnfhfbdjkjvvn";
+            label2.Text = "Jaga Hati Rawat Lingkungan";
             // 
             // flowLayoutPanel2
             // 
@@ -206,7 +206,7 @@
             flowLayoutPanel2.Controls.Add(flowLayoutPanel1);
             flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(201, 47);
+            flowLayoutPanel2.Size = new Size(234, 47);
             flowLayoutPanel2.TabIndex = 2;
             // 
             // pictureBox2
@@ -1055,6 +1055,15 @@
             btnHapusFoto.UseVisualStyleBackColor = false;
             btnHapusFoto.Click += btnHapusFoto_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 8F);
+            textBox1.Location = new Point(3, 380);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(430, 56);
+            textBox1.TabIndex = 59;
+            // 
             // label29
             // 
             label29.AutoSize = true;
@@ -1098,15 +1107,6 @@
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 46;
             pictureBox13.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 8F);
-            textBox1.Location = new Point(3, 380);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(430, 56);
-            textBox1.TabIndex = 59;
             // 
             // contextMenuStrip1
             // 
