@@ -48,7 +48,7 @@
             lblStatus = new Label();
             flowLayoutPanel7 = new FlowLayoutPanel();
             pictureBox3 = new PictureBox();
-            button1 = new Button();
+            btnAjukanPengangkutan = new Button();
             label10 = new Label();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel2.SuspendLayout();
@@ -288,7 +288,7 @@
             flowLayoutPanel7.AutoSize = true;
             flowLayoutPanel7.BackColor = Color.FromArgb(227, 241, 231);
             flowLayoutPanel7.Controls.Add(pictureBox3);
-            flowLayoutPanel7.Controls.Add(button1);
+            flowLayoutPanel7.Controls.Add(btnAjukanPengangkutan);
             flowLayoutPanel7.Location = new Point(4, 48);
             flowLayoutPanel7.Margin = new Padding(4);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
@@ -306,21 +306,22 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // button1
+            // btnAjukanPengangkutan
             // 
-            button1.Anchor = AnchorStyles.Left;
-            button1.AutoSize = true;
-            button1.BackColor = Color.FromArgb(227, 241, 231);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(63, 73, 67);
-            button1.Location = new Point(56, 6);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(228, 37);
-            button1.TabIndex = 12;
-            button1.Text = "Ajukan Pengangkutan";
-            button1.UseVisualStyleBackColor = false;
+            btnAjukanPengangkutan.Anchor = AnchorStyles.Left;
+            btnAjukanPengangkutan.AutoSize = true;
+            btnAjukanPengangkutan.BackColor = Color.FromArgb(227, 241, 231);
+            btnAjukanPengangkutan.FlatStyle = FlatStyle.Popup;
+            btnAjukanPengangkutan.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAjukanPengangkutan.ForeColor = Color.FromArgb(63, 73, 67);
+            btnAjukanPengangkutan.Location = new Point(56, 6);
+            btnAjukanPengangkutan.Margin = new Padding(4);
+            btnAjukanPengangkutan.Name = "btnAjukanPengangkutan";
+            btnAjukanPengangkutan.Size = new Size(228, 37);
+            btnAjukanPengangkutan.TabIndex = 12;
+            btnAjukanPengangkutan.Text = "Ajukan Pengangkutan";
+            btnAjukanPengangkutan.UseVisualStyleBackColor = false;
+            btnAjukanPengangkutan.Click += btnAjukanPengangkutan_Click;
             // 
             // label10
             // 
@@ -406,7 +407,7 @@
         private Label lblStatus;
         private FlowLayoutPanel flowLayoutPanel7;
         private PictureBox pictureBox3;
-        private Button button1;
+        private Button btnAjukanPengangkutan;
         private Label label10;
         private FlowLayoutPanel flowLayoutPanel8;
     }

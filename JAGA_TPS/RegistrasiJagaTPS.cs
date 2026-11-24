@@ -16,7 +16,6 @@ namespace JAGA_TPS
         public RegistrasiJagaTPS()
         {
             InitializeComponent();
-
         }
 
         private void linkMasuk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
