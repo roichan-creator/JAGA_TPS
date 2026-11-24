@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileScreen));
             pictureBoxDashHar = new PictureBox();
-            labelDashHar = new Label();
             pictureBoxProfile = new PictureBox();
             labelProfile = new Label();
             flowLayoutPanelDashboard = new FlowLayoutPanel();
@@ -42,7 +41,7 @@
             labelID = new Label();
             tableLayoutPanelPictTPSID = new TableLayoutPanel();
             labelIdentitas = new Label();
-            labelPengelola = new Label();
+            labelEmail = new Label();
             tableLayoutPanelIdentitas = new TableLayoutPanel();
             pictureBoxLokasi = new PictureBox();
             labelWilayahInstansi = new Label();
@@ -66,6 +65,8 @@
             tableLayoutPanelAksesPeran = new TableLayoutPanel();
             tableLayoutPanelNotifikasi = new TableLayoutPanel();
             tableLayoutPanelPengaturanSistemDanAkun = new TableLayoutPanel();
+            pictureBox5 = new PictureBox();
+            pictureBox3 = new PictureBox();
             panelPengaturanSistemDanAkun = new Panel();
             labelOP = new Label();
             pictureBoxBook = new PictureBox();
@@ -73,6 +74,7 @@
             labelPemilahanSampah = new Label();
             tableLayoutPanelDukunganOP = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
+            pictureBox6 = new PictureBox();
             panelOP = new Panel();
             tableLayoutPanel4 = new TableLayoutPanel();
             flowLayoutPanel2 = new FlowLayoutPanel();
@@ -96,10 +98,8 @@
             pictureBox4 = new PictureBox();
             label7 = new Label();
             flowLayoutPanel5 = new FlowLayoutPanel();
-            pictureBox3 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
             flowLayoutPanel7 = new FlowLayoutPanel();
+            linkLabelProfil = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDashHar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).BeginInit();
             flowLayoutPanelDashboard.SuspendLayout();
@@ -121,10 +121,13 @@
             tableLayoutPanelAksesPeran.SuspendLayout();
             tableLayoutPanelNotifikasi.SuspendLayout();
             tableLayoutPanelPengaturanSistemDanAkun.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panelPengaturanSistemDanAkun.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBook).BeginInit();
             tableLayoutPanelDukunganOP.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panelOP.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -141,9 +144,6 @@
             flowLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             flowLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             flowLayoutPanel7.SuspendLayout();
             SuspendLayout();
             // 
@@ -157,19 +157,6 @@
             pictureBoxDashHar.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxDashHar.TabIndex = 4;
             pictureBoxDashHar.TabStop = false;
-            // 
-            // labelDashHar
-            // 
-            labelDashHar.Anchor = AnchorStyles.Left;
-            labelDashHar.AutoSize = true;
-            labelDashHar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelDashHar.ForeColor = Color.FromArgb(51, 51, 51);
-            labelDashHar.Location = new Point(35, 6);
-            labelDashHar.Margin = new Padding(2, 0, 2, 0);
-            labelDashHar.Name = "labelDashHar";
-            labelDashHar.Size = new Size(134, 20);
-            labelDashHar.TabIndex = 5;
-            labelDashHar.Text = "Dashboard Harian";
             // 
             // pictureBoxProfile
             // 
@@ -201,7 +188,7 @@
             // 
             flowLayoutPanelDashboard.Anchor = AnchorStyles.Left;
             flowLayoutPanelDashboard.Controls.Add(pictureBoxDashHar);
-            flowLayoutPanelDashboard.Controls.Add(labelDashHar);
+            flowLayoutPanelDashboard.Controls.Add(linkLabelProfil);
             flowLayoutPanelDashboard.Location = new Point(2, 41);
             flowLayoutPanelDashboard.Margin = new Padding(2);
             flowLayoutPanelDashboard.Name = "flowLayoutPanelDashboard";
@@ -317,19 +304,19 @@
             labelIdentitas.Text = "Gading Azriel Prasetyo";
             labelIdentitas.TextAlign = ContentAlignment.TopCenter;
             // 
-            // labelPengelola
+            // labelEmail
             // 
-            labelPengelola.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            labelPengelola.AutoSize = true;
-            labelPengelola.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPengelola.ForeColor = Color.FromArgb(51, 51, 51);
-            labelPengelola.Location = new Point(2, 30);
-            labelPengelola.Margin = new Padding(2, 0, 2, 0);
-            labelPengelola.Name = "labelPengelola";
-            labelPengelola.Size = new Size(246, 20);
-            labelPengelola.TabIndex = 27;
-            labelPengelola.Text = "pengelola.tps@jtps.id";
-            labelPengelola.TextAlign = ContentAlignment.TopCenter;
+            labelEmail.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            labelEmail.AutoSize = true;
+            labelEmail.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelEmail.ForeColor = Color.FromArgb(51, 51, 51);
+            labelEmail.Location = new Point(2, 30);
+            labelEmail.Margin = new Padding(2, 0, 2, 0);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(246, 20);
+            labelEmail.TabIndex = 27;
+            labelEmail.Text = "pengelola.tps@jtps.id";
+            labelEmail.TextAlign = ContentAlignment.TopCenter;
             // 
             // tableLayoutPanelIdentitas
             // 
@@ -338,7 +325,7 @@
             tableLayoutPanelIdentitas.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanelIdentitas.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 17F));
             tableLayoutPanelIdentitas.Controls.Add(labelIdentitas, 0, 0);
-            tableLayoutPanelIdentitas.Controls.Add(labelPengelola, 0, 1);
+            tableLayoutPanelIdentitas.Controls.Add(labelEmail, 0, 1);
             tableLayoutPanelIdentitas.Location = new Point(99, 238);
             tableLayoutPanelIdentitas.Margin = new Padding(2);
             tableLayoutPanelIdentitas.Name = "tableLayoutPanelIdentitas";
@@ -666,6 +653,30 @@
             tableLayoutPanelPengaturanSistemDanAkun.Size = new Size(374, 155);
             tableLayoutPanelPengaturanSistemDanAkun.TabIndex = 52;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.White;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(323, 106);
+            pictureBox5.Margin = new Padding(2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(48, 47);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 69;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.White;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(323, 54);
+            pictureBox3.Margin = new Padding(2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(48, 47);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 69;
+            pictureBox3.TabStop = false;
+            // 
             // panelPengaturanSistemDanAkun
             // 
             panelPengaturanSistemDanAkun.BackColor = Color.FromArgb(233, 247, 237);
@@ -759,6 +770,18 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Size = new Size(379, 45);
             tableLayoutPanel3.TabIndex = 61;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.White;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(326, 2);
+            pictureBox6.Margin = new Padding(2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(48, 41);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 69;
+            pictureBox6.TabStop = false;
             // 
             // panelOP
             // 
@@ -1039,42 +1062,6 @@
             flowLayoutPanel5.Size = new Size(386, 265);
             flowLayoutPanel5.TabIndex = 68;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.White;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(323, 54);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(48, 47);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 69;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.White;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(323, 106);
-            pictureBox5.Margin = new Padding(2);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(48, 47);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 69;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.White;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(326, 2);
-            pictureBox6.Margin = new Padding(2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(48, 41);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 69;
-            pictureBox6.TabStop = false;
-            // 
             // flowLayoutPanel7
             // 
             flowLayoutPanel7.AutoSize = true;
@@ -1089,6 +1076,22 @@
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(449, 385);
             flowLayoutPanel7.TabIndex = 69;
+            // 
+            // linkLabelProfil
+            // 
+            linkLabelProfil.Anchor = AnchorStyles.None;
+            linkLabelProfil.AutoSize = true;
+            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabelProfil.LinkColor = SystemColors.ControlText;
+            linkLabelProfil.Location = new Point(35, 6);
+            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
+            linkLabelProfil.Name = "linkLabelProfil";
+            linkLabelProfil.Size = new Size(132, 20);
+            linkLabelProfil.TabIndex = 70;
+            linkLabelProfil.TabStop = true;
+            linkLabelProfil.Text = "Dashboard harian";
+            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
             // ProfileScreen
             // 
@@ -1138,12 +1141,15 @@
             tableLayoutPanelNotifikasi.ResumeLayout(false);
             tableLayoutPanelNotifikasi.PerformLayout();
             tableLayoutPanelPengaturanSistemDanAkun.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panelPengaturanSistemDanAkun.ResumeLayout(false);
             panelPengaturanSistemDanAkun.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBook).EndInit();
             tableLayoutPanelDukunganOP.ResumeLayout(false);
             tableLayoutPanelDukunganOP.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panelOP.ResumeLayout(false);
             panelOP.PerformLayout();
             tableLayoutPanel4.ResumeLayout(false);
@@ -1169,9 +1175,6 @@
             flowLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             flowLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             flowLayoutPanel7.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -1179,7 +1182,6 @@
 
         #endregion
         private PictureBox pictureBoxDashHar;
-        private Label labelDashHar;
         private PictureBox pictureBoxProfile;
         private Label labelProfile;
         private FlowLayoutPanel flowLayoutPanelDashboard;
@@ -1191,7 +1193,7 @@
         private Label labelID;
         private TableLayoutPanel tableLayoutPanelPictTPSID;
         private Label labelIdentitas;
-        private Label labelPengelola;
+        private Label labelEmail;
         private TableLayoutPanel tableLayoutPanelIdentitas;
         private PictureBox pictureBoxLokasi;
         private Label labelWilayahInstansi;
@@ -1249,5 +1251,6 @@
         private PictureBox pictureBox6;
         private FlowLayoutPanel flowLayoutPanel5;
         private FlowLayoutPanel flowLayoutPanel7;
+        private LinkLabel linkLabelProfil;
     }
 }

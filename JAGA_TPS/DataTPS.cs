@@ -41,6 +41,7 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.DarkGreen;
                 lblVolume.ForeColor = Color.DarkGreen;
                 flyStatus.BackColor = Color.LightGreen;
+                pictureBoxStatus.Image = Properties.Resources.CIrcleGreen;
             }
             else if (tps.Volume <= 75)
             {
@@ -49,6 +50,7 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.DarkGoldenrod;
                 lblVolume.ForeColor = Color.DarkGoldenrod;
                 flyStatus.BackColor = Color.LightGoldenrodYellow;
+                pictureBoxStatus.Image = Properties.Resources.Circleyellow;
             }
             else
             {
@@ -57,6 +59,7 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.Red;
                 lblVolume.ForeColor = Color.Red;
                 flyStatus.BackColor = Color.MistyRose;
+                pictureBoxStatus.Image = Properties.Resources.Circlered;
             }
         }
 
