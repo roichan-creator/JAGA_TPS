@@ -604,7 +604,7 @@
             flowLayoutPanel2.Location = new Point(4, 4);
             flowLayoutPanel2.Margin = new Padding(4);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(250, 57);
+            flowLayoutPanel2.Size = new Size(284, 57);
             flowLayoutPanel2.TabIndex = 2;
             // 
             // pictureBox1
@@ -628,7 +628,7 @@
             flowLayoutPanel1.Location = new Point(66, 4);
             flowLayoutPanel1.Margin = new Padding(4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(180, 46);
+            flowLayoutPanel1.Size = new Size(214, 46);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -651,9 +651,10 @@
             label2.Location = new Point(4, 25);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(172, 21);
+            label2.Size = new Size(206, 21);
             label2.TabIndex = 3;
-            label2.Text = "smskamkdnfhfbdjkjvvn";
+            label2.Text = "Jaga Hati Rawat Lingkungan";
+            label2.Click += label2_Click;
             // 
             // flowLayoutPanel4
             // 
