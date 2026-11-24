@@ -12,14 +12,17 @@ namespace JAGA_TPS
 {
     public partial class ProfileScreen : Form
     {
-        public ProfileScreen(string nama, string idizinkerja, string email)
+        public ProfileScreen()
         {
             InitializeComponent();
 
-            lblNamaUser.Text = nama;
-            labelIdentitas.Text = nama;
-            labelID.Text = idizinkerja;
-            labelEmail.Text = email;
+            if (UserStore.CurrentUser != null)
+            {
+                lblNamaUser.Text = UserStore.CurrentUser.NamaLengkap;
+                labelIdentitas.Text = UserStore.CurrentUser.NamaLengkap;
+                labelID.Text = UserStore.CurrentUser.IdIzinKerja;
+                labelEmail.Text = UserStore.CurrentUser.Email;
+            }
         }
 
 <<<<<<< HEAD
@@ -30,12 +33,17 @@ namespace JAGA_TPS
         private void linkLabelProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Membuka Form RegistrasiJagaTPS
-            DashboardPengisianHarian formharian = new DashboardPengisianHarian(lblNamaUser.Text);
+            DashboardPengisianHarian formharian = new DashboardPengisianHarian();
             formharian.Show();
 
             // Menyembunyikan form LoginPage
             this.Hide();
 >>>>>>> 717b529d008d63fab9f4477e1efe695e55177b11
+        }
+
+        private void labelProfile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

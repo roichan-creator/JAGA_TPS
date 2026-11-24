@@ -193,6 +193,16 @@ namespace JAGA_TPS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_aq66d3aq66d3aq66 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_aq66d3aq66d3aq66", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap History_Icon {
             get {
                 object obj = ResourceManager.GetObject("History-Icon", resourceCulture);
@@ -206,6 +216,16 @@ namespace JAGA_TPS.Properties {
         internal static System.Drawing.Bitmap History_Icon1 {
             get {
                 object obj = ResourceManager.GetObject("History-Icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap id_card {
+            get {
+                object obj = ResourceManager.GetObject("id-card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

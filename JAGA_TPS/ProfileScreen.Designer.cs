@@ -33,6 +33,7 @@
             pictureBoxProfile = new PictureBox();
             labelProfile = new Label();
             flowLayoutPanelDashboard = new FlowLayoutPanel();
+            linkLabelProfil = new LinkLabel();
             flowLayoutPanelProfile = new FlowLayoutPanel();
             pictureBoxFotoPengelola = new PictureBox();
             pictureBoxIDCard = new PictureBox();
@@ -99,7 +100,6 @@
             label7 = new Label();
             flowLayoutPanel5 = new FlowLayoutPanel();
             flowLayoutPanel7 = new FlowLayoutPanel();
-            linkLabelProfil = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDashHar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).BeginInit();
             flowLayoutPanelDashboard.SuspendLayout();
@@ -147,59 +147,6 @@
             flowLayoutPanel7.SuspendLayout();
             SuspendLayout();
             // 
-<<<<<<< HEAD
-            // pictureBoxLogo
-            // 
-            pictureBoxLogo.Image = Properties.Resources.TPS;
-            pictureBoxLogo.Location = new Point(2, 2);
-            pictureBoxLogo.Margin = new Padding(2);
-            pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(53, 64);
-            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxLogo.TabIndex = 0;
-            pictureBoxLogo.TabStop = false;
-            // 
-            // labelJagaTps
-            // 
-            labelJagaTps.Anchor = AnchorStyles.Left;
-            labelJagaTps.AutoSize = true;
-            labelJagaTps.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelJagaTps.ForeColor = Color.FromArgb(15, 81, 50);
-            labelJagaTps.Location = new Point(2, 3);
-            labelJagaTps.Margin = new Padding(2, 0, 2, 0);
-            labelJagaTps.Name = "labelJagaTps";
-            labelJagaTps.Size = new Size(95, 25);
-            labelJagaTps.TabIndex = 1;
-            labelJagaTps.Text = "JAGA TPS";
-            // 
-            // labelSistemResikSampah
-            // 
-            labelSistemResikSampah.Anchor = AnchorStyles.Left;
-            labelSistemResikSampah.AutoSize = true;
-            labelSistemResikSampah.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelSistemResikSampah.ForeColor = Color.FromArgb(51, 51, 51);
-            labelSistemResikSampah.Location = new Point(2, 35);
-            labelSistemResikSampah.Margin = new Padding(2, 0, 2, 0);
-            labelSistemResikSampah.Name = "labelSistemResikSampah";
-            labelSistemResikSampah.Size = new Size(190, 25);
-            labelSistemResikSampah.TabIndex = 2;
-            labelSistemResikSampah.Text = "Jaga Hati Rawat Bumi";
-            labelSistemResikSampah.Click += labelSistemResikSampah_Click;
-            // 
-            // labelNavigasiUtama
-            // 
-            labelNavigasiUtama.AutoSize = true;
-            labelNavigasiUtama.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelNavigasiUtama.ForeColor = Color.FromArgb(51, 51, 51);
-            labelNavigasiUtama.Location = new Point(13, 179);
-            labelNavigasiUtama.Margin = new Padding(2, 0, 2, 0);
-            labelNavigasiUtama.Name = "labelNavigasiUtama";
-            labelNavigasiUtama.Size = new Size(167, 25);
-            labelNavigasiUtama.TabIndex = 3;
-            labelNavigasiUtama.Text = "NAVIGASI UTAMA ";
-            // 
-=======
->>>>>>> 717b529d008d63fab9f4477e1efe695e55177b11
             // pictureBoxDashHar
             // 
             pictureBoxDashHar.Image = Properties.Resources.chartline1;
@@ -235,67 +182,8 @@
             labelProfile.Padding = new Padding(0, 0, 70, 0);
             labelProfile.Size = new Size(116, 20);
             labelProfile.TabIndex = 9;
-<<<<<<< HEAD
-            labelProfile.Text = "Profile";
-            // 
-            // pictureBoxLogout1
-            // 
-            pictureBoxLogout1.Image = Properties.Resources.logout11;
-            pictureBoxLogout1.Location = new Point(2, 2);
-            pictureBoxLogout1.Margin = new Padding(2);
-            pictureBoxLogout1.Name = "pictureBoxLogout1";
-            pictureBoxLogout1.Size = new Size(35, 35);
-            pictureBoxLogout1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxLogout1.TabIndex = 10;
-            pictureBoxLogout1.TabStop = false;
-            // 
-            // labelKeluarPetugas
-            // 
-            labelKeluarPetugas.Anchor = AnchorStyles.Left;
-            labelKeluarPetugas.AutoSize = true;
-            labelKeluarPetugas.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelKeluarPetugas.ForeColor = Color.FromArgb(51, 51, 51);
-            labelKeluarPetugas.Location = new Point(41, 7);
-            labelKeluarPetugas.Margin = new Padding(2, 0, 2, 0);
-            labelKeluarPetugas.Name = "labelKeluarPetugas";
-            labelKeluarPetugas.Size = new Size(136, 25);
-            labelKeluarPetugas.TabIndex = 11;
-            labelKeluarPetugas.Text = "Keluar Petugas";
-            // 
-            // tableLayoutPanelJagaTPSdanSistem
-            // 
-            tableLayoutPanelJagaTPSdanSistem.ColumnCount = 1;
-            tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelSistemResikSampah, 0, 1);
-            tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelJagaTps, 0, 0);
-            tableLayoutPanelJagaTPSdanSistem.Location = new Point(61, 2);
-            tableLayoutPanelJagaTPSdanSistem.Margin = new Padding(2);
-            tableLayoutPanelJagaTPSdanSistem.Name = "tableLayoutPanelJagaTPSdanSistem";
-            tableLayoutPanelJagaTPSdanSistem.RowCount = 2;
-            tableLayoutPanelJagaTPSdanSistem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelJagaTPSdanSistem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelJagaTPSdanSistem.Size = new Size(195, 64);
-            tableLayoutPanelJagaTPSdanSistem.TabIndex = 12;
-            // 
-            // tableLayoutPanelLogodanJagaTPS
-            // 
-            tableLayoutPanelLogodanJagaTPS.ColumnCount = 2;
-            tableLayoutPanelLogodanJagaTPS.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.015873F));
-            tableLayoutPanelLogodanJagaTPS.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 76.98412F));
-            tableLayoutPanelLogodanJagaTPS.Controls.Add(tableLayoutPanelJagaTPSdanSistem, 1, 0);
-            tableLayoutPanelLogodanJagaTPS.Controls.Add(pictureBoxLogo, 0, 0);
-            tableLayoutPanelLogodanJagaTPS.Location = new Point(2, 2);
-            tableLayoutPanelLogodanJagaTPS.Margin = new Padding(2);
-            tableLayoutPanelLogodanJagaTPS.Name = "tableLayoutPanelLogodanJagaTPS";
-            tableLayoutPanelLogodanJagaTPS.RowCount = 1;
-            tableLayoutPanelLogodanJagaTPS.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanelLogodanJagaTPS.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanelLogodanJagaTPS.Size = new Size(258, 70);
-            tableLayoutPanelLogodanJagaTPS.TabIndex = 13;
-=======
             labelProfile.Text = "Profil";
->>>>>>> 717b529d008d63fab9f4477e1efe695e55177b11
+            labelProfile.Click += labelProfile_Click;
             // 
             // flowLayoutPanelDashboard
             // 
@@ -307,6 +195,22 @@
             flowLayoutPanelDashboard.Name = "flowLayoutPanelDashboard";
             flowLayoutPanelDashboard.Size = new Size(174, 35);
             flowLayoutPanelDashboard.TabIndex = 14;
+            // 
+            // linkLabelProfil
+            // 
+            linkLabelProfil.Anchor = AnchorStyles.None;
+            linkLabelProfil.AutoSize = true;
+            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabelProfil.LinkColor = SystemColors.ControlText;
+            linkLabelProfil.Location = new Point(35, 6);
+            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
+            linkLabelProfil.Name = "linkLabelProfil";
+            linkLabelProfil.Size = new Size(132, 20);
+            linkLabelProfil.TabIndex = 70;
+            linkLabelProfil.TabStop = true;
+            linkLabelProfil.Text = "Dashboard harian";
+            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
             // flowLayoutPanelProfile
             // 
@@ -322,139 +226,6 @@
             flowLayoutPanelProfile.Size = new Size(158, 34);
             flowLayoutPanelProfile.TabIndex = 16;
             // 
-<<<<<<< HEAD
-            // flowLayoutPanelLogout1
-            // 
-            flowLayoutPanelLogout1.Controls.Add(pictureBoxLogout1);
-            flowLayoutPanelLogout1.Controls.Add(labelKeluarPetugas);
-            flowLayoutPanelLogout1.Location = new Point(34, 638);
-            flowLayoutPanelLogout1.Margin = new Padding(2);
-            flowLayoutPanelLogout1.Name = "flowLayoutPanelLogout1";
-            flowLayoutPanelLogout1.Size = new Size(185, 43);
-            flowLayoutPanelLogout1.TabIndex = 17;
-            // 
-            // panelnavbarkiri
-            // 
-            panelnavbarkiri.Controls.Add(tableLayoutPanelNavigasiUtama);
-            panelnavbarkiri.Controls.Add(flowLayoutPanelLogout1);
-            panelnavbarkiri.Controls.Add(tableLayoutPanelLogodanJagaTPS);
-            panelnavbarkiri.Controls.Add(labelNavigasiUtama);
-            panelnavbarkiri.Location = new Point(1, 2);
-            panelnavbarkiri.Margin = new Padding(2);
-            panelnavbarkiri.Name = "panelnavbarkiri";
-            panelnavbarkiri.Size = new Size(287, 710);
-            panelnavbarkiri.TabIndex = 18;
-            // 
-            // tableLayoutPanelNavigasiUtama
-            // 
-            tableLayoutPanelNavigasiUtama.ColumnCount = 1;
-            tableLayoutPanelNavigasiUtama.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanelNavigasiUtama.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelNavigasiUtama.Controls.Add(flowLayoutPanelProfile, 0, 2);
-            tableLayoutPanelNavigasiUtama.Controls.Add(flowLayoutPanelDashboard, 0, 0);
-            tableLayoutPanelNavigasiUtama.Controls.Add(flowLayoutPanelRiwayat, 0, 1);
-            tableLayoutPanelNavigasiUtama.Location = new Point(11, 214);
-            tableLayoutPanelNavigasiUtama.Margin = new Padding(2);
-            tableLayoutPanelNavigasiUtama.Name = "tableLayoutPanelNavigasiUtama";
-            tableLayoutPanelNavigasiUtama.RowCount = 3;
-            tableLayoutPanelNavigasiUtama.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanelNavigasiUtama.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanelNavigasiUtama.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanelNavigasiUtama.Size = new Size(217, 150);
-            tableLayoutPanelNavigasiUtama.TabIndex = 19;
-            // 
-            // panelNavAtas
-            // 
-            panelNavAtas.Controls.Add(tableLayoutPanel2);
-            panelNavAtas.Location = new Point(292, 2);
-            panelNavAtas.Margin = new Padding(2);
-            panelNavAtas.Name = "panelNavAtas";
-            panelNavAtas.Size = new Size(1049, 73);
-            panelNavAtas.TabIndex = 19;
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 3;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.8367348F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66.83673F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.32653F));
-            tableLayoutPanel2.Controls.Add(tableLayoutPanel1, 1, 0);
-            tableLayoutPanel2.Controls.Add(pictureBoxNotif, 2, 0);
-            tableLayoutPanel2.Controls.Add(pictureBoxUser, 0, 0);
-            tableLayoutPanel2.Location = new Point(678, 2);
-            tableLayoutPanel2.Margin = new Padding(2);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 68F));
-            tableLayoutPanel2.Size = new Size(392, 68);
-            tableLayoutPanel2.TabIndex = 25;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Controls.Add(labelIdentify, 0, 0);
-            tableLayoutPanel1.Controls.Add(labelPeran, 0, 1);
-            tableLayoutPanel1.Location = new Point(68, 2);
-            tableLayoutPanel1.Margin = new Padding(2);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(256, 62);
-            tableLayoutPanel1.TabIndex = 24;
-            // 
-            // labelIdentify
-            // 
-            labelIdentify.Anchor = AnchorStyles.Right;
-            labelIdentify.AutoSize = true;
-            labelIdentify.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelIdentify.Location = new Point(26, 1);
-            labelIdentify.Margin = new Padding(2, 0, 2, 0);
-            labelIdentify.Name = "labelIdentify";
-            labelIdentify.Size = new Size(228, 28);
-            labelIdentify.TabIndex = 22;
-            labelIdentify.Text = "Gading Azriel Prasetyo";
-            // 
-            // labelPeran
-            // 
-            labelPeran.Anchor = AnchorStyles.Right;
-            labelPeran.AutoSize = true;
-            labelPeran.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPeran.Location = new Point(5, 32);
-            labelPeran.Margin = new Padding(2, 0, 2, 0);
-            labelPeran.Name = "labelPeran";
-            labelPeran.Size = new Size(249, 28);
-            labelPeran.TabIndex = 23;
-            labelPeran.Text = "Pengelola Kawasan / TPS ";
-            // 
-            // pictureBoxNotif
-            // 
-            pictureBoxNotif.Image = Properties.Resources.circle_user_solid1;
-            pictureBoxNotif.Location = new Point(330, 2);
-            pictureBoxNotif.Margin = new Padding(2);
-            pictureBoxNotif.Name = "pictureBoxNotif";
-            pictureBoxNotif.Size = new Size(58, 62);
-            pictureBoxNotif.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxNotif.TabIndex = 20;
-            pictureBoxNotif.TabStop = false;
-            // 
-            // pictureBoxUser
-            // 
-            pictureBoxUser.Anchor = AnchorStyles.None;
-            pictureBoxUser.Image = Properties.Resources.Notification_Icon1;
-            pictureBoxUser.Location = new Point(15, 11);
-            pictureBoxUser.Margin = new Padding(2);
-            pictureBoxUser.Name = "pictureBoxUser";
-            pictureBoxUser.Size = new Size(35, 45);
-            pictureBoxUser.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxUser.TabIndex = 21;
-            pictureBoxUser.TabStop = false;
-            // 
-=======
->>>>>>> 717b529d008d63fab9f4477e1efe695e55177b11
             // pictureBoxFotoPengelola
             // 
             pictureBoxFotoPengelola.Anchor = AnchorStyles.Top;
@@ -1322,22 +1093,6 @@
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(449, 385);
             flowLayoutPanel7.TabIndex = 69;
-            // 
-            // linkLabelProfil
-            // 
-            linkLabelProfil.Anchor = AnchorStyles.None;
-            linkLabelProfil.AutoSize = true;
-            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabelProfil.LinkColor = SystemColors.ControlText;
-            linkLabelProfil.Location = new Point(35, 6);
-            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
-            linkLabelProfil.Name = "linkLabelProfil";
-            linkLabelProfil.Size = new Size(132, 20);
-            linkLabelProfil.TabIndex = 70;
-            linkLabelProfil.TabStop = true;
-            linkLabelProfil.Text = "Dashboard harian";
-            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
             // ProfileScreen
             // 
