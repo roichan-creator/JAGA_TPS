@@ -25,6 +25,11 @@ namespace JAGA_TPS
             }
         }
 
+<<<<<<< HEAD
+        private void labelSistemResikSampah_Click(object sender, EventArgs e)
+        {
+
+=======
         private void linkLabelProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Membuka Form RegistrasiJagaTPS
@@ -33,6 +38,7 @@ namespace JAGA_TPS
 
             // Menyembunyikan form LoginPage
             this.Hide();
+>>>>>>> 717b529d008d63fab9f4477e1efe695e55177b11
         }
 
         private void labelProfile_Click(object sender, EventArgs e)
