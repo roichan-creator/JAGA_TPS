@@ -12,10 +12,10 @@ namespace JAGA_TPS
 {
     public partial class ProfileScreen : Form
     {
+
         public ProfileScreen(string nama, string idizinkerja, string email)
         {
             InitializeComponent();
-
             lblNamaUser.Text = nama;
             labelIdentitas.Text = nama;
             labelID.Text = idizinkerja;
@@ -30,6 +30,11 @@ namespace JAGA_TPS
 
             // Menyembunyikan form LoginPage
             this.Hide();
+        }
+
+        private void labelProfile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
