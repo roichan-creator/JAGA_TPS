@@ -210,7 +210,7 @@
             linkLabelProfil.TabIndex = 70;
             linkLabelProfil.TabStop = true;
             linkLabelProfil.Text = "Dashboard harian";
-            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
+            
             // 
             // flowLayoutPanelProfile
             // 
