@@ -555,6 +555,8 @@
             btnKembali.Anchor = AnchorStyles.Left;
             btnKembali.AutoSize = true;
             btnKembali.BackColor = Color.FromArgb(227, 241, 231);
+            btnKembali.BackgroundImage = Properties.Resources.back;
+            btnKembali.BackgroundImageLayout = ImageLayout.Zoom;
             btnKembali.FlatStyle = FlatStyle.Popup;
             btnKembali.Font = new Font("Segoe UI", 7.8F);
             btnKembali.ForeColor = Color.FromArgb(63, 73, 67);
@@ -563,7 +565,6 @@
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(60, 60);
             btnKembali.TabIndex = 62;
-            btnKembali.Text = "←";
             btnKembali.UseVisualStyleBackColor = false;
             btnKembali.Click += btnKembali_Click;
             // 
@@ -1094,7 +1095,7 @@
             tableLayoutPanel9.RowCount = 1;
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Absolute, 66F));
-            tableLayoutPanel9.Size = new Size(485, 120);
+            tableLayoutPanel9.Size = new Size(496, 120);
             tableLayoutPanel9.TabIndex = 76;
             // 
             // pictureBoxTambahFoto
@@ -1115,7 +1116,7 @@
             flowLayoutPanel25.BackColor = Color.FromArgb(36, 123, 88);
             flowLayoutPanel25.Controls.Add(btnTambahGambar);
             flowLayoutPanel25.Controls.Add(btnHapusFoto);
-            flowLayoutPanel25.Location = new Point(247, 37);
+            flowLayoutPanel25.Location = new Point(258, 37);
             flowLayoutPanel25.Margin = new Padding(4);
             flowLayoutPanel25.Name = "flowLayoutPanel25";
             flowLayoutPanel25.Size = new Size(234, 45);
