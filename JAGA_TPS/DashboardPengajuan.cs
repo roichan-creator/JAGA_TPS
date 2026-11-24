@@ -24,10 +24,10 @@ namespace JAGA_TPS
         }
 
         // Constructor dengan parameter (opsional, jika suatu saat dipanggil langsung dengan TPSModel)
-        public DashboardPengajuan(TPSModel tpsObjek) : this()
-        {
-            MuatDataTps(tpsObjek);
-        }
+        //public DashboardPengajuan(TPSModel tpsObjek) : this()
+        //{
+        //    MuatDataTps(tpsObjek);
+        //}
 
         public void MuatDataTps(TPSModel tps, Form? formAsal = null)
         {
@@ -70,32 +70,8 @@ namespace JAGA_TPS
             lblJadwal.Text = tps.JadwalRutin;
         }
 
-        private void DashboardPengajuan_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAjukanPengangkutan_Click(object sender, EventArgs e)
+       
+        private void btnAjukan_Click(object sender, EventArgs e)
         {
             if (_tpsTerpilih == null) return;
 
@@ -124,6 +100,5 @@ namespace JAGA_TPS
             // 3. Tutup form pengajuan
             this.Close();
         }
-    
     }
 }
