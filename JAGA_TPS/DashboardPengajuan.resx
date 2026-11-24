@@ -215820,7 +215820,7 @@
         Zf2WZ00Ft9I2e5h+jie73NdgR5c26tpw69GIZ7r0Wf01a/8PB18ng+AIeOsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox19.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxTambahFoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAACAAAAAgACAIAAAA9xURnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAA/7JJREFUeF7k/YmWHanONAz3/V/k6T52eex2Tbbbdo3/AkEQRAh27rK7n/O/H0ur
@@ -251529,7 +251529,7 @@
         QmCC
 </value>
   </data>
-  <data name="button6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHapusFoto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAbaCAIAAAAStnv8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAi
         IQAAIiEByeFv7wAA/7JJREFUeF7s/Ye3ZGd95/vPf/D7/ebembmz7r0zHhswUShLnfv06azUkkASQjkg

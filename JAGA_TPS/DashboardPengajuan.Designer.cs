@@ -47,7 +47,7 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             flowLayoutPanel13 = new FlowLayoutPanel();
             pictureBox9 = new PictureBox();
-            button2 = new Button();
+            btnLogout = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             label5 = new Label();
             flowLayoutPanel5 = new FlowLayoutPanel();
@@ -68,11 +68,11 @@
             flowLayoutPanel4 = new FlowLayoutPanel();
             pictureBox8 = new PictureBox();
             flowLayoutPanel3 = new FlowLayoutPanel();
-            label3 = new Label();
+            lblNamaUser = new Label();
             label4 = new Label();
             pictureBox2 = new PictureBox();
             flowLayoutPanel14 = new FlowLayoutPanel();
-            button7 = new Button();
+            btnKembali = new Button();
             pictureBox10 = new PictureBox();
             label13 = new Label();
             flowLayoutPanel15 = new FlowLayoutPanel();
@@ -99,7 +99,7 @@
             label23 = new Label();
             flowLayoutPanel20 = new FlowLayoutPanel();
             pictureBox16 = new PictureBox();
-            textBox4 = new TextBox();
+            lblJadwalPengangkutan = new TextBox();
             flowLayoutPanel21 = new FlowLayoutPanel();
             pictureBox17 = new PictureBox();
             textBox2 = new TextBox();
@@ -121,10 +121,10 @@
             label31 = new Label();
             lblJadwal = new Label();
             tableLayoutPanel9 = new TableLayoutPanel();
-            pictureBox19 = new PictureBox();
+            pictureBoxTambahFoto = new PictureBox();
             flowLayoutPanel25 = new FlowLayoutPanel();
-            button5 = new Button();
-            button6 = new Button();
+            btnTambahGambar = new Button();
+            btnHapusFoto = new Button();
             flowLayoutPanel27 = new FlowLayoutPanel();
             flowLayoutPanel30 = new FlowLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
@@ -182,7 +182,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             tableLayoutPanel8.SuspendLayout();
             tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTambahFoto).BeginInit();
             flowLayoutPanel25.SuspendLayout();
             flowLayoutPanel27.SuspendLayout();
             flowLayoutPanel30.SuspendLayout();
@@ -402,7 +402,7 @@
             flowLayoutPanel13.AutoSize = true;
             flowLayoutPanel13.BackColor = Color.White;
             flowLayoutPanel13.Controls.Add(pictureBox9);
-            flowLayoutPanel13.Controls.Add(button2);
+            flowLayoutPanel13.Controls.Add(btnLogout);
             flowLayoutPanel13.Location = new Point(4, 752);
             flowLayoutPanel13.Margin = new Padding(4);
             flowLayoutPanel13.Name = "flowLayoutPanel13";
@@ -422,15 +422,16 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // button2
+            // btnLogout
             // 
-            button2.Location = new Point(53, 4);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 35);
-            button2.TabIndex = 18;
-            button2.Text = "Logout";
-            button2.UseVisualStyleBackColor = true;
+            btnLogout.Location = new Point(53, 4);
+            btnLogout.Margin = new Padding(4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(113, 35);
+            btnLogout.TabIndex = 18;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // flowLayoutPanel8
             // 
@@ -495,6 +496,7 @@
             label6.Size = new Size(132, 50);
             label6.TabIndex = 2;
             label6.Text = "Pengajuan\nPengangkutan\n";
+            label6.Click += label6_Click;
             // 
             // flowLayoutPanel6
             // 
@@ -683,7 +685,7 @@
             // 
             flowLayoutPanel3.AutoSize = true;
             flowLayoutPanel3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel3.Controls.Add(label3);
+            flowLayoutPanel3.Controls.Add(lblNamaUser);
             flowLayoutPanel3.Controls.Add(label4);
             flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(78, 4);
@@ -692,18 +694,18 @@
             flowLayoutPanel3.Size = new Size(190, 46);
             flowLayoutPanel3.TabIndex = 5;
             // 
-            // label3
+            // lblNamaUser
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(18, 30, 24);
-            label3.Location = new Point(64, 0);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(122, 25);
-            label3.TabIndex = 2;
-            label3.Text = "Budi Santoso";
+            lblNamaUser.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblNamaUser.AutoSize = true;
+            lblNamaUser.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNamaUser.ForeColor = Color.FromArgb(18, 30, 24);
+            lblNamaUser.Location = new Point(64, 0);
+            lblNamaUser.Margin = new Padding(4, 0, 4, 0);
+            lblNamaUser.Name = "lblNamaUser";
+            lblNamaUser.Size = new Size(122, 25);
+            lblNamaUser.TabIndex = 2;
+            lblNamaUser.Text = "Budi Santoso";
             // 
             // label4
             // 
@@ -734,7 +736,7 @@
             flowLayoutPanel14.AutoSize = true;
             flowLayoutPanel14.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel14.BackColor = Color.FromArgb(35, 122, 87);
-            flowLayoutPanel14.Controls.Add(button7);
+            flowLayoutPanel14.Controls.Add(btnKembali);
             flowLayoutPanel14.Controls.Add(pictureBox10);
             flowLayoutPanel14.Controls.Add(label13);
             flowLayoutPanel14.Location = new Point(4, 4);
@@ -743,21 +745,22 @@
             flowLayoutPanel14.Size = new Size(264, 26);
             flowLayoutPanel14.TabIndex = 50;
             // 
-            // button7
+            // btnKembali
             // 
-            button7.Anchor = AnchorStyles.Left;
-            button7.AutoSize = true;
-            button7.BackColor = Color.FromArgb(227, 241, 231);
-            button7.FlatStyle = FlatStyle.Popup;
-            button7.Font = new Font("Segoe UI", 7.8F);
-            button7.ForeColor = Color.FromArgb(63, 73, 67);
-            button7.Location = new Point(0, 0);
-            button7.Margin = new Padding(0);
-            button7.Name = "button7";
-            button7.Size = new Size(41, 37);
-            button7.TabIndex = 62;
-            button7.Text = "←";
-            button7.UseVisualStyleBackColor = false;
+            btnKembali.Anchor = AnchorStyles.Left;
+            btnKembali.AutoSize = true;
+            btnKembali.BackColor = Color.FromArgb(227, 241, 231);
+            btnKembali.FlatStyle = FlatStyle.Popup;
+            btnKembali.Font = new Font("Segoe UI", 7.8F);
+            btnKembali.ForeColor = Color.FromArgb(63, 73, 67);
+            btnKembali.Location = new Point(0, 0);
+            btnKembali.Margin = new Padding(0);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(41, 37);
+            btnKembali.TabIndex = 62;
+            btnKembali.Text = "←";
+            btnKembali.UseVisualStyleBackColor = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // pictureBox10
             // 
@@ -1066,7 +1069,7 @@
             flowLayoutPanel20.AutoSize = true;
             flowLayoutPanel20.BackColor = Color.FromArgb(221, 236, 226);
             flowLayoutPanel20.Controls.Add(pictureBox16);
-            flowLayoutPanel20.Controls.Add(textBox4);
+            flowLayoutPanel20.Controls.Add(lblJadwalPengangkutan);
             flowLayoutPanel20.Location = new Point(172, 4);
             flowLayoutPanel20.Margin = new Padding(4);
             flowLayoutPanel20.Name = "flowLayoutPanel20";
@@ -1085,14 +1088,14 @@
             pictureBox16.TabIndex = 0;
             pictureBox16.TabStop = false;
             // 
-            // textBox4
+            // lblJadwalPengangkutan
             // 
-            textBox4.BackColor = Color.FromArgb(221, 236, 226);
-            textBox4.Location = new Point(4, 44);
-            textBox4.Margin = new Padding(4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(166, 31);
-            textBox4.TabIndex = 66;
+            lblJadwalPengangkutan.BackColor = Color.FromArgb(221, 236, 226);
+            lblJadwalPengangkutan.Location = new Point(4, 44);
+            lblJadwalPengangkutan.Margin = new Padding(4);
+            lblJadwalPengangkutan.Name = "lblJadwalPengangkutan";
+            lblJadwalPengangkutan.Size = new Size(166, 31);
+            lblJadwalPengangkutan.TabIndex = 66;
             // 
             // flowLayoutPanel21
             // 
@@ -1362,7 +1365,7 @@
             tableLayoutPanel9.ColumnCount = 2;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.29703F));
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.70297F));
-            tableLayoutPanel9.Controls.Add(pictureBox19, 0, 0);
+            tableLayoutPanel9.Controls.Add(pictureBoxTambahFoto, 0, 0);
             tableLayoutPanel9.Controls.Add(flowLayoutPanel25, 1, 0);
             tableLayoutPanel9.Location = new Point(4, 428);
             tableLayoutPanel9.Margin = new Padding(4);
@@ -1373,61 +1376,63 @@
             tableLayoutPanel9.Size = new Size(485, 66);
             tableLayoutPanel9.TabIndex = 76;
             // 
-            // pictureBox19
+            // pictureBoxTambahFoto
             // 
-            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(4, 4);
-            pictureBox19.Margin = new Padding(4);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(56, 58);
-            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox19.TabIndex = 0;
-            pictureBox19.TabStop = false;
+            pictureBoxTambahFoto.Image = (Image)resources.GetObject("pictureBoxTambahFoto.Image");
+            pictureBoxTambahFoto.Location = new Point(4, 4);
+            pictureBoxTambahFoto.Margin = new Padding(4);
+            pictureBoxTambahFoto.Name = "pictureBoxTambahFoto";
+            pictureBoxTambahFoto.Size = new Size(56, 58);
+            pictureBoxTambahFoto.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxTambahFoto.TabIndex = 0;
+            pictureBoxTambahFoto.TabStop = false;
             // 
             // flowLayoutPanel25
             // 
             flowLayoutPanel25.Anchor = AnchorStyles.Right;
             flowLayoutPanel25.AutoSize = true;
             flowLayoutPanel25.BackColor = Color.FromArgb(36, 123, 88);
-            flowLayoutPanel25.Controls.Add(button5);
-            flowLayoutPanel25.Controls.Add(button6);
+            flowLayoutPanel25.Controls.Add(btnTambahGambar);
+            flowLayoutPanel25.Controls.Add(btnHapusFoto);
             flowLayoutPanel25.Location = new Point(247, 10);
             flowLayoutPanel25.Margin = new Padding(4);
             flowLayoutPanel25.Name = "flowLayoutPanel25";
             flowLayoutPanel25.Size = new Size(234, 45);
             flowLayoutPanel25.TabIndex = 72;
             // 
-            // button5
+            // btnTambahGambar
             // 
-            button5.Anchor = AnchorStyles.Left;
-            button5.AutoSize = true;
-            button5.BackColor = Color.FromArgb(36, 123, 88);
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(4, 4);
-            button5.Margin = new Padding(4);
-            button5.Name = "button5";
-            button5.Size = new Size(174, 37);
-            button5.TabIndex = 12;
-            button5.Text = "Tambah Gambar";
-            button5.UseVisualStyleBackColor = false;
+            btnTambahGambar.Anchor = AnchorStyles.Left;
+            btnTambahGambar.AutoSize = true;
+            btnTambahGambar.BackColor = Color.FromArgb(36, 123, 88);
+            btnTambahGambar.FlatStyle = FlatStyle.Popup;
+            btnTambahGambar.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTambahGambar.ForeColor = Color.White;
+            btnTambahGambar.Location = new Point(4, 4);
+            btnTambahGambar.Margin = new Padding(4);
+            btnTambahGambar.Name = "btnTambahGambar";
+            btnTambahGambar.Size = new Size(174, 37);
+            btnTambahGambar.TabIndex = 12;
+            btnTambahGambar.Text = "Tambah Gambar";
+            btnTambahGambar.UseVisualStyleBackColor = false;
+            btnTambahGambar.Click += btnTambahGambar_Click;
             // 
-            // button6
+            // btnHapusFoto
             // 
-            button6.AutoSize = true;
-            button6.BackColor = Color.FromArgb(36, 123, 88);
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Zoom;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(186, 4);
-            button6.Margin = new Padding(4);
-            button6.Name = "button6";
-            button6.Size = new Size(44, 37);
-            button6.TabIndex = 13;
-            button6.UseVisualStyleBackColor = false;
+            btnHapusFoto.AutoSize = true;
+            btnHapusFoto.BackColor = Color.FromArgb(36, 123, 88);
+            btnHapusFoto.BackgroundImage = (Image)resources.GetObject("btnHapusFoto.BackgroundImage");
+            btnHapusFoto.BackgroundImageLayout = ImageLayout.Zoom;
+            btnHapusFoto.FlatStyle = FlatStyle.Popup;
+            btnHapusFoto.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHapusFoto.ForeColor = Color.White;
+            btnHapusFoto.Location = new Point(186, 4);
+            btnHapusFoto.Margin = new Padding(4);
+            btnHapusFoto.Name = "btnHapusFoto";
+            btnHapusFoto.Size = new Size(44, 37);
+            btnHapusFoto.TabIndex = 13;
+            btnHapusFoto.UseVisualStyleBackColor = false;
+            btnHapusFoto.Click += btnHapusFoto_Click;
             // 
             // flowLayoutPanel27
             // 
@@ -1608,7 +1613,7 @@
             tableLayoutPanel8.PerformLayout();
             tableLayoutPanel9.ResumeLayout(false);
             tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTambahFoto).EndInit();
             flowLayoutPanel25.ResumeLayout(false);
             flowLayoutPanel25.PerformLayout();
             flowLayoutPanel27.ResumeLayout(false);
@@ -1642,7 +1647,7 @@
         private TableLayoutPanel tableLayoutPanel2;
         private FlowLayoutPanel flowLayoutPanel13;
         private PictureBox pictureBox9;
-        private Button button2;
+        private Button btnLogout;
         private FlowLayoutPanel flowLayoutPanel8;
         private Label label5;
         private FlowLayoutPanel flowLayoutPanel5;
@@ -1662,7 +1667,7 @@
         private FlowLayoutPanel flowLayoutPanel4;
         private PictureBox pictureBox8;
         private FlowLayoutPanel flowLayoutPanel3;
-        private Label label3;
+        private Label lblNamaUser;
         private Label label4;
         private PictureBox pictureBox2;
         private FlowLayoutPanel flowLayoutPanel14;
@@ -1713,12 +1718,12 @@
         private Label label31;
         private FlowLayoutPanel flowLayoutPanel24;
         private FlowLayoutPanel flowLayoutPanel25;
-        private PictureBox pictureBox19;
-        private Button button5;
-        private Button button6;
+        private PictureBox pictureBoxTambahFoto;
+        private Button btnTambahGambar;
+        private Button btnHapusFoto;
         private TableLayoutPanel tableLayoutPanel9;
         private FlowLayoutPanel flowLayoutPanel27;
-        private TextBox textBox4;
+        private TextBox lblJadwalPengangkutan;
         private TableLayoutPanel tableLayoutPanel4;
         private DataTPS datatps3;
         private DataTPS datatps2;
@@ -1729,6 +1734,6 @@
         private TableLayoutPanel tableLayoutPanel10;
         private FlowLayoutPanel flowLayoutPanel30;
         private LinkLabel linkLabel1;
-        private Button button7;
+        private Button btnKembali;
     }
 }

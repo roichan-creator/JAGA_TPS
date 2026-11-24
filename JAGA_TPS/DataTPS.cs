@@ -40,6 +40,8 @@ namespace JAGA_TPS
                 lblStatus.BackColor = Color.LightSkyBlue;
                 lblStatus.ForeColor = Color.Navy;
                 flyStatus.BackColor = Color.LightSkyBlue;
+                btnAjukanPengangkutan.Enabled = false;
+                btnAjukanPengangkutan.Text = "Menunggu...";
             }
             else if (tps.Volume <= 40)
             {

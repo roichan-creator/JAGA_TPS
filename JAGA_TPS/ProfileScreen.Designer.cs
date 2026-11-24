@@ -33,7 +33,7 @@
             pictureBoxProfile = new PictureBox();
             labelProfile = new Label();
             flowLayoutPanelDashboard = new FlowLayoutPanel();
-            linkLabelProfil = new LinkLabel();
+            linklabelDashboardHarian = new LinkLabel();
             flowLayoutPanelProfile = new FlowLayoutPanel();
             pictureBoxFotoPengelola = new PictureBox();
             pictureBoxIDCard = new PictureBox();
@@ -183,34 +183,34 @@
             labelProfile.Size = new Size(141, 25);
             labelProfile.TabIndex = 9;
             labelProfile.Text = "Profil";
-            labelProfile.Click += labelProfile_Click;
+            
             // 
             // flowLayoutPanelDashboard
             // 
             flowLayoutPanelDashboard.Anchor = AnchorStyles.Left;
             flowLayoutPanelDashboard.Controls.Add(pictureBoxDashHar);
-            flowLayoutPanelDashboard.Controls.Add(linkLabelProfil);
+            flowLayoutPanelDashboard.Controls.Add(linklabelDashboardHarian);
             flowLayoutPanelDashboard.Location = new Point(2, 47);
             flowLayoutPanelDashboard.Margin = new Padding(2);
             flowLayoutPanelDashboard.Name = "flowLayoutPanelDashboard";
             flowLayoutPanelDashboard.Size = new Size(209, 42);
             flowLayoutPanelDashboard.TabIndex = 14;
             // 
-            // linkLabelProfil
+            // linklabelDashboardHarian
             // 
-            linkLabelProfil.Anchor = AnchorStyles.None;
-            linkLabelProfil.AutoSize = true;
-            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabelProfil.LinkColor = SystemColors.ControlText;
-            linkLabelProfil.Location = new Point(41, 7);
-            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
-            linkLabelProfil.Name = "linkLabelProfil";
-            linkLabelProfil.Size = new Size(157, 25);
-            linkLabelProfil.TabIndex = 70;
-            linkLabelProfil.TabStop = true;
-            linkLabelProfil.Text = "Dashboard harian";
-            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked_1;
+            linklabelDashboardHarian.Anchor = AnchorStyles.None;
+            linklabelDashboardHarian.AutoSize = true;
+            linklabelDashboardHarian.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linklabelDashboardHarian.LinkBehavior = LinkBehavior.NeverUnderline;
+            linklabelDashboardHarian.LinkColor = SystemColors.ControlText;
+            linklabelDashboardHarian.Location = new Point(41, 7);
+            linklabelDashboardHarian.Margin = new Padding(2, 0, 2, 0);
+            linklabelDashboardHarian.Name = "linklabelDashboardHarian";
+            linklabelDashboardHarian.Size = new Size(157, 25);
+            linklabelDashboardHarian.TabIndex = 70;
+            linklabelDashboardHarian.TabStop = true;
+            linklabelDashboardHarian.Text = "Dashboard harian";
+            linklabelDashboardHarian.LinkClicked += linkLabelProfil_LinkClicked_1;
             // 
             // flowLayoutPanelProfile
             // 
@@ -222,7 +222,7 @@
             flowLayoutPanelProfile.Controls.Add(labelProfile);
             flowLayoutPanelProfile.ForeColor = SystemColors.Control;
             flowLayoutPanelProfile.Location = new Point(4, 147);
-            flowLayoutPanelProfile.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanelProfile.Margin = new Padding(4);
             flowLayoutPanelProfile.Name = "flowLayoutPanelProfile";
             flowLayoutPanelProfile.Size = new Size(190, 40);
             flowLayoutPanelProfile.TabIndex = 16;
@@ -824,7 +824,7 @@
             tableLayoutPanel4.Controls.Add(flowLayoutPanel4, 1, 0);
             tableLayoutPanel4.Dock = DockStyle.Top;
             tableLayoutPanel4.Location = new Point(0, 0);
-            tableLayoutPanel4.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel4.Margin = new Padding(4);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -838,7 +838,7 @@
             flowLayoutPanel2.Controls.Add(pictureBox1);
             flowLayoutPanel2.Controls.Add(flowLayoutPanel1);
             flowLayoutPanel2.Location = new Point(4, 4);
-            flowLayoutPanel2.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel2.Margin = new Padding(4);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(284, 57);
             flowLayoutPanel2.TabIndex = 2;
@@ -847,7 +847,7 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(4, 4);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(54, 49);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -862,7 +862,7 @@
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(66, 4);
-            flowLayoutPanel1.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel1.Margin = new Padding(4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(214, 46);
             flowLayoutPanel1.TabIndex = 1;
@@ -900,7 +900,7 @@
             flowLayoutPanel4.Controls.Add(flowLayoutPanel3);
             flowLayoutPanel4.Controls.Add(pictureBox2);
             flowLayoutPanel4.Location = new Point(1288, 4);
-            flowLayoutPanel4.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel4.Margin = new Padding(4);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(326, 54);
             flowLayoutPanel4.TabIndex = 6;
@@ -925,7 +925,7 @@
             flowLayoutPanel3.Controls.Add(label4);
             flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(78, 4);
-            flowLayoutPanel3.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel3.Margin = new Padding(4);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(190, 46);
             flowLayoutPanel3.TabIndex = 5;
@@ -960,7 +960,7 @@
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(276, 4);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(46, 44);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -976,7 +976,7 @@
             tableLayoutPanel5.Controls.Add(flowLayoutPanel8, 0, 0);
             tableLayoutPanel5.Dock = DockStyle.Left;
             tableLayoutPanel5.Location = new Point(0, 65);
-            tableLayoutPanel5.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel5.Margin = new Padding(4);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 2;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 692F));
@@ -994,7 +994,7 @@
             flowLayoutPanel13.Controls.Add(pictureBox9);
             flowLayoutPanel13.Controls.Add(button2);
             flowLayoutPanel13.Location = new Point(4, 752);
-            flowLayoutPanel13.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel13.Margin = new Padding(4);
             flowLayoutPanel13.Name = "flowLayoutPanel13";
             flowLayoutPanel13.Padding = new Padding(0, 0, 60, 0);
             flowLayoutPanel13.Size = new Size(230, 44);
@@ -1005,7 +1005,7 @@
             pictureBox9.Anchor = AnchorStyles.Left;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(4, 4);
-            pictureBox9.Margin = new Padding(4, 4, 4, 4);
+            pictureBox9.Margin = new Padding(4);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(41, 36);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1015,7 +1015,7 @@
             // button2
             // 
             button2.Location = new Point(53, 4);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(113, 35);
             button2.TabIndex = 18;
@@ -1031,7 +1031,7 @@
             flowLayoutPanel8.Controls.Add(flowLayoutPanelProfile);
             flowLayoutPanel8.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel8.Location = new Point(4, 4);
-            flowLayoutPanel8.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel8.Margin = new Padding(4);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
             flowLayoutPanel8.Size = new Size(213, 191);
             flowLayoutPanel8.TabIndex = 13;
@@ -1056,7 +1056,7 @@
             flowLayoutPanel6.Controls.Add(pictureBox4);
             flowLayoutPanel6.Controls.Add(label7);
             flowLayoutPanel6.Location = new Point(4, 95);
-            flowLayoutPanel6.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel6.Margin = new Padding(4);
             flowLayoutPanel6.Name = "flowLayoutPanel6";
             flowLayoutPanel6.Padding = new Padding(0, 0, 60, 0);
             flowLayoutPanel6.Size = new Size(193, 44);
@@ -1067,7 +1067,7 @@
             pictureBox4.Anchor = AnchorStyles.Left;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(4, 4);
-            pictureBox4.Margin = new Padding(4, 4, 4, 4);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 36);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -1081,7 +1081,7 @@
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label7.ForeColor = SystemColors.ControlText;
             label7.Location = new Point(53, 9);
-            label7.Margin = new Padding(4, 4, 4, 4);
+            label7.Margin = new Padding(4);
             label7.Name = "label7";
             label7.Size = new Size(76, 25);
             label7.TabIndex = 2;
@@ -1095,7 +1095,7 @@
             flowLayoutPanel5.Controls.Add(panelOP);
             flowLayoutPanel5.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel5.Location = new Point(580, 533);
-            flowLayoutPanel5.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel5.Margin = new Padding(4);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
             flowLayoutPanel5.Size = new Size(462, 316);
             flowLayoutPanel5.TabIndex = 68;
@@ -1111,7 +1111,7 @@
             flowLayoutPanel7.Controls.Add(tableLayoutPanelInformation);
             flowLayoutPanel7.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel7.Location = new Point(540, 74);
-            flowLayoutPanel7.Margin = new Padding(4, 4, 4, 4);
+            flowLayoutPanel7.Margin = new Padding(4);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(538, 458);
             flowLayoutPanel7.TabIndex = 69;
@@ -1274,6 +1274,6 @@
         private PictureBox pictureBox6;
         private FlowLayoutPanel flowLayoutPanel5;
         private FlowLayoutPanel flowLayoutPanel7;
-        private LinkLabel linkLabelProfil;
+        private LinkLabel linklabelDashboardHarian;
     }
 }
