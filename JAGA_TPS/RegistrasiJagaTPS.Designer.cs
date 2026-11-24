@@ -126,7 +126,7 @@
             pictureBox1.Image = Properties.Resources.logo_JagaTPS;
             pictureBox1.Location = new Point(186, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(173, 120);
+            pictureBox1.Size = new Size(173, 128);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -161,12 +161,12 @@
             tableLayoutPanel1.Controls.Add(flowLayoutPanel4, 0, 10);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 1);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel2, 0, 4);
-            tableLayoutPanel1.Controls.Add(flowLayoutPanel5, 0, 7);
             tableLayoutPanel1.Controls.Add(label4, 0, 0);
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
             tableLayoutPanel1.Controls.Add(label6, 0, 6);
             tableLayoutPanel1.Controls.Add(label15, 0, 9);
             tableLayoutPanel1.Controls.Add(chkPersetujuan, 0, 11);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel5, 0, 7);
             tableLayoutPanel1.Location = new Point(37, 257);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 12;

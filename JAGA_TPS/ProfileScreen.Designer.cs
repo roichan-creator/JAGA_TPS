@@ -44,13 +44,6 @@
             labelIdentitas = new Label();
             labelEmail = new Label();
             tableLayoutPanelIdentitas = new TableLayoutPanel();
-            pictureBoxLokasi = new PictureBox();
-            labelWilayahInstansi = new Label();
-            labelLingkunganHidup = new Label();
-            tableLayoutPanelWilayah = new TableLayoutPanel();
-            flowLayoutPanelPictDanWilayahInstansi = new FlowLayoutPanel();
-            labelKawasanTPS = new Label();
-            tableLayoutPanelInformation = new TableLayoutPanel();
             labelPengaturanAkun = new Label();
             pictureBoxManageAccount = new PictureBox();
             labelInformasiAkun = new Label();
@@ -109,10 +102,6 @@
             flowLayoutPanelTPS.SuspendLayout();
             tableLayoutPanelPictTPSID.SuspendLayout();
             tableLayoutPanelIdentitas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxLokasi).BeginInit();
-            tableLayoutPanelWilayah.SuspendLayout();
-            flowLayoutPanelPictDanWilayahInstansi.SuspendLayout();
-            tableLayoutPanelInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxManageAccount).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRightArrow1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxUserPanelSetting).BeginInit();
@@ -183,7 +172,6 @@
             labelProfile.Size = new Size(141, 25);
             labelProfile.TabIndex = 9;
             labelProfile.Text = "Profil";
-            
             // 
             // flowLayoutPanelDashboard
             // 
@@ -234,7 +222,7 @@
             pictureBoxFotoPengelola.Location = new Point(2, 2);
             pictureBoxFotoPengelola.Margin = new Padding(2);
             pictureBoxFotoPengelola.Name = "pictureBoxFotoPengelola";
-            pictureBoxFotoPengelola.Size = new Size(534, 223);
+            pictureBoxFotoPengelola.Size = new Size(534, 290);
             pictureBoxFotoPengelola.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxFotoPengelola.TabIndex = 20;
             pictureBoxFotoPengelola.TabStop = false;
@@ -274,7 +262,7 @@
             flowLayoutPanelTPS.Location = new Point(2, 5);
             flowLayoutPanelTPS.Margin = new Padding(2);
             flowLayoutPanelTPS.Name = "flowLayoutPanelTPS";
-            flowLayoutPanelTPS.Size = new Size(180, 39);
+            flowLayoutPanelTPS.Size = new Size(174, 39);
             flowLayoutPanelTPS.TabIndex = 23;
             // 
             // labelID
@@ -284,10 +272,10 @@
             labelID.BackColor = Color.FromArgb(233, 247, 237);
             labelID.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelID.ForeColor = Color.FromArgb(51, 51, 51);
-            labelID.Location = new Point(186, 12);
+            labelID.Location = new Point(180, 12);
             labelID.Margin = new Padding(2, 0, 2, 0);
             labelID.Name = "labelID";
-            labelID.Size = new Size(137, 25);
+            labelID.Size = new Size(133, 25);
             labelID.TabIndex = 24;
             labelID.Text = "ID : TPS - 8842";
             // 
@@ -299,13 +287,13 @@
             tableLayoutPanelPictTPSID.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 43.3846169F));
             tableLayoutPanelPictTPSID.Controls.Add(flowLayoutPanelTPS, 0, 0);
             tableLayoutPanelPictTPSID.Controls.Add(labelID, 1, 0);
-            tableLayoutPanelPictTPSID.Location = new Point(106, 229);
+            tableLayoutPanelPictTPSID.Location = new Point(111, 296);
             tableLayoutPanelPictTPSID.Margin = new Padding(2);
             tableLayoutPanelPictTPSID.Name = "tableLayoutPanelPictTPSID";
             tableLayoutPanelPictTPSID.RowCount = 1;
             tableLayoutPanelPictTPSID.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanelPictTPSID.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanelPictTPSID.Size = new Size(325, 50);
+            tableLayoutPanelPictTPSID.Size = new Size(315, 50);
             tableLayoutPanelPictTPSID.TabIndex = 25;
             // 
             // labelIdentitas
@@ -314,10 +302,10 @@
             labelIdentitas.AutoSize = true;
             labelIdentitas.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelIdentitas.ForeColor = Color.Black;
-            labelIdentitas.Location = new Point(2, 2);
+            labelIdentitas.Location = new Point(2, 9);
             labelIdentitas.Margin = new Padding(2, 0, 2, 0);
             labelIdentitas.Name = "labelIdentitas";
-            labelIdentitas.Size = new Size(296, 28);
+            labelIdentitas.Size = new Size(434, 28);
             labelIdentitas.TabIndex = 26;
             labelIdentitas.Text = "Gading Azriel Prasetyo";
             labelIdentitas.TextAlign = ContentAlignment.TopCenter;
@@ -328,10 +316,10 @@
             labelEmail.AutoSize = true;
             labelEmail.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelEmail.ForeColor = Color.FromArgb(51, 51, 51);
-            labelEmail.Location = new Point(2, 36);
+            labelEmail.Location = new Point(2, 57);
             labelEmail.Margin = new Padding(2, 0, 2, 0);
             labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(296, 25);
+            labelEmail.Size = new Size(434, 25);
             labelEmail.TabIndex = 27;
             labelEmail.Text = "pengelola.tps@jtps.id";
             labelEmail.TextAlign = ContentAlignment.TopCenter;
@@ -344,114 +332,14 @@
             tableLayoutPanelIdentitas.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanelIdentitas.Controls.Add(labelIdentitas, 0, 0);
             tableLayoutPanelIdentitas.Controls.Add(labelEmail, 0, 1);
-            tableLayoutPanelIdentitas.Location = new Point(119, 283);
+            tableLayoutPanelIdentitas.Location = new Point(50, 350);
             tableLayoutPanelIdentitas.Margin = new Padding(2);
             tableLayoutPanelIdentitas.Name = "tableLayoutPanelIdentitas";
             tableLayoutPanelIdentitas.RowCount = 2;
             tableLayoutPanelIdentitas.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanelIdentitas.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelIdentitas.Size = new Size(300, 65);
+            tableLayoutPanelIdentitas.Size = new Size(438, 93);
             tableLayoutPanelIdentitas.TabIndex = 28;
-            // 
-            // pictureBoxLokasi
-            // 
-            pictureBoxLokasi.BackColor = Color.FromArgb(163, 228, 215);
-            pictureBoxLokasi.Image = Properties.Resources.location;
-            pictureBoxLokasi.Location = new Point(2, 2);
-            pictureBoxLokasi.Margin = new Padding(2);
-            pictureBoxLokasi.Name = "pictureBoxLokasi";
-            pictureBoxLokasi.Size = new Size(50, 64);
-            pictureBoxLokasi.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxLokasi.TabIndex = 29;
-            pictureBoxLokasi.TabStop = false;
-            // 
-            // labelWilayahInstansi
-            // 
-            labelWilayahInstansi.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            labelWilayahInstansi.AutoSize = true;
-            labelWilayahInstansi.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelWilayahInstansi.ForeColor = Color.FromArgb(51, 51, 51);
-            labelWilayahInstansi.Location = new Point(2, 1);
-            labelWilayahInstansi.Margin = new Padding(2, 0, 2, 0);
-            labelWilayahInstansi.Name = "labelWilayahInstansi";
-            labelWilayahInstansi.Size = new Size(363, 28);
-            labelWilayahInstansi.TabIndex = 30;
-            labelWilayahInstansi.Text = "WILAYAH KERJA DAN INSTANSI ";
-            labelWilayahInstansi.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelLingkunganHidup
-            // 
-            labelLingkunganHidup.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            labelLingkunganHidup.AutoSize = true;
-            labelLingkunganHidup.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelLingkunganHidup.ForeColor = Color.FromArgb(51, 51, 51);
-            labelLingkunganHidup.Location = new Point(2, 33);
-            labelLingkunganHidup.Margin = new Padding(2, 0, 2, 0);
-            labelLingkunganHidup.Name = "labelLingkunganHidup";
-            labelLingkunganHidup.Size = new Size(363, 25);
-            labelLingkunganHidup.TabIndex = 31;
-            labelLingkunganHidup.Text = "Dinas Lingkungan Hidup Wilayah Selatan ";
-            labelLingkunganHidup.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // tableLayoutPanelWilayah
-            // 
-            tableLayoutPanelWilayah.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanelWilayah.ColumnCount = 1;
-            tableLayoutPanelWilayah.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanelWilayah.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelWilayah.Controls.Add(labelWilayahInstansi, 0, 0);
-            tableLayoutPanelWilayah.Controls.Add(labelLingkunganHidup, 0, 1);
-            tableLayoutPanelWilayah.Location = new Point(56, 3);
-            tableLayoutPanelWilayah.Margin = new Padding(2);
-            tableLayoutPanelWilayah.Name = "tableLayoutPanelWilayah";
-            tableLayoutPanelWilayah.RowCount = 2;
-            tableLayoutPanelWilayah.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelWilayah.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanelWilayah.Size = new Size(367, 61);
-            tableLayoutPanelWilayah.TabIndex = 32;
-            // 
-            // flowLayoutPanelPictDanWilayahInstansi
-            // 
-            flowLayoutPanelPictDanWilayahInstansi.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            flowLayoutPanelPictDanWilayahInstansi.Controls.Add(pictureBoxLokasi);
-            flowLayoutPanelPictDanWilayahInstansi.Controls.Add(tableLayoutPanelWilayah);
-            flowLayoutPanelPictDanWilayahInstansi.Location = new Point(2, 3);
-            flowLayoutPanelPictDanWilayahInstansi.Margin = new Padding(2);
-            flowLayoutPanelPictDanWilayahInstansi.Name = "flowLayoutPanelPictDanWilayahInstansi";
-            flowLayoutPanelPictDanWilayahInstansi.Size = new Size(442, 64);
-            flowLayoutPanelPictDanWilayahInstansi.TabIndex = 33;
-            // 
-            // labelKawasanTPS
-            // 
-            labelKawasanTPS.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            labelKawasanTPS.AutoSize = true;
-            labelKawasanTPS.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelKawasanTPS.ForeColor = SystemColors.ControlText;
-            labelKawasanTPS.Location = new Point(2, 73);
-            labelKawasanTPS.Margin = new Padding(2, 0, 2, 0);
-            labelKawasanTPS.Name = "labelKawasanTPS";
-            labelKawasanTPS.Size = new Size(442, 28);
-            labelKawasanTPS.TabIndex = 34;
-            labelKawasanTPS.Text = "Kawasan TSP Mandiri Melati ";
-            labelKawasanTPS.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // tableLayoutPanelInformation
-            // 
-            tableLayoutPanelInformation.Anchor = AnchorStyles.Top;
-            tableLayoutPanelInformation.BackColor = Color.FromArgb(233, 247, 237);
-            tableLayoutPanelInformation.ColumnCount = 1;
-            tableLayoutPanelInformation.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanelInformation.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanelInformation.Controls.Add(flowLayoutPanelPictDanWilayahInstansi, 0, 0);
-            tableLayoutPanelInformation.Controls.Add(labelKawasanTPS, 0, 1);
-            tableLayoutPanelInformation.Location = new Point(46, 352);
-            tableLayoutPanelInformation.Margin = new Padding(2);
-            tableLayoutPanelInformation.Name = "tableLayoutPanelInformation";
-            tableLayoutPanelInformation.RowCount = 2;
-            tableLayoutPanelInformation.RowStyles.Add(new RowStyle(SizeType.Percent, 67.30769F));
-            tableLayoutPanelInformation.RowStyles.Add(new RowStyle(SizeType.Percent, 32.6923065F));
-            tableLayoutPanelInformation.Size = new Size(446, 104);
-            tableLayoutPanelInformation.TabIndex = 35;
             // 
             // labelPengaturanAkun
             // 
@@ -1108,12 +996,11 @@
             flowLayoutPanel7.Controls.Add(pictureBoxFotoPengelola);
             flowLayoutPanel7.Controls.Add(tableLayoutPanelPictTPSID);
             flowLayoutPanel7.Controls.Add(tableLayoutPanelIdentitas);
-            flowLayoutPanel7.Controls.Add(tableLayoutPanelInformation);
             flowLayoutPanel7.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel7.Location = new Point(540, 74);
+            flowLayoutPanel7.Location = new Point(545, 73);
             flowLayoutPanel7.Margin = new Padding(4);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
-            flowLayoutPanel7.Size = new Size(538, 458);
+            flowLayoutPanel7.Size = new Size(538, 445);
             flowLayoutPanel7.TabIndex = 69;
             // 
             // ProfileScreen
@@ -1132,7 +1019,7 @@
             MinimizeBox = false;
             Name = "ProfileScreen";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ProfileScreen";
+            Text = " ";
             ((System.ComponentModel.ISupportInitialize)pictureBoxDashHar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).EndInit();
             flowLayoutPanelDashboard.ResumeLayout(false);
@@ -1147,12 +1034,6 @@
             tableLayoutPanelPictTPSID.PerformLayout();
             tableLayoutPanelIdentitas.ResumeLayout(false);
             tableLayoutPanelIdentitas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxLokasi).EndInit();
-            tableLayoutPanelWilayah.ResumeLayout(false);
-            tableLayoutPanelWilayah.PerformLayout();
-            flowLayoutPanelPictDanWilayahInstansi.ResumeLayout(false);
-            tableLayoutPanelInformation.ResumeLayout(false);
-            tableLayoutPanelInformation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxManageAccount).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRightArrow1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxUserPanelSetting).EndInit();
@@ -1218,13 +1099,6 @@
         private Label labelIdentitas;
         private Label labelEmail;
         private TableLayoutPanel tableLayoutPanelIdentitas;
-        private PictureBox pictureBoxLokasi;
-        private Label labelWilayahInstansi;
-        private Label labelLingkunganHidup;
-        private TableLayoutPanel tableLayoutPanelWilayah;
-        private FlowLayoutPanel flowLayoutPanelPictDanWilayahInstansi;
-        private Label labelKawasanTPS;
-        private TableLayoutPanel tableLayoutPanelInformation;
         private Label labelPengaturanAkun;
         private PictureBox pictureBoxManageAccount;
         private Label labelInformasiAkun;
