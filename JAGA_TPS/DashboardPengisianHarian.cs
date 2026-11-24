@@ -19,6 +19,9 @@ namespace JAGA_TPS
         {
             InitializeComponent();
 
+            // UserStore.CurrentUser adalah properti statis yang menyimpan informasi tentang pengguna yang saat ini masuk ke dalam aplikasi.
+            // Properti ini digunakan untuk mengakses data pengguna, seperti nama lengkap, ID izin kerja, email, dan peran pengguna.
+            // Dengan menggunakan UserStore.CurrentUser,kita dapat menampilkan informasi pengguna di berbagai bagian aplikasi, seperti di label atau form profil.
             if (UserStore.CurrentUser != null)
             {
                 lblNamaUser.Text = UserStore.CurrentUser.NamaLengkap;
@@ -111,29 +114,29 @@ namespace JAGA_TPS
             // Membersihkan kartu sebelumnya
             tblDaftarTPS.Controls.Clear();
 
-            // 2. Iterasi seluruh data TPS yang tersimpan di TPSStore
+            // Iterasi seluruh data TPS yang tersimpan di TPSStore
             foreach (TPSModel tps in TPSStore.DaftarTPS)
             {
-                // 3. Hanya tampilkan kartu untuk TPS yang sudah melalui proses pemeriksaan harian
+                // Hanya tampilkan kartu untuk TPS yang sudah melalui proses pemeriksaan harian
                 if (tps.SudahDiperiksa)
                 {
-                    // 4. Buat instance User Control kartu TPS dan isi tampilannya sesuai data TPS saat ini
+                    // Buat instance User Control kartu TPS dan isi tampilannya sesuai data TPS saat ini
                     DataTPS itemTps = new DataTPS();
                     itemTps.TampilkanData(tps);
 
-                    // 5. Pasang event saat tombol "Ajukan Pengangkutan" di dalam kartu TPS diklik
+                    // Pasang event saat tombol "Ajukan Pengangkutan" di dalam kartu TPS diklik
                     itemTps.AjukanClicked += (sender, tpsObjek) =>
                     {
-                        // 6. Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
+                        // Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
                         DashboardPengajuan formPengajuan = new DashboardPengajuan();
                         formPengajuan.MuatDataTps(tpsObjek, this);
                         formPengajuan.Show();
 
-                        // 7. Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
+                        // Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
                         this.Hide();
                     };
 
-                    // 8. Masukkan kartu TPS ke dalam container (TableLayoutPanel / FlowLayoutPanel)
+                    // Masukkan kartu TPS ke dalam container (TableLayoutPanel / FlowLayoutPanel)
                     tblDaftarTPS.Controls.Add(itemTps);
                 }
             }
@@ -215,11 +218,6 @@ namespace JAGA_TPS
             }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
 
@@ -251,11 +249,6 @@ namespace JAGA_TPS
 
             // Menyembunyikan form LoginPage
             this.Hide();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         public void RefreshDaftarTPS()

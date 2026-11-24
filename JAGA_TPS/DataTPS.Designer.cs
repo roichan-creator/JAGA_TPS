@@ -340,7 +340,6 @@
             Controls.Add(flowLayoutPanel1);
             Name = "DataTPS";
             Size = new Size(690, 246);
-            Load += DataTPS_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

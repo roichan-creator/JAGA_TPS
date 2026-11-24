@@ -326,7 +326,6 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Size = new Size(204, 668);
             tableLayoutPanel2.TabIndex = 9;
-            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // flowLayoutPanel13
             // 
@@ -762,7 +761,7 @@
             // nudVolume
             // 
             nudVolume.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            nudVolume.ForeColor = Color.FromArgb(186, 26, 26);
+            nudVolume.ForeColor = Color.Black;
             nudVolume.Location = new Point(6, 0);
             nudVolume.Margin = new Padding(0);
             nudVolume.Name = "nudVolume";

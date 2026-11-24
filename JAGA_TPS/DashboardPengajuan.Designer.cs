@@ -496,7 +496,6 @@
             label6.Size = new Size(132, 50);
             label6.TabIndex = 2;
             label6.Text = "Pengajuan\nPengangkutan\n";
-            label6.Click += label6_Click;
             // 
             // flowLayoutPanel6
             // 

@@ -30,13 +30,13 @@ namespace JAGA_TPS
 
         private void btnDaftar_Click(object sender, EventArgs e)
         {
-            // 1. Mengambil data dari TextBox
+            // Mengambil data dari TextBox
             string nama = txtUsername.Text.Trim();
             string idizinkerja = txtNamaInstansi.Text.Trim();
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text;
 
-            // 2. Validasi input kosong
+            // Validasi input kosong
             if (nama == "" || idizinkerja == "" ||
                 email == "" || password == "")
             {
@@ -44,14 +44,14 @@ namespace JAGA_TPS
                 return;
             }
 
-            // 3. Validasi email
+            // Validasi email
             if (!email.Contains("@") || !email.Contains("."))
             {
                 MessageBox.Show("Format email tidak valid!");
                 return;
             }
 
-            // 4. Memeriksa pilihan role
+            // Memeriksa pilihan role
             string role = "";
 
             if (rbPengelola.Checked)
@@ -72,7 +72,7 @@ namespace JAGA_TPS
                 return;
             }
 
-            // 5. Memeriksa persetujuan
+            // Memeriksa persetujuan
             if (!chkPersetujuan.Checked)
             {
                 MessageBox.Show("Anda harus menyetujui ketentuan!");
@@ -101,11 +101,6 @@ namespace JAGA_TPS
             login.Show();
 
             this.Hide();
-
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }

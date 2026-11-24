@@ -16,6 +16,7 @@ namespace JAGA_TPS
         {
             InitializeComponent();
 
+            // Menampilkan data user saat ini di halaman profil
             if (UserStore.CurrentUser != null)
             {
                 lblNamaUser.Text = UserStore.CurrentUser.NamaLengkap;

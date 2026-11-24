@@ -42,6 +42,7 @@ namespace JAGA_TPS
                 flyStatus.BackColor = Color.LightSkyBlue;
                 btnAjukanPengangkutan.Enabled = false;
                 btnAjukanPengangkutan.Text = "Menunggu...";
+                pictureBoxStatus.Image = Properties.Resources.Circleblue;
             }
             else if (tps.Volume <= 40)
             {
@@ -50,6 +51,7 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.DarkGreen;
                 lblVolume.ForeColor = Color.DarkGreen;
                 flyStatus.BackColor = Color.LightGreen;
+                pictureBoxStatus.Image = Properties.Resources.CIrcleGreen;
             }
             else if (tps.Volume <= 75)
             {
@@ -58,6 +60,7 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.DarkGoldenrod;
                 lblVolume.ForeColor = Color.DarkGoldenrod;
                 flyStatus.BackColor = Color.LightGoldenrodYellow;
+                pictureBoxStatus.Image = Properties.Resources.Circleyellow;
             }
             else
             {
@@ -66,12 +69,8 @@ namespace JAGA_TPS
                 lblStatus.ForeColor = Color.Red;
                 lblVolume.ForeColor = Color.Red;
                 flyStatus.BackColor = Color.MistyRose;
+                pictureBoxStatus.Image = Properties.Resources.Circlered;
             }
-        }
-
-        private void DataTPS_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAjukanPengangkutan_Click(object sender, EventArgs e)

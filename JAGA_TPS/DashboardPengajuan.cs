@@ -28,12 +28,6 @@ namespace JAGA_TPS
 
         }
 
-        // Constructor dengan parameter (opsional, jika suatu saat dipanggil langsung dengan TPSModel)
-        //public DashboardPengajuan(TPSModel tpsObjek) : this()
-        //{
-        //    MuatDataTps(tpsObjek);
-        //}
-
         public void MuatDataTps(TPSModel tps, Form? formAsal = null)
         {
             if (tps == null) return;
@@ -47,29 +41,26 @@ namespace JAGA_TPS
                 lblStatusTPS.Text = "Aman";
                 lblStatusTPS.BackColor = Color.LightGreen;
                 lblStatusTPS.ForeColor = Color.DarkGreen;
-                //lblVolume.ForeColor = Color.DarkGreen;
                 flyStatus.BackColor = Color.LightGreen;
+                pictureBoxStatus.Image = Properties.Resources.CIrcleGreen;
             }
             else if (tps.Volume <= 75)
             {
                 lblStatusTPS.Text = "Normal";
                 lblStatusTPS.BackColor = Color.LightGoldenrodYellow;
                 lblStatusTPS.ForeColor = Color.DarkGoldenrod;
-                //lblVolume.ForeColor = Color.DarkGoldenrod;
                 flyStatus.BackColor = Color.LightGoldenrodYellow;
+                pictureBoxStatus.Image = Properties.Resources.Circleyellow;
             }
             else
             {
                 lblStatusTPS.Text = "Kritis";
                 lblStatusTPS.BackColor = Color.MistyRose;
                 lblStatusTPS.ForeColor = Color.Red;
-                //lblVolume.ForeColor = Color.Red;
                 flyStatus.BackColor = Color.MistyRose;
+                pictureBoxStatus.Image = Properties.Resources.Circlered;
             }
-
-            // Sesuaikan nama Label / TextBox di bawah ini dengan nama kontrol di DashboardPengajuan.Designer.cs
-            //lblIdTPS.Text = tps.Id;
-            //lblStatusTPS.Text = statusTps;
+            // Menampilkan data TPS
             lblNamaTPS.Text = tps.NamaTPS;
             lblLokasiTPS.Text = tps.Lokasi;
             lblJadwal.Text = tps.JadwalRutin;
@@ -81,9 +72,10 @@ namespace JAGA_TPS
 
         private void btnAjukan_Click(object sender, EventArgs e)
         {
+            
             if (_tpsTerpilih == null) return;
 
-            // 1. Ubah status TPS menjadi "Menunggu"
+            // Ubah status TPS menjadi "Menunggu"
             _tpsTerpilih.Status = "Menunggu";
 
             MessageBox.Show(
@@ -93,7 +85,7 @@ namespace JAGA_TPS
                 MessageBoxIcon.Information
             );
 
-            // 2. Kembali ke DashboardPengisianHarian dan refresh daftar TPS
+            // Kembali ke DashboardPengisianHarian dan refresh daftar TPS
             if (_formDashboardAsal is DashboardPengisianHarian dashboardHarian)
             {
                 dashboardHarian.RefreshDaftarTPS();
@@ -105,13 +97,8 @@ namespace JAGA_TPS
                 dashboardBaru.Show();
             }
 
-            // 3. Tutup form pengajuan
+            // Tutup form pengajuan
             this.Close();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnTambahGambar_Click(object sender, EventArgs e)

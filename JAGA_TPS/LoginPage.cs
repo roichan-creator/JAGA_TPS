@@ -23,18 +23,18 @@ namespace JAGA_TPS
         private void btnDaftar_Click(object sender, EventArgs e)
         {
             // Periksa email dan password
-            // 1. Mengambil input pengguna
+            // Mengambil input pengguna
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text;
 
-            // 2. Validasi input kosong
+            // Validasi input kosong
             if (email == "" || password == "")
             {
                 MessageBox.Show("Email dan password wajib diisi!");
                 return;
             }
 
-            // 3. Mencari akun dalam List
+            // Mencari akun dalam List
             User akunDitemukan = null;
 
             foreach (User user in UserStore.Users)
@@ -49,7 +49,7 @@ namespace JAGA_TPS
                 }
             }
 
-            // 4. Memeriksa hasil pencarian
+            // Memeriksa hasil pencarian
             if (akunDitemukan != null)
             {
                 MessageBox.Show(
@@ -60,11 +60,11 @@ namespace JAGA_TPS
                 // Menampilkan role pengguna
                 MessageBox.Show("Role: " + akunDitemukan.Role);
 
+                // Menyimpan akun yang berhasil login ke UserStore
                 UserStore.CurrentUser = akunDitemukan;
 
                 // Membuka Dashboard dengan nama pengguna
-                DashboardPengisianHarian dashboard =
-                    new DashboardPengisianHarian();
+                DashboardPengisianHarian dashboard = new DashboardPengisianHarian();
 
                 dashboard.Show();
 
@@ -74,9 +74,6 @@ namespace JAGA_TPS
             {
                 MessageBox.Show("Email atau password salah!");
             }
-
-
-
         }
     }
 }
