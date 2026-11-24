@@ -75,5 +75,10 @@ namespace JAGA_TPS
                 MessageBox.Show("Email atau password salah!");
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
