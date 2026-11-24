@@ -122,11 +122,12 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.Image = Properties.Resources.logo_JagaTPS;
-            pictureBox1.Location = new Point(186, 3);
+            pictureBox1.Location = new Point(186, -1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(173, 120);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -192,7 +193,7 @@
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Controls.Add(tableLayoutPanel5, 0, 1);
             tableLayoutPanel4.Controls.Add(tableLayoutPanel2, 0, 0);
-            tableLayoutPanel4.Location = new Point(3, 235);
+            tableLayoutPanel4.Location = new Point(3, 232);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 2;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 17.7142849F));
@@ -257,8 +258,8 @@
             // tableLayoutPanel10
             // 
             tableLayoutPanel10.ColumnCount = 2;
-            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.3684216F));
-            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.63158F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23.6641216F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 76.33588F));
             tableLayoutPanel10.Controls.Add(pictureBox9, 0, 0);
             tableLayoutPanel10.Controls.Add(rbPenanggungJawab, 1, 0);
             tableLayoutPanel10.Location = new Point(3, 3);
@@ -275,7 +276,7 @@
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(3, 3);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(23, 20);
+            pictureBox9.Size = new Size(25, 20);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 7;
             pictureBox9.TabStop = false;
@@ -361,8 +362,7 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Image = Properties.Resources.Gemini_Generated_Image_aq66d3aq66d3aq66;
             pictureBox8.Location = new Point(3, 3);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(27, 20);
@@ -491,7 +491,7 @@
             flowLayoutPanel4.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel4.Controls.Add(pictureBox11);
             flowLayoutPanel4.Controls.Add(txtPassword);
-            flowLayoutPanel4.Location = new Point(3, 457);
+            flowLayoutPanel4.Location = new Point(3, 454);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(471, 31);
             flowLayoutPanel4.TabIndex = 13;
@@ -529,7 +529,7 @@
             flowLayoutPanel1.Controls.Add(txtUsername);
             flowLayoutPanel1.Location = new Point(3, 31);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(471, 35);
+            flowLayoutPanel1.Size = new Size(471, 32);
             flowLayoutPanel1.TabIndex = 1;
             // 
             // pictureBox2
@@ -538,7 +538,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(3, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(19, 29);
+            pictureBox2.Size = new Size(19, 26);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
@@ -549,7 +549,7 @@
             txtUsername.BackColor = Color.FromArgb(233, 247, 237);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.ForeColor = Color.FromArgb(111, 122, 114);
-            txtUsername.Location = new Point(28, 5);
+            txtUsername.Location = new Point(28, 4);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(440, 24);
             txtUsername.TabIndex = 6;
@@ -561,15 +561,15 @@
             flowLayoutPanel2.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel2.Controls.Add(pictureBox3);
             flowLayoutPanel2.Controls.Add(txtNamaInstansi);
-            flowLayoutPanel2.Location = new Point(3, 110);
+            flowLayoutPanel2.Location = new Point(3, 107);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(471, 35);
             flowLayoutPanel2.TabIndex = 7;
             // 
             // pictureBox3
             // 
-            pictureBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Anchor = AnchorStyles.None;
+            pictureBox3.Image = Properties.Resources.id_card;
             pictureBox3.Location = new Point(3, 3);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(19, 29);
@@ -595,7 +595,7 @@
             flowLayoutPanel5.BackColor = Color.FromArgb(233, 247, 237);
             flowLayoutPanel5.Controls.Add(pictureBox5);
             flowLayoutPanel5.Controls.Add(txtEmail);
-            flowLayoutPanel5.Location = new Point(3, 192);
+            flowLayoutPanel5.Location = new Point(3, 189);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
             flowLayoutPanel5.Size = new Size(471, 37);
             flowLayoutPanel5.TabIndex = 8;
@@ -606,8 +606,8 @@
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(3, 3);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(19, 34);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.Size = new Size(19, 39);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             // 
@@ -617,7 +617,7 @@
             txtEmail.BackColor = Color.FromArgb(233, 247, 237);
             txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.ForeColor = Color.FromArgb(111, 122, 114);
-            txtEmail.Location = new Point(28, 8);
+            txtEmail.Location = new Point(28, 10);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(440, 24);
             txtEmail.TabIndex = 6;
@@ -636,7 +636,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 79);
+            label5.Location = new Point(3, 76);
             label5.Name = "label5";
             label5.Size = new Size(115, 28);
             label5.TabIndex = 6;
@@ -646,7 +646,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 158);
+            label6.Location = new Point(3, 155);
             label6.Name = "label6";
             label6.Size = new Size(59, 28);
             label6.TabIndex = 8;
@@ -656,7 +656,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(3, 427);
+            label15.Location = new Point(3, 424);
             label15.Name = "label15";
             label15.Size = new Size(105, 27);
             label15.TabIndex = 10;
@@ -665,7 +665,7 @@
             // chkPersetujuan
             // 
             chkPersetujuan.AutoSize = true;
-            chkPersetujuan.Location = new Point(3, 494);
+            chkPersetujuan.Location = new Point(3, 491);
             chkPersetujuan.Name = "chkPersetujuan";
             chkPersetujuan.Size = new Size(471, 54);
             chkPersetujuan.TabIndex = 14;
