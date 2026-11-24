@@ -26,18 +26,6 @@ namespace JAGA_TPS
         }
 
 
-
-
-        private void linkLabelProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            // Membuka Form RegistrasiJagaTPS
-            DashboardPengisianHarian formharian = new DashboardPengisianHarian();
-            formharian.Show();
-
-            // Menyembunyikan form LoginPage
-            this.Hide();
-        }
-
         private void labelProfile_Click(object sender, EventArgs e)
         {
 
@@ -45,7 +33,10 @@ namespace JAGA_TPS
 
         private void linkLabelProfil_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            DashboardPengisianHarian formharian = new DashboardPengisianHarian();
+            formharian.Show();
 
+            this.Hide();
         }
     }
 }
