@@ -15,19 +15,18 @@ namespace JAGA_TPS
     public partial class DashboardPengisianHarian : Form
     {
 
-        public DashboardPengisianHarian(string nama)
+        public DashboardPengisianHarian()
         {
             InitializeComponent();
 
-            lblNamaUser.Text = nama;
+            if (UserStore.CurrentUser != null)
+            {
+                lblNamaUser.Text = UserStore.CurrentUser.NamaLengkap;
+            }
 
             MuatDaftarLokasiTPS();
             TampilkanDaftarTPS();
-
         }
-
-
-
         private void MuatDaftarLokasiTPS()
         {
             // Mengosongkan pilihan sebelumnya
@@ -109,33 +108,20 @@ namespace JAGA_TPS
 
         private void TampilkanDaftarTPS()
         {
-            // 1. Hapus kartu TPS yang lama agar tidak menumpuk saat daftar di-refresh
+            // Membersihkan kartu sebelumnya
             tblDaftarTPS.Controls.Clear();
 
-            // 2. Iterasi seluruh data TPS yang tersimpan di TPSStore
+            // Mengambil data TPS
             foreach (TPSModel tps in TPSStore.DaftarTPS)
             {
-                // 3. Hanya tampilkan kartu untuk TPS yang sudah melalui proses pemeriksaan harian
+                // Hanya TPS yang sudah diperiksa ditampilkan
                 if (tps.SudahDiperiksa)
                 {
-                    // 4. Buat instance User Control kartu TPS dan isi tampilannya sesuai data TPS saat ini
-                    DataTPS itemTps = new DataTPS();
-                    itemTps.TampilkanData(tps);
+                    DataTPS kartu = new DataTPS();
 
-                    // 5. Pasang event saat tombol "Ajukan Pengangkutan" di dalam kartu TPS diklik
-                    itemTps.AjukanClicked += (sender, tpsObjek) =>
-                    {
-                        // 6. Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
-                        DashboardPengajuan formPengajuan = new DashboardPengajuan();
-                        formPengajuan.MuatDataTps(tpsObjek);
-                        formPengajuan.Show();
+                    kartu.TampilkanData(tps);
 
-                        // 7. Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
-                        this.Hide();
-                    };
-
-                    // 8. Masukkan kartu TPS ke dalam container (TableLayoutPanel / FlowLayoutPanel)
-                    tblDaftarTPS.Controls.Add(itemTps);
+                    tblDaftarTPS.Controls.Add(kartu);
                 }
             }
         }
