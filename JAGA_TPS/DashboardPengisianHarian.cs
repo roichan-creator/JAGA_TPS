@@ -22,7 +22,10 @@ namespace JAGA_TPS
 
             MuatDaftarLokasiTPS();
             TampilkanDaftarTPS();
+
         }
+
+
 
         private void MuatDaftarLokasiTPS()
         {
@@ -105,20 +108,33 @@ namespace JAGA_TPS
 
         private void TampilkanDaftarTPS()
         {
-            // Membersihkan kartu sebelumnya
+            // 1. Hapus kartu TPS yang lama agar tidak menumpuk saat daftar di-refresh
             tblDaftarTPS.Controls.Clear();
 
-            // Mengambil data TPS
+            // 2. Iterasi seluruh data TPS yang tersimpan di TPSStore
             foreach (TPSModel tps in TPSStore.DaftarTPS)
             {
-                // Hanya TPS yang sudah diperiksa ditampilkan
+                // 3. Hanya tampilkan kartu untuk TPS yang sudah melalui proses pemeriksaan harian
                 if (tps.SudahDiperiksa)
                 {
-                    DataTPS kartu = new DataTPS();
+                    // 4. Buat instance User Control kartu TPS dan isi tampilannya sesuai data TPS saat ini
+                    DataTPS itemTps = new DataTPS();
+                    itemTps.TampilkanData(tps);
 
-                    kartu.TampilkanData(tps);
+                    // 5. Pasang event saat tombol "Ajukan Pengangkutan" di dalam kartu TPS diklik
+                    itemTps.AjukanClicked += (sender, tpsObjek) =>
+                    {
+                        // 6. Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
+                        DashboardPengajuan formPengajuan = new DashboardPengajuan();
+                        formPengajuan.MuatDataTps(tpsObjek);
+                        formPengajuan.Show();
 
-                    tblDaftarTPS.Controls.Add(kartu);
+                        // 7. Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
+                        this.Hide();
+                    };
+
+                    // 8. Masukkan kartu TPS ke dalam container (TableLayoutPanel / FlowLayoutPanel)
+                    tblDaftarTPS.Controls.Add(itemTps);
                 }
             }
         }
