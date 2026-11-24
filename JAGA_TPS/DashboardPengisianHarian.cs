@@ -22,7 +22,10 @@ namespace JAGA_TPS
 
             MuatDaftarLokasiTPS();
             TampilkanDaftarTPS();
+
         }
+
+
 
         private void MuatDaftarLokasiTPS()
         {
@@ -70,6 +73,13 @@ namespace JAGA_TPS
                 return;
             }
 
+            // Meminta jadwal rutin TPS
+            string jadwalrutin = Interaction.InputBox(
+                "Masukkan jadwal rutin TPS:",
+                "Tambah TPS",
+                ""
+            );
+
             // Membuat data TPS baru
             TPSModel tpsBaru = new TPSModel();
 
@@ -80,7 +90,7 @@ namespace JAGA_TPS
             tpsBaru.Lokasi = lokasi;
             tpsBaru.Volume = 0;
             tpsBaru.SudahDiperiksa = false;
-            tpsBaru.JadwalRutin = "-";
+            tpsBaru.JadwalRutin = jadwalrutin;
 
             // Menyimpan data TPS
             TPSStore.DaftarTPS.Add(tpsBaru);
@@ -98,20 +108,33 @@ namespace JAGA_TPS
 
         private void TampilkanDaftarTPS()
         {
-            // Membersihkan kartu sebelumnya
+            // 1. Hapus kartu TPS yang lama agar tidak menumpuk saat daftar di-refresh
             tblDaftarTPS.Controls.Clear();
 
-            // Mengambil data TPS
+            // 2. Iterasi seluruh data TPS yang tersimpan di TPSStore
             foreach (TPSModel tps in TPSStore.DaftarTPS)
             {
-                // Hanya TPS yang sudah diperiksa ditampilkan
+                // 3. Hanya tampilkan kartu untuk TPS yang sudah melalui proses pemeriksaan harian
                 if (tps.SudahDiperiksa)
                 {
-                    DataTPS kartu = new DataTPS();
+                    // 4. Buat instance User Control kartu TPS dan isi tampilannya sesuai data TPS saat ini
+                    DataTPS itemTps = new DataTPS();
+                    itemTps.TampilkanData(tps);
 
-                    kartu.TampilkanData(tps);
+                    // 5. Pasang event saat tombol "Ajukan Pengangkutan" di dalam kartu TPS diklik
+                    itemTps.AjukanClicked += (sender, tpsObjek) =>
+                    {
+                        // 6. Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
+                        DashboardPengajuan formPengajuan = new DashboardPengajuan();
+                        formPengajuan.MuatDataTps(tpsObjek);
+                        formPengajuan.Show();
 
-                    tblDaftarTPS.Controls.Add(kartu);
+                        // 7. Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
+                        this.Hide();
+                    };
+
+                    // 8. Masukkan kartu TPS ke dalam container (TableLayoutPanel / FlowLayoutPanel)
+                    tblDaftarTPS.Controls.Add(itemTps);
                 }
             }
         }
@@ -136,13 +159,11 @@ namespace JAGA_TPS
                 return;
             }
 
-            // Mengambil nilai volume
-            //tps.Volume = (int)nudVolume.Value;
+            // Mengambil nilai estimasi volume sampah
+            tps.Volume = (int)nudVolume.Value;
 
             // Mengubah status pemeriksaan
             tps.SudahDiperiksa = true;
-
-            tps.JadwalRutin = "Setiap Selasa & Jumat";
 
             // Memperbarui tampilan Dashboard
             TampilkanDaftarTPS();
@@ -150,6 +171,86 @@ namespace JAGA_TPS
             MessageBox.Show(
                 "Hasil pemeriksaan berhasil disimpan!"
             );
+        }
+
+        private void btnTambahFoto_Click(object sender, EventArgs e)
+        {
+            // Membuat instance OpenFileDialog
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                // Filter jenis file gambar yang bisa dipilih
+                openFileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.bmp)|*.jpg; *.jpeg; *.png; *.bmp";
+                openFileDialog.Title = "Pilih Dokumentasi Foto Lapangan";
+
+                // Jika pengguna memilih file dan menekan OK
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        // Menampilkan gambar ke PictureBox
+                        pictureDokumentasiFoto.Image = Image.FromFile(openFileDialog.FileName);
+
+                        // Menyesuaikan ukuran gambar agar pas di dalam PictureBox
+                        pictureDokumentasiFoto.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Gagal memuat gambar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void btnHapusFoto_Click(object sender, EventArgs e)
+        {
+            // Membersihkan gambar dari PictureBox
+            if (pictureDokumentasiFoto.Image != null)
+            {
+                pictureDokumentasiFoto.Image.Dispose(); // Membersihkan memori gambar sebelumnya
+                pictureDokumentasiFoto.Image = null;
+            }
+            else
+            {
+                MessageBox.Show("Tidak ada foto untuk dihapus.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show(
+                "Apakah Anda yakin ingin keluar dari akun ini?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+
+                LoginPage formLogin = new LoginPage();
+
+
+                formLogin.Show();
+
+
+                this.Close();
+            }
+        }
+
+        private void linkLabelProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Membuka Form RegistrasiJagaTPS
+            ProfileScreen formProfil = new ProfileScreen();
+            formProfil.Show();
+
+            // Menyembunyikan form LoginPage
+            this.Hide();
         }
     }
 }
