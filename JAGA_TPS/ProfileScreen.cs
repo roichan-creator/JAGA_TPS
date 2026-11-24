@@ -17,6 +17,9 @@ namespace JAGA_TPS
             InitializeComponent();
         }
 
-        
+        private void labelSistemResikSampah_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,7 +30,6 @@
         {
             pictureBoxLogo = new PictureBox();
             labelJagaTps = new Label();
-            labelSistemResikSampah = new Label();
             labelNavigasiUtama = new Label();
             pictureBoxDashHar = new PictureBox();
             labelDashHar = new Label();
@@ -101,6 +100,7 @@
             labelLogout2 = new Label();
             pictureBoxLogout2 = new PictureBox();
             flowLayoutPanelLogout = new FlowLayoutPanel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDashHar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRiwayat).BeginInit();
@@ -172,19 +172,6 @@
             labelJagaTps.Size = new Size(95, 25);
             labelJagaTps.TabIndex = 1;
             labelJagaTps.Text = "JAGA TPS";
-            // 
-            // labelSistemResikSampah
-            // 
-            labelSistemResikSampah.Anchor = AnchorStyles.Left;
-            labelSistemResikSampah.AutoSize = true;
-            labelSistemResikSampah.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelSistemResikSampah.ForeColor = Color.FromArgb(51, 51, 51);
-            labelSistemResikSampah.Location = new Point(2, 35);
-            labelSistemResikSampah.Margin = new Padding(2, 0, 2, 0);
-            labelSistemResikSampah.Name = "labelSistemResikSampah";
-            labelSistemResikSampah.Size = new Size(186, 25);
-            labelSistemResikSampah.TabIndex = 2;
-            labelSistemResikSampah.Text = "Sistem Resik Sampah";
             // 
             // labelNavigasiUtama
             // 
@@ -300,8 +287,8 @@
             tableLayoutPanelJagaTPSdanSistem.ColumnCount = 1;
             tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanelJagaTPSdanSistem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanelJagaTPSdanSistem.Controls.Add(label1, 0, 1);
             tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelJagaTps, 0, 0);
-            tableLayoutPanelJagaTPSdanSistem.Controls.Add(labelSistemResikSampah, 0, 1);
             tableLayoutPanelJagaTPSdanSistem.Location = new Point(61, 2);
             tableLayoutPanelJagaTPSdanSistem.Margin = new Padding(2);
             tableLayoutPanelJagaTPSdanSistem.Name = "tableLayoutPanelJagaTPSdanSistem";
@@ -1116,6 +1103,18 @@
             flowLayoutPanelLogout.Size = new Size(193, 39);
             flowLayoutPanelLogout.TabIndex = 65;
             // 
+            // label1
+            // 
+            label1.Enabled = false;
+            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label1.Location = new Point(3, 32);
+            label1.Name = "label1";
+            label1.RightToLeft = RightToLeft.No;
+            label1.Size = new Size(186, 28);
+            label1.TabIndex = 66;
+            label1.Text = "Aksi Nyata, Lingkungan";
+            label1.UseWaitCursor = true;
+            // 
             // ProfileScreen
             // 
             AutoScaleDimensions = new SizeF(144F, 144F);
@@ -1208,7 +1207,6 @@
 
         private PictureBox pictureBoxLogo;
         private Label labelJagaTps;
-        private Label labelSistemResikSampah;
         private Label labelNavigasiUtama;
         private PictureBox pictureBoxDashHar;
         private Label labelDashHar;
@@ -1279,5 +1277,6 @@
         private Label labelLogout2;
         private PictureBox pictureBoxLogout2;
         private FlowLayoutPanel flowLayoutPanelLogout;
+        private Label label1;
     }
 }

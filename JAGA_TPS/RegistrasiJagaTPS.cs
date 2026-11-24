@@ -77,7 +77,8 @@ namespace JAGA_TPS
             {
                 MessageBox.Show("Anda harus menyetujui ketentuan!");
                 return;
-            };
+            }
+            ;
 
             User penggunaBaru = new User();
 
@@ -100,6 +101,11 @@ namespace JAGA_TPS
             login.Show();
 
             this.Hide();
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
