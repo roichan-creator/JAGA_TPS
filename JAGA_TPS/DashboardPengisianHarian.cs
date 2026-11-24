@@ -14,16 +14,18 @@ namespace JAGA_TPS
     public partial class DashboardPengisianHarian : Form
     {
 
-        public DashboardPengisianHarian(string nama)
+        public DashboardPengisianHarian()
         {
             InitializeComponent();
 
-            lblNamaUser.Text = nama;
+            if (UserStore.CurrentUser != null)
+            {
+                lblNamaUser.Text = UserStore.CurrentUser.NamaLengkap;
+            }
 
             MuatDaftarLokasiTPS();
             TampilkanDaftarTPS();
         }
-
         private void MuatDaftarLokasiTPS()
         {
             // Mengosongkan pilihan sebelumnya

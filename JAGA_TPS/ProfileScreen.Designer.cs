@@ -33,6 +33,7 @@
             pictureBoxProfile = new PictureBox();
             labelProfile = new Label();
             flowLayoutPanelDashboard = new FlowLayoutPanel();
+            linkLabelProfil = new LinkLabel();
             flowLayoutPanelProfile = new FlowLayoutPanel();
             pictureBoxFotoPengelola = new PictureBox();
             pictureBoxIDCard = new PictureBox();
@@ -99,7 +100,6 @@
             label7 = new Label();
             flowLayoutPanel5 = new FlowLayoutPanel();
             flowLayoutPanel7 = new FlowLayoutPanel();
-            linkLabelProfil = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDashHar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProfile).BeginInit();
             flowLayoutPanelDashboard.SuspendLayout();
@@ -183,6 +183,7 @@
             labelProfile.Size = new Size(116, 20);
             labelProfile.TabIndex = 9;
             labelProfile.Text = "Profil";
+            labelProfile.Click += labelProfile_Click;
             // 
             // flowLayoutPanelDashboard
             // 
@@ -194,6 +195,22 @@
             flowLayoutPanelDashboard.Name = "flowLayoutPanelDashboard";
             flowLayoutPanelDashboard.Size = new Size(174, 35);
             flowLayoutPanelDashboard.TabIndex = 14;
+            // 
+            // linkLabelProfil
+            // 
+            linkLabelProfil.Anchor = AnchorStyles.None;
+            linkLabelProfil.AutoSize = true;
+            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabelProfil.LinkColor = SystemColors.ControlText;
+            linkLabelProfil.Location = new Point(35, 6);
+            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
+            linkLabelProfil.Name = "linkLabelProfil";
+            linkLabelProfil.Size = new Size(132, 20);
+            linkLabelProfil.TabIndex = 70;
+            linkLabelProfil.TabStop = true;
+            linkLabelProfil.Text = "Dashboard harian";
+            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
             // flowLayoutPanelProfile
             // 
@@ -1076,22 +1093,6 @@
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(449, 385);
             flowLayoutPanel7.TabIndex = 69;
-            // 
-            // linkLabelProfil
-            // 
-            linkLabelProfil.Anchor = AnchorStyles.None;
-            linkLabelProfil.AutoSize = true;
-            linkLabelProfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabelProfil.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabelProfil.LinkColor = SystemColors.ControlText;
-            linkLabelProfil.Location = new Point(35, 6);
-            linkLabelProfil.Margin = new Padding(2, 0, 2, 0);
-            linkLabelProfil.Name = "linkLabelProfil";
-            linkLabelProfil.Size = new Size(132, 20);
-            linkLabelProfil.TabIndex = 70;
-            linkLabelProfil.TabStop = true;
-            linkLabelProfil.Text = "Dashboard harian";
-            linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
             // ProfileScreen
             // 

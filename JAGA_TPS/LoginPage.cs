@@ -60,9 +60,11 @@ namespace JAGA_TPS
                 // Menampilkan role pengguna
                 MessageBox.Show("Role: " + akunDitemukan.Role);
 
+                UserStore.CurrentUser = akunDitemukan;
+
                 // Membuka Dashboard dengan nama pengguna
                 DashboardPengisianHarian dashboard =
-                    new DashboardPengisianHarian(akunDitemukan.NamaLengkap);
+                    new DashboardPengisianHarian();
 
                 dashboard.Show();
 
