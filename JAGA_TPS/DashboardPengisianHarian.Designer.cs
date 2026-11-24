@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardPengisianHarian));
             pictureBox1 = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -56,7 +57,6 @@
             flowLayoutPanel7 = new FlowLayoutPanel();
             pictureBox5 = new PictureBox();
             linkLabelProfil = new LinkLabel();
-            label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             flowLayoutPanel9 = new FlowLayoutPanel();
@@ -96,7 +96,6 @@
             flowLayoutPanel17 = new FlowLayoutPanel();
             pictureDokumentasiFoto = new PictureBox();
             label27 = new Label();
-            label28 = new Label();
             flowLayoutPanel19 = new FlowLayoutPanel();
             pictureBox12 = new PictureBox();
             btnSimpanPemeriksaan = new Button();
@@ -109,6 +108,8 @@
             label30 = new Label();
             flowLayoutPanel21 = new FlowLayoutPanel();
             pictureBox13 = new PictureBox();
+            textBox1 = new TextBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -488,19 +489,6 @@
             linkLabelProfil.Text = "Profil";
             linkLabelProfil.LinkClicked += linkLabelProfil_LinkClicked;
             // 
-            // label8
-            // 
-            label8.Anchor = AnchorStyles.Left;
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(1145, 522);
-            label8.Margin = new Padding(3, 10, 3, 10);
-            label8.Name = "label8";
-            label8.Size = new Size(46, 20);
-            label8.TabIndex = 2;
-            label8.Text = "Profil";
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -639,7 +627,7 @@
             flowLayoutPanel12.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel12.Location = new Point(206, 53);
             flowLayoutPanel12.Name = "flowLayoutPanel12";
-            flowLayoutPanel12.Size = new Size(701, 648);
+            flowLayoutPanel12.Size = new Size(692, 648);
             flowLayoutPanel12.TabIndex = 17;
             // 
             // tblDaftarTPS
@@ -656,7 +644,7 @@
             tblDaftarTPS.RowStyles.Add(new RowStyle());
             tblDaftarTPS.RowStyles.Add(new RowStyle());
             tblDaftarTPS.RowStyles.Add(new RowStyle());
-            tblDaftarTPS.Size = new Size(695, 535);
+            tblDaftarTPS.Size = new Size(686, 535);
             tblDaftarTPS.TabIndex = 18;
             // 
             // datatps3
@@ -700,7 +688,7 @@
             label13.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.FromArgb(16, 81, 58);
             label13.Location = new Point(31, 3);
-            label13.Margin = new Padding(3, 3, 3, 3);
+            label13.Margin = new Padding(3);
             label13.Name = "label13";
             label13.Size = new Size(128, 17);
             label13.TabIndex = 2;
@@ -763,13 +751,13 @@
             // 
             // cmbLokasiTPS
             // 
+            cmbLokasiTPS.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbLokasiTPS.FormattingEnabled = true;
             cmbLokasiTPS.Items.AddRange(new object[] { "TPS Blok C - Kawasan Manufaktur Utama", "TPS Blok C - Kawasan Manufaktur Utama", "TPS Blok C - Kawasan Manufaktur Utama" });
             cmbLokasiTPS.Location = new Point(3, 103);
             cmbLokasiTPS.Name = "cmbLokasiTPS";
             cmbLokasiTPS.Size = new Size(334, 28);
             cmbLokasiTPS.TabIndex = 23;
-            cmbLokasiTPS.Text = "TPS Blok C - Kawasan Manufaktur Utama";
             // 
             // nudVolume
             // 
@@ -898,7 +886,7 @@
             label24.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.FromArgb(16, 81, 58);
             label24.Location = new Point(3, 3);
-            label24.Margin = new Padding(3, 3, 3, 3);
+            label24.Margin = new Padding(3);
             label24.Name = "label24";
             label24.Size = new Size(0, 17);
             label24.TabIndex = 2;
@@ -950,17 +938,6 @@
             label27.TabIndex = 39;
             label27.Text = "Catatan Tambahan Lapangan";
             // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label28.ForeColor = Color.FromArgb(63, 73, 67);
-            label28.Location = new Point(3, 377);
-            label28.Name = "label28";
-            label28.Size = new Size(412, 40);
-            label28.TabIndex = 40;
-            label28.Text = "Tuliskan temuan tumpukan sampah spesifik non-organik (cth:\nkardus basah, jeriken plastik berlebih, palet pecah) ...";
-            // 
             // flowLayoutPanel19
             // 
             flowLayoutPanel19.Anchor = AnchorStyles.None;
@@ -968,7 +945,7 @@
             flowLayoutPanel19.BackColor = Color.FromArgb(0, 96, 65);
             flowLayoutPanel19.Controls.Add(pictureBox12);
             flowLayoutPanel19.Controls.Add(btnSimpanPemeriksaan);
-            flowLayoutPanel19.Location = new Point(3, 420);
+            flowLayoutPanel19.Location = new Point(3, 442);
             flowLayoutPanel19.Name = "flowLayoutPanel19";
             flowLayoutPanel19.Size = new Size(462, 41);
             flowLayoutPanel19.TabIndex = 41;
@@ -1014,12 +991,12 @@
             flowLayoutPanel20.Controls.Add(label23);
             flowLayoutPanel20.Controls.Add(tableLayoutPanel4);
             flowLayoutPanel20.Controls.Add(label27);
-            flowLayoutPanel20.Controls.Add(label28);
+            flowLayoutPanel20.Controls.Add(textBox1);
             flowLayoutPanel20.Controls.Add(flowLayoutPanel19);
             flowLayoutPanel20.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel20.Location = new Point(901, 53);
             flowLayoutPanel20.Name = "flowLayoutPanel20";
-            flowLayoutPanel20.Size = new Size(468, 464);
+            flowLayoutPanel20.Size = new Size(468, 486);
             flowLayoutPanel20.TabIndex = 42;
             // 
             // tableLayoutPanel4
@@ -1030,7 +1007,7 @@
             tableLayoutPanel4.Controls.Add(flowLayoutPanel18, 1, 0);
             tableLayoutPanel4.Controls.Add(pictureDokumentasiFoto, 0, 0);
             tableLayoutPanel4.Location = new Point(2, 228);
-            tableLayoutPanel4.Margin = new Padding(2, 2, 2, 2);
+            tableLayoutPanel4.Margin = new Padding(2);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -1044,7 +1021,7 @@
             flowLayoutPanel18.Controls.Add(btnTambahFoto);
             flowLayoutPanel18.Controls.Add(btnHapusFoto);
             flowLayoutPanel18.Location = new Point(301, 2);
-            flowLayoutPanel18.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel18.Margin = new Padding(2);
             flowLayoutPanel18.Name = "flowLayoutPanel18";
             flowLayoutPanel18.Size = new Size(140, 122);
             flowLayoutPanel18.TabIndex = 48;
@@ -1122,13 +1099,27 @@
             pictureBox13.TabIndex = 46;
             pictureBox13.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 8F);
+            textBox1.Location = new Point(3, 380);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(430, 56);
+            textBox1.TabIndex = 59;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
             // DashboardPengisianHarian
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 250, 244);
             ClientSize = new Size(1348, 721);
-            Controls.Add(label8);
             Controls.Add(pictureBox13);
             Controls.Add(flowLayoutPanel21);
             Controls.Add(flowLayoutPanel20);
@@ -1237,7 +1228,6 @@
         private FlowLayoutPanel flowLayoutPanel8;
         private FlowLayoutPanel flowLayoutPanel7;
         private PictureBox pictureBox5;
-        private Label label8;
         private Label label9;
         private Label label10;
         private FlowLayoutPanel flowLayoutPanel9;
@@ -1281,7 +1271,6 @@
         private FlowLayoutPanel flowLayoutPanel17;
         private PictureBox pictureDokumentasiFoto;
         private Label label27;
-        private Label label28;
         private FlowLayoutPanel flowLayoutPanel19;
         private PictureBox pictureBox12;
         private Button btnSimpanPemeriksaan;
@@ -1295,5 +1284,7 @@
         private TableLayoutPanel tableLayoutPanel4;
         private FlowLayoutPanel flowLayoutPanel18;
         private LinkLabel linkLabelProfil;
+        private TextBox textBox1;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
