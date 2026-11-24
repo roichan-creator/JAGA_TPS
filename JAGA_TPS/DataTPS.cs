@@ -12,13 +12,19 @@ namespace JAGA_TPS
 {
     public partial class DataTPS : UserControl
     {
+
+        public event EventHandler<TPSModel>? AjukanClicked;
+        public TPSModel? DataTps { get; private set; }
+
         public DataTPS()
         {
             InitializeComponent();
+            
         }
 
         public void TampilkanData(TPSModel tps)
         {
+            DataTps = tps;
             lblNamaTPS.Text = tps.NamaTPS;
             lblLokasiTPS.Text = tps.Lokasi;
 
@@ -60,6 +66,14 @@ namespace JAGA_TPS
         private void DataTPS_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAjukanPengangkutan_Click(object sender, EventArgs e)
+        {
+            if (DataTps != null)
+            {
+                AjukanClicked?.Invoke(this, DataTps);
+            }
         }
     }
 }
