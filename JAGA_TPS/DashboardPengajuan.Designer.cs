@@ -110,6 +110,8 @@
             flowLayoutPanel28 = new FlowLayoutPanel();
             panel1 = new Panel();
             panel2 = new Panel();
+            flowLayoutPanel9 = new FlowLayoutPanel();
+            panel3 = new Panel();
             flowLayoutPanel12.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             flowLayoutPanel13.SuspendLayout();
@@ -153,10 +155,10 @@
             tableLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxTambahFoto).BeginInit();
             flowLayoutPanel25.SuspendLayout();
-            flowLayoutPanel26.SuspendLayout();
             flowLayoutPanel28.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel12
@@ -856,14 +858,15 @@
             // 
             // flowLayoutPanel20
             // 
+            flowLayoutPanel20.Anchor = AnchorStyles.Left;
             flowLayoutPanel20.AutoSize = true;
             flowLayoutPanel20.BackColor = Color.FromArgb(221, 236, 226);
             flowLayoutPanel20.Controls.Add(pictureBox16);
             flowLayoutPanel20.Controls.Add(lblJadwalPengangkutan);
-            flowLayoutPanel20.Location = new Point(4, 25);
+            flowLayoutPanel20.Location = new Point(8, 29);
             flowLayoutPanel20.Margin = new Padding(4);
             flowLayoutPanel20.Name = "flowLayoutPanel20";
-            flowLayoutPanel20.Size = new Size(223, 40);
+            flowLayoutPanel20.Size = new Size(492, 40);
             flowLayoutPanel20.TabIndex = 63;
             // 
             // pictureBox16
@@ -884,14 +887,14 @@
             lblJadwalPengangkutan.Location = new Point(53, 4);
             lblJadwalPengangkutan.Margin = new Padding(4);
             lblJadwalPengangkutan.Name = "lblJadwalPengangkutan";
-            lblJadwalPengangkutan.Size = new Size(166, 31);
+            lblJadwalPengangkutan.Size = new Size(435, 31);
             lblJadwalPengangkutan.TabIndex = 66;
             // 
             // label24
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.Location = new Point(4, 0);
+            label24.Location = new Point(7, 4);
             label24.Margin = new Padding(4, 0, 4, 0);
             label24.Name = "label24";
             label24.Size = new Size(160, 21);
@@ -1159,13 +1162,11 @@
             // 
             flowLayoutPanel26.AutoSize = true;
             flowLayoutPanel26.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            flowLayoutPanel26.Controls.Add(label24);
-            flowLayoutPanel26.Controls.Add(flowLayoutPanel20);
             flowLayoutPanel26.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel26.Location = new Point(13, 211);
             flowLayoutPanel26.Margin = new Padding(4);
             flowLayoutPanel26.Name = "flowLayoutPanel26";
-            flowLayoutPanel26.Size = new Size(231, 69);
+            flowLayoutPanel26.Size = new Size(0, 0);
             flowLayoutPanel26.TabIndex = 72;
             // 
             // flowLayoutPanel28
@@ -1199,6 +1200,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(flowLayoutPanel9);
             panel2.Controls.Add(flowLayoutPanel18);
             panel2.Controls.Add(label22);
             panel2.Controls.Add(flowLayoutPanel28);
@@ -1209,6 +1212,24 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(551, 800);
             panel2.TabIndex = 73;
+            // 
+            // flowLayoutPanel9
+            // 
+            flowLayoutPanel9.AutoSize = true;
+            flowLayoutPanel9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel9.Location = new Point(13, 599);
+            flowLayoutPanel9.Name = "flowLayoutPanel9";
+            flowLayoutPanel9.Size = new Size(0, 0);
+            flowLayoutPanel9.TabIndex = 77;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(flowLayoutPanel20);
+            panel3.Controls.Add(label24);
+            panel3.Location = new Point(13, 211);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(500, 71);
+            panel3.TabIndex = 78;
             // 
             // DashboardPengajuan
             // 
@@ -1296,14 +1317,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxTambahFoto).EndInit();
             flowLayoutPanel25.ResumeLayout(false);
             flowLayoutPanel25.PerformLayout();
-            flowLayoutPanel26.ResumeLayout(false);
-            flowLayoutPanel26.PerformLayout();
             flowLayoutPanel28.ResumeLayout(false);
             flowLayoutPanel28.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1390,5 +1411,7 @@
         private Button btnKembali;
         private Panel panel1;
         private Panel panel2;
+        private FlowLayoutPanel flowLayoutPanel9;
+        private Panel panel3;
     }
 }
