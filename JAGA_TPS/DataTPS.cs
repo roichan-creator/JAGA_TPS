@@ -33,6 +33,7 @@ namespace JAGA_TPS
 
             lblJadwal.Text = "" + tps.JadwalRutin;
 
+
             // Menentukan status TPS
             if (tps.Volume <= 40)
             {

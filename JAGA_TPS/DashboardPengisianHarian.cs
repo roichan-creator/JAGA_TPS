@@ -126,7 +126,7 @@ namespace JAGA_TPS
                     {
                         // 6. Buka form DashboardPengajuan dan kirimkan data TPS yang dipilih ke form tersebut
                         DashboardPengajuan formPengajuan = new DashboardPengajuan();
-                        formPengajuan.MuatDataTps(tpsObjek);
+                        formPengajuan.MuatDataTps(tpsObjek, this);
                         formPengajuan.Show();
 
                         // 7. Sembunyikan DashboardPengisianHarian agar user berpindah ke halaman pengajuan
@@ -251,6 +251,16 @@ namespace JAGA_TPS
 
             // Menyembunyikan form LoginPage
             this.Hide();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void RefreshDaftarTPS()
+        {
+            TampilkanDaftarTPS();
         }
     }
 }

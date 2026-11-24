@@ -12,6 +12,10 @@ namespace JAGA_TPS
 {
     public partial class DashboardPengajuan : Form
     {
+
+        private TPSModel? _tpsTerpilih;
+        private Form? _formDashboardAsal;
+
         public DashboardPengajuan()
         {
             InitializeComponent();
@@ -25,9 +29,12 @@ namespace JAGA_TPS
             MuatDataTps(tpsObjek);
         }
 
-        public void MuatDataTps(TPSModel tps)
+        public void MuatDataTps(TPSModel tps, Form? formAsal = null)
         {
             if (tps == null) return;
+
+            _tpsTerpilih = tps;
+            _formDashboardAsal = formAsal;
 
             // Menentukan status TPS
             if (tps.Volume <= 40)
@@ -87,5 +94,36 @@ namespace JAGA_TPS
         {
 
         }
+
+        private void btnAjukanPengangkutan_Click(object sender, EventArgs e)
+        {
+            if (_tpsTerpilih == null) return;
+
+            // 1. Ubah status TPS menjadi "Menunggu"
+            _tpsTerpilih.Status = "Menunggu";
+
+            MessageBox.Show(
+                "Pengajuan pengangkutan berhasil dikirim. Status TPS kini Menunggu.",
+                "Informasi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // 2. Kembali ke DashboardPengisianHarian dan refresh daftar TPS
+            if (_formDashboardAsal is DashboardPengisianHarian dashboardHarian)
+            {
+                dashboardHarian.RefreshDaftarTPS();
+                dashboardHarian.Show();
+            }
+            else
+            {
+                var dashboardBaru = new DashboardPengisianHarian();
+                dashboardBaru.Show();
+            }
+
+            // 3. Tutup form pengajuan
+            this.Close();
+        }
+    
     }
 }

@@ -18,6 +18,7 @@ namespace JAGA_TPS
         public bool SudahDiperiksa { get; set; }
 
         public string JadwalRutin { get; set; }
+        public string Status { get; set; }
     }
 
 }
